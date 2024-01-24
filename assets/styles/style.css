@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+::-webkit-scrollbar {
+    width: 12px; 
+  }
+  
+ 
+::-webkit-scrollbar-track {
+    background-color: #000; 
+}
+  
+ 
+::-webkit-scrollbar-thumb {
+    background-color: #7B2CBF;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+  
+  
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a159e0;
+}
+::-webkit-scrollbar-thumb:focus{
+    border-radius: 20px;
+}   
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contact button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #7B2CBF;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover, form .btn-submit input:hover{
+    box-shadow: 0px 0px 8px #7a2cbf;
+    transform: scale(1.05);
+}
+
+h2.title{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.title span{
+    color: #7a2cbf;
+}
+
+
+header{
+    padding: 40px 4%;
+    display: flex;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header nav.desktop-menu a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.desktop-menu ul li{
+    display: inline-block;
+    padding: 0 40px;
+} 
+
+
