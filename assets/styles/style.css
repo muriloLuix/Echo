@@ -166,6 +166,10 @@ section p{
     margin-right: 250px;
     
 }
+
+.input-container img{
+    display: none;
+}
 /* slogan style  */
 
 #slogan{
@@ -202,6 +206,8 @@ section p{
 
     header{
         background-image: url(../img/background-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     header a{
         display: none;
@@ -230,6 +236,7 @@ section p{
     }
 
     .input-container img {
+        display: flex;
         position: absolute;
         left: 18em;
         top: 50%;
@@ -237,5 +244,12 @@ section p{
         width: 100px;
         height: auto;
         z-index: 2;
+    }
+
+
+    #sobre{
+        background-image: url(/assets/img/sobre-mobile.jpg) ;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
