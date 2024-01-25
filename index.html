@@ -6,24 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="shortcut icon" href="assets/img/echologo.png" type="image/x-icon">
+    <script src="/assets/js/input.js"></script>
     <title>| Echo</title>
 </head>
 
 <body>
     <header>
         <div class="interface">
-            <p>.</p>
+            <p> </p>
             <nav class="desktop-menu">
                 <ul>
                     <li><a href="#slogan">Inicio</a></li>
                     <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#"">Serviços</a></li>
-                        <li><a href=" #"">Contato</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
             <figure>
                 <img id="echo-logo" src="./assets/img/logo png.png">
             </figure>
+            <div class="input-container">
+                <img src="assets/img/logo png.png" alt="Ícone" />
+                <input placeholder="O que procura?" type="text" id="campoLetras" class="search" autocomplete="off" onkeydown="validarApenasLetras(event)">
+            </div>
         </div>
     </header>
     <section id="sobre">
@@ -67,7 +72,5 @@
             </figure>
         </div>
     </section>
-
 </body>
-
 </html>

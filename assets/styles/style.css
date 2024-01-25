@@ -131,6 +131,10 @@ header nav.desktop-menu ul li{
     transition: 0.3s;
 }
 
+.search{
+    display: none;
+}
+
 /* About Style */
 #sobre{
     background-image: url(../img/SOBRE\ wallpaper.png);
@@ -205,5 +209,33 @@ section p{
     #echo-logo{
         display: none;
     }
+    .search{
+    display: flex;
+    position: absolute;
+    width: 366px;
+    height: 59px;
+    left: 0px;
+    top: 0px;
+    padding-left: 20px;
+    margin-left: 11px;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) -22.95%, rgba(90, 87, 108, 0.231) 114.34%);
+    backdrop-filter: blur(4.05px);
+    border-radius: 29.5px;
+    transition: 0.3s;
+    }
+    .search:focus{
+    box-shadow: rgba(161, 161, 161, 0.25) 0px 54px 55px, rgba(161, 161, 161, 0.12) 0px -12px 30px, rgba(161, 161, 161, 0.12) 0px 4px 6px, rgba(161, 161, 161, 0.17) 0px 12px 13px, rgba(161, 161, 161, 0.09) 0px -3px 5px;
+    transition: 0.3s;
+    }
 
+    .input-container img {
+        position: absolute;
+        left: 18em;
+        top: 50%;
+        transform: translateY(-30%);
+        width: 100px;
+        height: auto;
+        z-index: 2;
+    }
 }
