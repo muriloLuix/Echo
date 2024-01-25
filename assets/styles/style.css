@@ -193,3 +193,17 @@ section p{
     width: 713px;
     height: 475px;
 }
+
+@media screen and (max-width: 1064px) {
+
+    header{
+        background-image: url(../img/background-mobile.jpg);
+    }
+    header a{
+        display: none;
+    }
+    #echo-logo{
+        display: none;
+    }
+
+}
