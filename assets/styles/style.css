@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 html{
     scroll-behavior: smooth
@@ -152,19 +153,22 @@ section p{
     font-family: Mono;
     margin-left: 150px;
 }
+
+
   
-.container-texto-sobre{
+.container-texto-sobre {
     max-width: 750px;
     padding-top: 420px;
+    overflow-y: hidden;
 }
-
+.container-texto-sobre p{
+    overflow-y: hidden;
+}
 .img-sobre{
-    width: 490px;
-    height: 490px;
-    position: relative;
-    top: 420px;
-    margin-right: 250px;
-    
+    width: 587px;
+    height: 571px;
+    margin-top: 26em;
+    margin-right: 15em;
 }
 
 .input-container img{
@@ -177,14 +181,10 @@ section p{
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 1080px;
     display: flex;
     justify-content: space-between;
 }
 
-.lista-eco{
-    max-width: 10px;
-}
 
 .eco{
     width: 640.1px;
@@ -212,23 +212,26 @@ section p{
     header a{
         display: none;
     }
+    header li{
+        display: none;
+    }
     #echo-logo{
         display: none;
     }
     .search{
-    display: flex;
-    position: absolute;
-    width: 366px;
-    height: 59px;
-    left: 0px;
-    top: 0px;
-    padding-left: 20px;
-    margin-left: 11px;
-    color: #fff;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0) -22.95%, rgba(90, 87, 108, 0.231) 114.34%);
-    backdrop-filter: blur(4.05px);
-    border-radius: 29.5px;
-    transition: 0.3s;
+        display: flex;
+        position: absolute;
+        width: 366px;
+        height: 59px;
+        left: 0px;
+        top: 44px;
+        padding-left: 20px;
+        margin-left: 11px;
+        color: #fff;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0) -22.95%, rgba(90, 87, 108, 0.231) 114.34%);
+        backdrop-filter: blur(4.05px);
+        border-radius: 29.5px;
+        transition: 0.3s;
     }
     .search:focus{
     box-shadow: rgba(161, 161, 161, 0.25) 0px 54px 55px, rgba(161, 161, 161, 0.12) 0px -12px 30px, rgba(161, 161, 161, 0.12) 0px 4px 6px, rgba(161, 161, 161, 0.17) 0px 12px 13px, rgba(161, 161, 161, 0.09) 0px -3px 5px;
@@ -239,7 +242,7 @@ section p{
         display: flex;
         position: absolute;
         left: 18em;
-        top: 50%;
+        margin-top: 13px;
         transform: translateY(-30%);
         width: 100px;
         height: auto;
@@ -251,5 +254,44 @@ section p{
         background-image: url(/assets/img/sobre-mobile.jpg) ;
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    .texto-sobre{
+        margin-left: 0;
+        padding: 5px 5%;
+        text-align: justify;
+    }
+    .texto-sobre2{
+        margin: 0;
+        padding: 5px 5%;
+        text-align: justify;
+    }
+    .texto-sobre3{
+        margin: 0;
+        padding: 5px 5%;
+        text-align: justify;
+    }
+    .texto-sobre4{
+        margin: 0;
+        padding: 5px 5%;
+        text-align: justify;
+    }
+    .texto-sobre5{
+        margin: 0;
+        padding: 5px 5%;
+        text-align: justify;
+    }
+    .container-texto-sobre{
+        max-width: 750px;
+        padding-top: 420px;
+    }
+    .img-sobre{
+        display: none;
+    }
+    .lista-eco{
+        display: none;
+    }
+    .img-slogan-container{
+        display: none;
     }
 }
