@@ -241,7 +241,7 @@ section p{
     .input-container img {
         display: flex;
         position: absolute;
-        left: 18em;
+        left: 77vw;
         margin-top: 13px;
         transform: translateY(-30%);
         width: 100px;
@@ -254,6 +254,7 @@ section p{
         background-image: url(/assets/img/sobre-mobile.jpg) ;
         background-size: cover;
         background-repeat: no-repeat;
+        height: 1980px;
     }
 
     .texto-sobre{
