@@ -207,6 +207,7 @@ section p{
     header{
         background-image: url(../img/background-mobile.jpg);
         background-size: cover;
+        overflow-x: hidden;
         background-repeat: no-repeat;
     }
     header a{
@@ -251,7 +252,7 @@ section p{
 
 
     #sobre{
-        background-image: url(/assets/img/sobre-mobile.jpg) ;
+        background-image: url(/assets/img/sobre-mobile.jpeg) ;
         background-size: cover;
         background-repeat: no-repeat;
         height: 1980px;
