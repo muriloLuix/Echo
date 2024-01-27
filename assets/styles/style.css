@@ -89,7 +89,7 @@ header{
     background-image: url(../img/wallpaper\ echo.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 98vh !important;
+    height: 100vh !important;
 }
 header > .interface {
     display: flex;
@@ -124,7 +124,7 @@ header nav.desktop-menu ul li{
     height: 111px;
     transition: 0.3s;
     cursor: pointer;
-    margin-right: 20px;
+    margin: 20px;
 }
 
 #echo-logo:hover{
@@ -138,37 +138,44 @@ header nav.desktop-menu ul li{
 
 /* About Style */
 #sobre{
-    background-image: url(../img/SOBRE\ wallpaper.png);
+    background-image: url(../img/bg-sobre.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 1080px;
-    display: flex;
-    justify-content: space-between;
+    height: 1425px;
+    
+}
+.img-sobre_text img{
+    width: 100px;
+    height: 100px;
 }
 section p{
     color: #fff;
-    margin-bottom: 15px;
     font-size: 22px;
     font-family: Mono;
     margin-left: 150px;
 }
 
 
-  
 .container-texto-sobre {
     max-width: 750px;
-    padding-top: 420px;
+    padding-top: 608px;
+    margin-right: 224px;
     overflow-y: hidden;
 }
 .container-texto-sobre p{
     overflow-y: hidden;
+    line-height: 38px;
+
+}
+.texto-sobre{
+    text-align: justify;
 }
 .img-sobre{
     width: 587px;
     height: 571px;
-    margin-top: 26em;
-    margin-right: 15em;
+    margin-top: 40em;
+    margin-right: 283px;
 }
 
 .input-container img{
@@ -202,6 +209,47 @@ section p{
     height: 475px;
 }
 
+#planos{
+    background-image: url(/assets/img/bg-planos.png);
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+}
+
+#contato{
+    background-image: url(/assets/img/bg-final.png);
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+.retangulo {
+    width: auto; 
+    max-width: 43%; 
+    margin: 29em auto;
+    background: rgba(217, 217, 217, 0.12);
+    backdrop-filter: blur(3.65px);
+    border-radius: 94px; 
+    box-sizing: border-box;
+    border: 2px solid rgba(255, 255, 255, 0.38);
+    text-align: center; 
+}
+
+.retangulo p {
+    margin: 0;
+    overflow: hidden;
+}
+
+.retangulo p a {
+    font-weight: 700;
+    font-size: 39px;
+    z-index: 1000;
+    background: linear-gradient(90deg, #C4B8FF 35.96%, #242328 117.52%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+}
 @media screen and (max-width: 1064px) {
 
     header{
