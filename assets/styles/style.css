@@ -210,14 +210,14 @@ section p{
 }
 
 #planos{
-    background-image: url(/assets/img/bg-planos.png);
+    background-image: url(../img/bg-planos.png);
     width: 100%;
     background-size: cover;
     height: 100vh;
 }
 
 #contato{
-    background-image: url(/assets/img/bg-final.png);
+    background-image: url(../img/bg-final.png);
     width: 100%;
     background-size: cover;
     height: 100vh;
@@ -233,11 +233,22 @@ section p{
     box-sizing: border-box;
     border: 2px solid rgba(255, 255, 255, 0.38);
     text-align: center; 
+    overflow: hidden;
 }
 
 .retangulo p {
     margin: 0;
     overflow: hidden;
+    transition: 0.3s;
+}
+
+.retangulo p:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.retangulo p:active{
+    transform: scale(0.5);
 }
 
 .retangulo p a {
@@ -249,6 +260,7 @@ section p{
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-decoration: none;
+    overflow: hidden;
 }
 @media screen and (max-width: 1064px) {
 
