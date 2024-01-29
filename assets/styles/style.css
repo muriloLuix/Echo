@@ -182,6 +182,7 @@ section p{
 .text-about{
     width: 55em;
     height: 36em;
+    padding-right: 89px;
 }
 .texto-general{
     position: absolute;
@@ -217,6 +218,19 @@ section p{
     width: 100%;
     background-size: cover;
     height: 1080px;
+    position: relative;
+}
+.div_planos{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+.planos-img{
+    width: 65em;
+}
+.echo-img{
+    width: 400px;
+    margin: 211px 236px;
 }
 
 #contato{
