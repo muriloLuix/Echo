@@ -86,10 +86,10 @@ h2.title span{
 header{
     padding: 40px 4%;
     display: flex;
-    background-image: url(../img/wallpaper\ echo.png);
+    background-image: url(../img/copia\ 1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 98vh !important;
+    background-size:cover ;
+    height: 1080px !important;
 }
 header > .interface {
     display: flex;
@@ -124,7 +124,7 @@ header nav.desktop-menu ul li{
     height: 111px;
     transition: 0.3s;
     cursor: pointer;
-    margin-right: 20px;
+    margin: 20px;
 }
 
 #echo-logo:hover{
@@ -138,37 +138,44 @@ header nav.desktop-menu ul li{
 
 /* About Style */
 #sobre{
-    background-image: url(../img/SOBRE\ wallpaper.png);
+    background-image: url(../img/copia\ 2.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 1080px;
-    display: flex;
-    justify-content: space-between;
+    
+}
+.img-sobre_text img{
+    width: 100px;
+    height: 100px;
 }
 section p{
     color: #fff;
-    margin-bottom: 15px;
     font-size: 22px;
     font-family: Mono;
     margin-left: 150px;
 }
 
 
-  
 .container-texto-sobre {
     max-width: 750px;
-    padding-top: 420px;
+    padding-top: 608px;
+    margin-right: 224px;
     overflow-y: hidden;
 }
 .container-texto-sobre p{
     overflow-y: hidden;
+    line-height: 38px;
+
+}
+.texto-sobre{
+    text-align: justify;
 }
 .img-sobre{
     width: 587px;
     height: 571px;
-    margin-top: 26em;
-    margin-right: 15em;
+    margin-top: 40em;
+    margin-right: 283px;
 }
 
 .input-container img{
@@ -177,19 +184,13 @@ section p{
 /* slogan style  */
 
 #slogan{
-    background-image: url(../img/CIRCULO\ back\ groud.png);
+    background-image: url(../img/copia\ 3.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    height: 1080px;
     display: flex;
     justify-content: space-between;
-}
-
-
-.eco{
-    width: 640.1px;
-    height: 360.1px;
-    margin-left: 240px;
 }
 
 .img-slogan-container{
@@ -202,97 +203,56 @@ section p{
     height: 475px;
 }
 
-@media screen and (max-width: 1064px) {
+#planos{
+    background-image: url(../img/copia\ 4.png);
+    width: 100%;
+    background-size: cover;
+    height: 1080px;
+}
 
-    header{
-        background-image: url(../img/background-mobile.jpg);
-        background-size: cover;
-        overflow-x: hidden;
-        background-repeat: no-repeat;
-    }
-    header a{
-        display: none;
-    }
-    header li{
-        display: none;
-    }
-    #echo-logo{
-        display: none;
-    }
-    .search{
-        display: flex;
-        position: absolute;
-        width: 366px;
-        height: 59px;
-        left: 0px;
-        top: 44px;
-        padding-left: 20px;
-        margin-left: 11px;
-        color: #fff;
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0) -22.95%, rgba(90, 87, 108, 0.231) 114.34%);
-        backdrop-filter: blur(4.05px);
-        border-radius: 29.5px;
-        transition: 0.3s;
-    }
-    .search:focus{
-    box-shadow: rgba(161, 161, 161, 0.25) 0px 54px 55px, rgba(161, 161, 161, 0.12) 0px -12px 30px, rgba(161, 161, 161, 0.12) 0px 4px 6px, rgba(161, 161, 161, 0.17) 0px 12px 13px, rgba(161, 161, 161, 0.09) 0px -3px 5px;
+#contato{
+    background-image: url(../img/bg-final.png);
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+.retangulo {
+    width: auto; 
+    max-width: 43%; 
+    margin: 29em auto;
+    background: rgba(217, 217, 217, 0.12);
+    backdrop-filter: blur(3.65px);
+    border-radius: 94px; 
+    box-sizing: border-box;
+    border: 2px solid rgba(255, 255, 255, 0.38);
+    text-align: center; 
+    overflow: hidden;
+}
+
+.retangulo p {
+    margin: 0;
+    overflow: hidden;
     transition: 0.3s;
-    }
+}
 
-    .input-container img {
-        display: flex;
-        position: absolute;
-        left: 77vw;
-        margin-top: 13px;
-        transform: translateY(-30%);
-        width: 100px;
-        height: auto;
-        z-index: 2;
-    }
+.retangulo p:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
 
+.retangulo p:active{
+    transform: scale(0.5);
+}
 
-    #sobre{
-        background-image: url(/assets/img/sobre-mobile.jpeg) ;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 1980px;
-    }
-
-    .texto-sobre{
-        margin-left: 0;
-        padding: 5px 5%;
-        text-align: justify;
-    }
-    .texto-sobre2{
-        margin: 0;
-        padding: 5px 5%;
-        text-align: justify;
-    }
-    .texto-sobre3{
-        margin: 0;
-        padding: 5px 5%;
-        text-align: justify;
-    }
-    .texto-sobre4{
-        margin: 0;
-        padding: 5px 5%;
-        text-align: justify;
-    }
-    .texto-sobre5{
-        margin: 0;
-        padding: 5px 5%;
-        text-align: justify;
-    }
-    .container-texto-sobre{
-        max-width: 750px;
-        padding-top: 420px;
-    }
-    .img-sobre{
-        display: none;
-    }
-    .lista-eco{
-        display: none;
-    }
-    .img-slogan-container{
-    }
+.retangulo p a {
+    font-weight: 700;
+    font-size: 39px;
+    z-index: 1000;
+    background: linear-gradient(90deg, #C4B8FF 35.96%, #242328 117.52%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+    overflow: hidden;
 }
