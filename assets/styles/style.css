@@ -143,6 +143,8 @@ header nav.desktop-menu ul li{
     background-repeat: no-repeat;
     width: 100%;
     height: 1080px;
+    overflow: hidden;
+    position: relative;
     
 }
 .img-sobre_text img{
@@ -159,17 +161,17 @@ section p{
 
 .container-texto-sobre {
     max-width: 750px;
-    padding-top: 608px;
-    margin-right: 224px;
+    margin: 0 auto;
     overflow-y: hidden;
+    text-align: center;
 }
 .container-texto-sobre p{
     overflow-y: hidden;
     line-height: 38px;
-
 }
-.texto-sobre{
-    text-align: justify;
+.texto-sobre, .texto-sobre2, .texto-sobre3, .texto-sobre4, .texto-sobre5{
+    margin: 0;
+    width: 35em;
 }
 .img-sobre{
     width: 587px;
@@ -177,7 +179,15 @@ section p{
     margin-top: 40em;
     margin-right: 283px;
 }
-
+.text-about{
+    width: 55em;
+    height: 36em;
+}
+.texto-general{
+    position: absolute;
+    top: 40%;
+    text-align: center;
+}
 .input-container img{
     display: none;
 }
@@ -194,8 +204,7 @@ section p{
 }
 
 .img-slogan-container{
-    margin-top: 270px;
-    margin-right: 144px;
+    margin: 100px auto;
 }
 
 .img-slogan{
