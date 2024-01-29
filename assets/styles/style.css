@@ -279,3 +279,37 @@ section p{
     text-decoration: none;
     overflow: hidden;
 }
+/* 
+.flip-card{
+    width: 600px;
+    margin: 50px auto;
+}
+.face{
+    width: 400px;
+    height: 300px;
+    perspective: 700px;
+}
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: 700ms;
+}
+.front{
+background: #7a2cbf;
+    z-index: 1;
+}
+.back{
+    background: #08a3b5;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden ;
+}
+.face:hover .front {
+    transform: rotateY(180deg);
+    z-index: 0;
+}
+.face:hover .back {
+    transform: rotateY(0);
+    z-index: 1;
+} */
