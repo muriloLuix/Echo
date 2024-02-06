@@ -279,13 +279,13 @@ section p{
     text-decoration: none;
     overflow: hidden;
 }
-/* 
+ 
 .flip-card{
-    width: 600px;
-    margin: 50px auto;
+    width: 550px;
+    margin: 0 auto;
 }
 .face{
-    width: 400px;
+    width: 357px;
     height: 300px;
     perspective: 700px;
 }
@@ -312,4 +312,4 @@ background: #7a2cbf;
 .face:hover .back {
     transform: rotateY(0);
     z-index: 1;
-} */
+} 
