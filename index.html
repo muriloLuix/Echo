@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="assets/js/index.js"></script>
     <link
       rel="shortcut icon"
       href="assets/img/favicon.png"
       type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link
       rel="stylesheet"
@@ -17,70 +22,76 @@
   </head>
   <body>
     <header>
-        <div class="container">
-          <div class="logo">
-            <img src="assets/img/logoEcho.png" alt="Logo" />
-        <div class="icons">
-          <div class="svgOne">
-            <svg
-              viewBox="0 0 24 24"
-              width="24"
-              height="24"
-              stroke="currentColor"
-              stroke-width="2"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="css-i6dzq1"
-            >
-              <path
-                d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
-              ></path>
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <path d="M16 10a4 4 0 0 1-8 0"></path>
-            </svg>
-          </div>
-          <div class="svgTwo">
-            <svg
-              viewBox="0 0 24 24"
-              width="24"
-              height="24"
-              stroke="currentColor"
-              stroke-width="2"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="css-i6dzq1"
-            >
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-          </div>
-        </div>
-          </div>
-          <div class="midLogo">
-            <img src="assets/img/iconeMeio.png" alt="Logo" />
-          </div>
-          <div class="buttons">
-            <nav>
-              <ul>
-                <a href="#">
-                  <li>CONTATO</li>
-                </a>
-                <a href="#">
-                  <li>LOGIN</li>
-                </a>
-              </ul>
-            </nav>
+      <div class="container">
+        <div class="logo">
+          <img src="assets/img/logoEcho.png" alt="Logo" />
+          <div class="icons">
+            <div class="svgOne">
+              <svg
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="css-i6dzq1"
+              >
+                <path
+                  d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                ></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+            </div>
+            <div class="svgTwo">
+              <svg
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="css-i6dzq1"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </div>
           </div>
         </div>
-      </header>
-      
+        <div class="midLogo">
+          <img src="assets/img/iconeMeio.png" alt="Logo" />
+        </div>
+        <div class="buttons">
+          <nav>
+            <ul>
+              <a href="#">
+                <li><span>CONTATO</span></li>
+              </a>
+              <a href="#">
+                <li><span>LOGIN</span></li>
+              </a>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
     <main>
-
+      <section class="general">
+        <aside class="title">
+          <h1>Plataforma de<br> Criação de sites.</h1>
+          <p>Digitalize o seu pequeno<br> negócio ou empresa com a<br> ECHO!</p>
+          <div class="email-container" onclick="input()">
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplete="off">
+            <button class="echo-button">Torne-se um echo</button>
+          </div>          
+        </aside>
+      </section>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
   </body>
 </html>
