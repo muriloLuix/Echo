@@ -1,6 +1,6 @@
 # Echo
 
-<img src="imagem.png" alt="Exemplo imagem">
+![image](https://github.com/muriloLuix/Echo/assets/143234115/461d5a96-2bf5-44c3-8f28-8c19f2cbf7b0)
 
 > Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler.
 
