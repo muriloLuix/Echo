@@ -1,14 +1,17 @@
 function input() {
-    const input = document.querySelector("#email");
-  
-    input.addEventListener("input", function () {
-      const inputWidth = this.value.length * 1.2 + 21; // Ajuste conforme necessário
-  
-      if (inputWidth > 35) {
-        this.style.width = "35em";
+  const input = document.querySelector("#email");
+
+  input.addEventListener("input", function () {
+      const inputWidth = this.value.length * 1.2 + 22;
+      const maxWidth = 32; 
+
+      if (inputWidth > maxWidth) {
+          this.style.width = maxWidth + "em";
       } else {
-        this.style.width = inputWidth + "em";
+          this.style.width = inputWidth + "em";
       }
-    });
-  }
-  
+  });
+}
+
+// Chame a função input() para ativar o evento de input
+input();

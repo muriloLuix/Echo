@@ -16,12 +16,18 @@
   --cor-logo-selecionado: #aaccff;
 }
 
+html,
+body,
+main {
+  overflow-x: hidden;
+}
+
 ::-webkit-scrollbar {
   width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--cor-logo)
+  background-color: var(--cor-logo);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -37,7 +43,6 @@
 ::-webkit-scrollbar-thumb:focus {
   border-radius: 50px;
 }
-
 
 /* General Style - End */
 
@@ -192,6 +197,7 @@ main {
   font-style: italic;
   font-weight: 800;
   font-size: 5rem;
+  color: var(--preto-fundo);
 }
 
 .title P {
@@ -200,13 +206,14 @@ main {
   font-style: italic;
   font-weight: 400;
   font-size: 3rem;
+  color: var(--preto-fundo);
   margin-left: 2.4%;
 }
 
 /* Input Style */
 
 .email-container {
-  position: relative; 
+  position: relative;
   display: flex;
   align-items: center;
   border: 5px solid #a0c4ff;
@@ -241,29 +248,29 @@ main {
   font-size: 1.4rem;
   cursor: pointer;
   position: absolute;
-  height: 9vh;
+  height: 91%;
+  max-height: 91%;
   top: 50%;
   width: 15em;
   right: 6px;
   transform: translateY(-50%);
   font-weight: bolder;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-
-.echo-button:hover{
+.echo-button:hover {
   background-color: var(--cor-logo-selecionado);
   padding-left: 10%;
 }
 
 .echo-button::before {
   content: "\f1d8";
-  font-family: "Font Awesome 5 Free"; 
+  font-family: "Font Awesome 5 Free";
   position: absolute;
-  left: 10px; 
+  left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 1.2rem; 
-  opacity: 0; 
+  font-size: 1.2rem;
+  opacity: 0;
   transition: opacity 0.3s ease;
 }
 
@@ -279,4 +286,306 @@ button:focus {
   outline: none;
 }
 
-/* Input Style (end) */
+/* Finger Style */
+
+.hand-wrapper {
+  right: -66%;
+  position: absolute;
+  width: 100%;
+}
+
+.hand-container {
+  display: flex;
+  margin-left: auto;
+}
+
+.hand-container:hover .firstFinger {
+  height: 180px;
+}
+
+.hand-container:hover .secondFinger {
+  height: 480px;
+}
+
+.hand-container:hover .thirdFinger {
+  height: 290px;
+}
+
+.hand-container:hover .fourthFinger {
+  height: 280px;
+}
+
+.hand-container:hover .fifthFinger {
+  height: 250px;
+}
+
+.firstFinger,
+.secondFinger,
+.thirdFinger,
+.fourthFinger,
+.fifthFinger {
+  width: 6.8%;
+  background-color: var(--preto-fundo);
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  transition: height 0.2s ease;
+}
+
+.firstFinger {
+  height: 250px;
+}
+
+.secondFinger {
+  height: 370px;
+}
+
+.thirdFinger {
+  height: 400px;
+}
+
+.fourthFinger {
+  height: 390px;
+}
+
+.fifthFinger {
+  height: 360px;
+}
+
+.buttonsFinger {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 15%;
+}
+
+.buttonsFinger nav ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.buttonsFinger nav ul a {
+  color: var(--cor-logo);
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.buttonsFinger nav ul li {
+  position: relative;
+  list-style: none;
+  color: #000;
+  padding: 9px 9px 9px 9px;
+  border-radius: 8px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+.buttonsFinger nav ul li::before {
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: -30px;
+  opacity: 0;
+  transition: opacity 0.3s ease, left 0.3s ease;
+}
+
+.buttonsFinger nav ul li span {
+  transition: font-style 0.3s ease;
+}
+
+.buttonsFinger nav ul li:hover {
+  color: var(--cor-logo-selecionado);
+  padding-left: 35px;
+}
+
+.buttonsFinger nav ul li:hover span {
+  font-style: italic;
+  color: var(--cor-logo-selecionado);
+}
+
+.buttonsFinger nav ul li:hover::before {
+  opacity: 1;
+  left: 5px;
+}
+
+/* Finger Style */
+
+/* secondTitle Style */
+
+.secondTitle {
+  margin-top: 1.5%;
+}
+
+.secondTitle h1 {
+  margin: 0;
+  padding: 2% 2.4%;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 5rem;
+  color: var(--preto-fundo);
+  text-align: right;
+}
+
+.secondTitle p {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 3rem;
+  color: var(--preto-fundo);
+  margin-left: 2.4%;
+  display: flex;
+  justify-content: right;
+  text-align: left;
+}
+
+/* secondTitle Style */
+
+/* Card Style */
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7%;
+  font-family: "Montserrat", sans-serif;
+  color: var(--cor-logo);
+}
+
+.cardOne,
+.cardTwo,
+.cardThree {
+  margin-right: 50px;
+  height: 40.7rem;
+  width: 26rem;
+  background-color: var(--preto-fundo);
+  transition: all 0.2s ease;
+}
+
+.cardFour {
+  height: 40.7rem;
+  width: 26rem;
+  background-color: var(--preto-fundo);
+  transition: all 0.2s ease;
+}
+
+.cardOne h1 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+  font-weight: 500;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.cardOne span {
+  font-size: 18px !important;
+  margin-top: -10px;
+  font-weight: 300;
+  position: relative;
+  top: -16px;
+  left: 58px;
+  text-transform: uppercase;
+}
+
+.cardOne p {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.cardTwo h1 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+  font-weight: 500;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.cardTwo span {
+  font-size: 18px !important;
+  margin-top: -10px;
+  font-weight: 300;
+  position: relative;
+  top: -16px;
+  left: 58px;
+  text-transform: uppercase;
+}
+
+.cardTwo p {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.cardThree h1 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+  font-weight: 500;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.cardThree span {
+  font-size: 18px !important;
+  margin-top: -10px;
+  font-weight: 300;
+  position: relative;
+  top: -16px;
+  left: 58px;
+  text-transform: uppercase;
+}
+
+.cardThree p {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.cardFour h1 {
+  font-size: 3rem;
+  margin-bottom: 5px;
+  font-weight: 500;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.cardFour span {
+  font-size: 18px !important;
+  margin-top: -10px;
+  font-weight: 300;
+  position: relative;
+  top: -16px;
+  left: 58px;
+  text-transform: uppercase;
+}
+
+.cardFour p {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.cardOne:hover,
+.cardTwo:hover,
+.cardThree:hover,
+.cardFour:hover {
+  background-color: var(--cor-logo-selecionado);
+  color: var(--preto-fundo);
+  font-style: italic;
+  font-weight: 900 !important;
+  transform: scale(1.05);
+}
+
+/* Card Style */
