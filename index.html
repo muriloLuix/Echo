@@ -1,387 +1,272 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="assets/js/index.js"></script>
-    <link
-      rel="shortcut icon"
-      href="assets/img/favicon-32x32.png"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Echo</title>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="logo">
-          <img src="assets/img/logoEcho.png" alt="Logo" />
-          <div class="icons">
-            <div class="svgOne">
-              <svg
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-                stroke="currentColor"
-                stroke-width="2"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="css-i6dzq1"
-              >
-                <path
-                  d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
-                ></path>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <path d="M16 10a4 4 0 0 1-8 0"></path>
-              </svg>
-            </div>
-            <div class="svgTwo">
-              <svg
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-                stroke="currentColor"
-                stroke-width="2"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="css-i6dzq1"
-              >
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="midLogo">
-          <img src="assets/img/iconeMeio.png" alt="Logo" />
-        </div>
-        <div class="buttons">
-          <nav>
-            <ul>
-              <a href="#"
-                ><li><span>CONTATO</span></li></a
-              >
-              <a href="#"
-                ><li><span>LOGIN</span></li></a
-              >
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <main>
-      <section class="general">
-        <div class="hand-wrapper">
-          <div class="hand-container">
-            <div class="firstFinger"></div>
-            <div class="secondFinger">
-              <div class="buttonsFinger">
-                <nav>
-                  <ul>
-                    <li>
-                      <a href=""><span>SOBRE</span></a>
-                    </li>
-                    <li>
-                      <a href=""><span>PRODUTO</span></a>
-                    </li>
-                    <li>
-                      <a href=""><span>PLANOS</span></a>
-                    </li>
-                    <li>
-                      <a href=""><span>REDES SOCIAIS</span></a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-            <div class="thirdFinger"></div>
-            <div class="fourthFinger"></div>
-            <div class="fifthFinger"></div>
-          </div>
-        </div>
-        <aside class="title">
-          <h1>
-            Plataforma de<br />
-            Criação de sites.
-          </h1>
-          <p>
-            Digitalize o seu pequeno<br />
-            negócio ou empresa com a<br />
-            ECHO!
-          </p>
-          <div class="email-container" onclick="input()">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Digite seu e-mail"
-              autocomplete="off"
-            />
-            <button class="echo-button">Torne-se um echo</button>
-          </div>
-        </aside>
-        <aside class="secondTitle">
-          <h1>
-            Venha saber mais<br />
-            sobre a ECHO!
-          </h1>
-          <p>
-            A Echo é uma start-up, fundada por 4<br />
-            amigos apaixonados por tecnologia e <br />são eles;
-          </p>
-        </aside>
-        <section class="cards">
-          <div class="cardOne">
-            <h1>Eduardo <span>AMORIM</span></h1>
-            <p>Front-end & Back-End</p>
-          </div>
-          <div class="cardTwo">
-            <h1>Mateus <span>NASCIMENTO</span></h1>
-            <p>Desing UI/UX</p>
-            <svg
-              width="289"
-              height="303"
-              viewBox="0 0 289 303"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M127.595 249.265C136.751 170.189 133.465 126.44 127.595 48.4097C135.038 70.5929 139.348 82.6636 145.137 109.275C154.255 70.49 154.257 45.0952 157.34 2C156.165 124.496 162.378 186.863 170.306 301V109.275L205.391 257.634L197.106 71.2341C193.853 138.496 164.988 178.448 132.997 178.448C101.005 178.448 81.1747 182.313 53.7174 173.183C30.0734 165.321 -48.051 108.99 50.6665 145.794C149.384 182.597 287 245.461 287 245.461"
-                stroke="#FFFFD2"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="assets/js/input.js" defer></script>
+  <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Echo</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="assets/img/logoEcho.png" alt="Logo" />
+        <div class="icons">
+          <div class="svgOne">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+              stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
             </svg>
           </div>
-          <div class="cardThree">
-            <h1>Murilo <span>JABOINSKI</span></h1>
-            <p>Front-end</p>
-          </div>
-          <div class="cardFour">
-            <h1>Igor <span>CANGIANI</span></h1>
-            <p>Front-end & Back-End</p>
-            <svg
-              width="153"
-              height="347"
-              viewBox="0 0 153 347"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M28 4L149 29"
-                stroke="#FFFFD2"
-                stroke-width="7"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M4 166L125 191"
-                stroke="#FFFFD2"
-                stroke-width="7"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M92 18C82.0763 79.7824 75.203 114.581 60 177"
-                stroke="#FFFFD2"
-                stroke-width="7"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M28 226.119C77.2833 152.208 100.066 111.197 125 39C124.173 158.423 124.6 224.705 125 343"
-                stroke="#FFFFD2"
-                stroke-width="7"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+          <div class="svgTwo">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+              stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
           </div>
-        </section>
-        <section class="weDo">
-          <aside class="titleWeDo">
-            <h1>
-              O QUE NÓS<br />
-              <strong>FAZEMOS</strong>
-            </h1>
-            <p>
-              A ECHO tem como objetivo <br />principal criar um ambiente<br />
-              criativo e acessível, na<br />
-              criação de sites, para a sua <br />empresa ou pequeno
-              <br />comércio.
-            </p>
-          </aside>
-          <div class="backgroundBlack"></div>
-        </section>
-      </section>
-      <section class="general2">
-        <section class="generalBlack">
-          <aside class="titleServices">
-            <h1>SERVIÇOS</h1>
-          </aside>
-          <div class="planBg">
-            <div class="card-container">
-              <div class="card-wrapper">
-                <div class="card"></div>
-              </div>
-              <div class="card-wrapper">
-                <div class="card"></div>
-              </div>
-              <div class="card-wrapper">
-                <div class="card"></div>
-              </div>
-              <div class="card-wrapper">
-                <div class="card"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footerTitle">
-        <div class="echo">
-          <h1>ECHO</h1>
-        </div>
-        <div class="contact">
-          <h1>CONTATO</h1>
         </div>
       </div>
-      <div class="footerTitle">
-        <div class="generalMedias">
-          <nav>
-            <ul>
-              <li>
-                <a href="#"><span>INSTAGRAM</span></a>
-              </li>
-              <li>
-                <a href="#"><span>TWITTER</span></a>
-              </li>
-              <li>
-                <a href="#"><span>WHATSAPP</span></a>
-              </li>
-              <li>
-                <a href="#"><span>LINKEDIN</span></a>
-              </li>
-            </ul>
-          </nav>
+      <div class="midLogo">
+        <img src="assets/img/iconeMeio.png" alt="Logo" />
+      </div>
+      <div class="buttons">
+        <nav>
+          <ul>
+            <a href="#">
+              <li><span>CONTATO</span></li>
+            </a>
+            <a href="#">
+              <li><span>LOGIN</span></li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="general">
+      <div class="hand-wrapper">
+        <div class="hand-container">
+          <div class="firstFinger"></div>
+          <div class="secondFinger">
+            <div class="buttonsFinger">
+              <nav>
+                <ul>
+                  <li>
+                    <a href=""><span>SOBRE</span></a>
+                  </li>
+                  <li>
+                    <a href=""><span>PRODUTO</span></a>
+                  </li>
+                  <li>
+                    <a href=""><span>PLANOS</span></a>
+                  </li>
+                  <li>
+                    <a href=""><span>REDES SOCIAIS</span></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="thirdFinger"></div>
+          <div class="fourthFinger"></div>
+          <div class="fifthFinger"></div>
         </div>
-    
-        <form class="infos">
-          <div class="left-column">
-            <div class="form-group">
-              <label for="name">nome</label>
-              <input
-                class="input"
-                type="text"
-                id="name"
-                name="name"
-                autocomplete="off"
-              />
+      </div>
+      <aside class="title">
+        <h1>
+          Plataforma de<br />
+          Criação de sites.
+        </h1>
+        <p>
+          Digitalize o seu pequeno<br />
+          negócio ou empresa com a<br />
+          ECHO!
+        </p>
+        <div class="email-container" onclick="input()">
+          <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplete="off" />
+          <button class="echo-button">Torne-se um echo</button>
+        </div>
+      </aside>
+      <aside class="secondTitle">
+        <h1>
+          Venha saber mais<br />
+          sobre a ECHO!
+        </h1>
+        <p>
+          A Echo é uma start-up, fundada por 4<br />
+          amigos apaixonados por tecnologia e <br />são eles;
+        </p>
+      </aside>
+      <section class="cards">
+        <div class="cardOne">
+          <h1>Eduardo <span>AMORIM</span></h1>
+          <p>Front-end & Back-End</p>
+        </div>
+        <div class="cardTwo">
+          <h1>Mateus <span>NASCIMENTO</span></h1>
+          <p>Desing UI/UX</p>
+          <svg width="289" height="303" viewBox="0 0 289 303" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M127.595 249.265C136.751 170.189 133.465 126.44 127.595 48.4097C135.038 70.5929 139.348 82.6636 145.137 109.275C154.255 70.49 154.257 45.0952 157.34 2C156.165 124.496 162.378 186.863 170.306 301V109.275L205.391 257.634L197.106 71.2341C193.853 138.496 164.988 178.448 132.997 178.448C101.005 178.448 81.1747 182.313 53.7174 173.183C30.0734 165.321 -48.051 108.99 50.6665 145.794C149.384 182.597 287 245.461 287 245.461"
+              stroke="#FFFFD2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="cardThree">
+          <h1>Murilo <span>JABOINSKI</span></h1>
+          <p>Front-end</p>
+        </div>
+        <div class="cardFour">
+          <h1>Igor <span>CANGIANI</span></h1>
+          <p>Front-end & Back-End</p>
+          <svg width="153" height="347" viewBox="0 0 153 347" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28 4L149 29" stroke="#FFFFD2" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M4 166L125 191" stroke="#FFFFD2" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M92 18C82.0763 79.7824 75.203 114.581 60 177" stroke="#FFFFD2" stroke-width="7"
+              stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M28 226.119C77.2833 152.208 100.066 111.197 125 39C124.173 158.423 124.6 224.705 125 343"
+              stroke="#FFFFD2" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+      </section>
+      <section class="weDo">
+        <aside class="titleWeDo">
+          <h1>
+            O QUE NÓS<br />
+            <strong>FAZEMOS</strong>
+          </h1>
+          <p>
+            A ECHO tem como objetivo <br />principal criar um ambiente<br />
+            criativo e acessível, na<br />
+            criação de sites, para a sua <br />empresa ou pequeno
+            <br />comércio.
+          </p>
+        </aside>
+        <div class="backgroundBlack"></div>
+      </section>
+    </section>
+    <section class="general2">
+      <section class="generalBlack">
+        <aside class="titleServices">
+          <h1>SERVIÇOS</h1>
+        </aside>
+        <div class="planBg">
+          <div class="card-container">
+            <div class="card-wrapper">
+              <div class="card"></div>
             </div>
-            <div class="form-group">
-              <label for="email2">e-mail</label>
-              <input
-                class="input"
-                type="email"
-                id="email2"
-                name="email2"
-                autocomplete="off"
-              />
+            <div class="card-wrapper">
+              <div class="card"></div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card"></div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card"></div>
             </div>
           </div>
-          <div class="right-column">
-            <div class="form-group">
-              <label for="option2">opção</label>
-              <select class="option2" name="option" id="option2">
-                <option value="" disabled selected></option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="msg">mensagem</label>
-              <textarea name="msg" id="msg"></textarea>
-            </div>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footerTitle">
+      <div class="echo">
+        <h1>ECHO</h1>
+      </div>
+      <div class="contact">
+        <h1>CONTATO</h1>
+      </div>
+    </div>
+    <div class="footerTitle">
+      <div class="generalMedias">
+        <nav>
+          <ul>
+            <li>
+              <a href="#"><span>INSTAGRAM</span></a>
+            </li>
+            <li>
+              <a href="#"><span>TWITTER</span></a>
+            </li>
+            <li>
+              <a href="#"><span>WHATSAPP</span></a>
+            </li>
+            <li>
+              <a href="#"><span>LINKEDIN</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <form class="infos">
+        <div class="left-column">
+          <div class="form-group">
+            <label for="name">nome</label>
+            <input class="input" type="text" id="name" name="name" autocomplete="off" />
           </div>
-          <div class="logoPlane">
-            <button
-              style="
+          <div class="form-group">
+            <label for="email2">e-mail</label>
+            <input class="input" type="email" id="email2" name="email2" autocomplete="off" />
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="form-group">
+            <label for="option2">opção</label>
+            <select class="option2" name="option" id="option2">
+              <option value="" disabled selected>Escolha uma opção</option>
+              <option value="infoPlan">Informações sobre os planos</option>
+              <option value="paymentMethods">Métodos de pagamento</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="msg">mensagem</label>
+            <textarea name="msg" id="msg"></textarea>
+          </div>
+        </div>
+        <div class="logoPlane">
+          <button style="
                 background: none;
                 border: none;
                 padding: 0;
                 cursor: pointer;
-              "
-              type="submit"
-            >
-              <div class="svgContainer">
-                <svg
-                  class="svgDefault"
-                  width="115"
-                  height="116"
-                  viewBox="0 0 115 116"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M95.8334 19.6665L53.6667 61.8332"
-                    stroke="#FFFFD2"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M95.8334 19.6665L69.0001 96.3332L53.6667 61.8332L19.1667 46.4998L95.8334 19.6665Z"
-                    stroke="#FFFFD2"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <svg
-                  class="svgHover"
-                  width="116"
-                  height="116"
-                  viewBox="0 0 116 116"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect x="0.5" width="115" height="116" stroke="#151515" />
-                  <path
-                    d="M96.3334 19.6665L54.1667 61.8332"
-                    stroke="#151515"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M96.3334 19.6665L69.5001 96.3332L54.1667 61.8332L19.6667 46.4998L96.3334 19.6665Z"
-                    stroke="#151515"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
-        </form>
-      </div>
-      <div class="footerTitle">
-        <div class="border1"></div>
-        <div class="border2"></div>
-      </div>
-    </footer>
-    
-  </body>
+              " type="submit">
+            <div class="svgContainer">
+              <svg class="svgDefault" width="115" height="116" viewBox="0 0 115 116" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M95.8334 19.6665L53.6667 61.8332" stroke="#FFFFD2" stroke-width="5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M95.8334 19.6665L69.0001 96.3332L53.6667 61.8332L19.1667 46.4998L95.8334 19.6665Z"
+                  stroke="#FFFFD2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <svg class="svgHover" width="116" height="116" viewBox="0 0 116 116" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" width="115" height="116" stroke="#151515" />
+                <path d="M96.3334 19.6665L54.1667 61.8332" stroke="#151515" stroke-width="5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M96.3334 19.6665L69.5001 96.3332L54.1667 61.8332L19.6667 46.4998L96.3334 19.6665Z"
+                  stroke="#151515" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="footerTitle">
+      <div class="border1"></div>
+      <div class="border2"></div>
+    </div>
+  </footer>
+
+</body>
+
 </html>

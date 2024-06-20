@@ -13,5 +13,4 @@ function input() {
   });
 }
 
-// Chame a função input() para ativar o evento de input
 input();
