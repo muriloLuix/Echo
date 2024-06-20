@@ -466,15 +466,25 @@ button:focus {
   margin-right: 50px;
   height: 40.7rem;
   width: 26rem;
-  background-color: var(--preto-fundo);
-  transition: all 0.2s ease;
+  background: rgb(21, 21, 21);
+  background: linear-gradient(
+    180deg,
+    rgba(21, 21, 21, 1) 0%,
+    rgba(97, 136, 171, 1) 100%
+  );
+  transition: all 0.3s ease;
 }
 
 .cardFour {
   height: 40.7rem;
   width: 26rem;
-  background-color: var(--preto-fundo);
-  transition: all 0.2s ease;
+  background: rgb(21, 21, 21);
+  background: linear-gradient(
+    180deg,
+    rgba(21, 21, 21, 1) 0%,
+    rgba(97, 136, 171, 1) 100%
+  );
+  transition: all 0.3s ease;
 }
 
 .cardOne h1 {
@@ -581,11 +591,396 @@ button:focus {
 .cardTwo:hover,
 .cardThree:hover,
 .cardFour:hover {
-  background-color: var(--cor-logo-selecionado);
+  background: var(--cor-logo-selecionado) !important;
   color: var(--preto-fundo);
   font-style: italic;
-  font-weight: 900 !important;
   transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.cardTwo svg,
+.cardFour svg {
+  margin: 113px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /* Card Style */
+
+/* We DO Style */
+
+.titleWeDo h1 {
+  margin: 0;
+  padding: 2% 2.4%;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 5rem;
+  color: var(--preto-fundo);
+}
+
+.titleWeDo strong {
+  font-weight: bolder;
+}
+
+.titleWeDo P {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 3rem;
+  color: var(--preto-fundo);
+  margin-left: 2.4%;
+}
+
+.backgroundBlack {
+  margin: 0 auto;
+  width: 94%;
+  height: 48em;
+  background-color: var(--preto-fundo);
+  margin-bottom: 1px;
+}
+
+/* General 2 */
+
+.general2 {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: var(--preto-fundo);
+}
+
+.generalBlack {
+  width: 95%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: var(--preto-fundo) !important;
+  border-left: 1px solid var(--cor-logo);
+  border-right: 1px solid var(--cor-logo);
+}
+
+.titleServices h1 {
+  margin: 0;
+  padding: 2% 2.4%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 8rem;
+  color: var(--cor-logo);
+}
+
+.planBg {
+  width: 100%;
+  background: rgb(255, 255, 210);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 210, 1) 0%,
+    rgba(21, 21, 21, 1) 100%
+  );
+  height: 650px;
+  display: flex;
+  justify-content: center; /* Centraliza os cards horizontalmente */
+  align-items: center; /* Centraliza os cards verticalmente */
+}
+
+.card-container {
+  display: flex;
+}
+
+.card-wrapper {
+  width: 450px;
+  height: 651px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  border: 1px solid var(--cor-logo);
+}
+
+.card {
+  width: 430px;
+  height: 605px;
+  background-color: var(--preto-fundo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2%;
+}
+
+.card-wrapper:hover {
+  background-color: var(--cor-logo-selecionado);
+  transition: all 0.3s ease;
+}
+
+/* Footer Style */
+
+.footer {
+  width: 100%;
+  height: 550px;
+  background-color: var(--preto-fundo);
+  border-top: 1px solid var(--cor-logo);
+}
+
+.footerTitle {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background-color: var(--preto-fundo);
+  border-bottom: 1px solid var(--cor-logo);
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.contact {
+  height: 150px;
+  width: 177%;
+  max-width: 195%;
+  border-right: 1px solid var(--cor-logo);
+  margin-right: 2.5%;
+}
+.contact h1 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 8rem;
+  color: var(--cor-logo);
+  text-align: left;
+  margin-left: 3%;
+}
+.echo {
+  border-right: 1px solid var(--cor-logo);
+  border-left: 1px solid var(--cor-logo);
+  height: 150px;
+  width: 59%;
+  margin-left: 2.5%;
+  transition: all 0.3s ease;
+}
+
+.echo:hover {
+  background-color: var(--cor-logo-selecionado);
+  transition: all 0.3s ease;
+}
+
+.echo h1 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 8rem;
+  color: var(--preto-fundo);
+}
+
+.footerTitle:nth-child(2) {
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.generalMedias {
+  border-right: 1px solid var(--cor-logo);
+  border-left: 1px solid var(--cor-logo);
+  height: 350px;
+  width: 34.8%;
+  margin-left: 2.5%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding-left: 2%;
+}
+
+.generalMedias nav ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.generalMedias nav ul li {
+  position: relative;
+  list-style: none;
+  color: #000;
+  padding: 9px 9px 9px 9px;
+  border-radius: 8px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  white-space: nowrap;
+}
+
+.generalMedias nav ul li::before {
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: -30px;
+  opacity: 0;
+  transition: opacity 0.3s ease, left 0.3s ease;
+}
+
+.generalMedias nav ul li span {
+  transition: font-style 0.3s ease;
+}
+
+.generalMedias nav ul li:hover {
+  color: var(--cor-logo-selecionado);
+  padding-left: 35px;
+}
+
+.generalMedias nav ul li:hover span {
+  font-style: italic;
+  color: var(--cor-logo-selecionado);
+}
+
+.generalMedias nav ul li:hover::before {
+  opacity: 1;
+  left: 5px;
+}
+
+.generalMedias nav ul li a {
+  color: var(--cor-logo);
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+form.infos {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  margin-right: 48px;
+  height: 348px;
+  padding: 0 7%;
+  font-family: "Montserrat";
+  color: #fff;
+  align-items: center;
+  border-right: 1px solid var(--cor-logo);
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-column {
+  margin-left: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 800;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.input,
+.option2,
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: var(--preto-fundo);
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-size: 2rem !important;
+  color: #fff;
+  resize: none;
+}
+
+.option2 {
+  padding-bottom: 5px;
+}
+
+.option2:focus,
+textarea:focus {
+  outline: none;
+}
+
+textarea {
+  height: 52.5px;
+}
+
+.logoPlane .svgContainer {
+  position: relative;
+  display: inline-block;
+  width: 115px;
+  height: 116px;
+}
+
+.logoPlane .svgContainer svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+.logoPlane .svgContainer .svgHover {
+  opacity: 0;
+}
+
+.logoPlane .svgContainer:hover .svgDefault {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.logoPlane .svgContainer:hover .svgHover {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.logoPlane {
+  position: relative;
+  top: 32px;
+  left: 66px;
+}
+
+.logoPlane svg:hover {
+  background-color: var(--cor-logo-selecionado);
+  transition: all 0.3s ease;
+}
+
+.logoPlane svg {
+  border: 1px solid var(--cor-logo);
+  transition: all 0.3s ease;
+}
+
+.footerTitle:nth-child(3) {
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  border-bottom: none;
+}
+
+.border1 {
+  border-right: 1px solid var(--cor-logo);
+  border-left: 1px solid var(--cor-logo);
+  height: 63px;
+  width: 59%;
+  margin-left: 2.5%;
+  transition: all 0.3s ease;
+}
+
+.border2 {
+  height: 63px;
+  width: 177%;
+  max-width: 195%;
+  border-right: 1px solid var(--cor-logo);
+  margin-right: 2.5%;
+}
