@@ -23,6 +23,67 @@ main {
   overflow-x: hidden;
 }
 
+body {
+  opacity: 0;
+  /* Inicia o body com opacidade 0 */
+  animation: fadeIn 2s ease-in-out forwards;
+  /* Animação fadeIn com duração de 2 segundos */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cor-logo) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeOut 1s forwards;
+  /* Aplica a animação fadeOut por 1 segundo */
+  animation-delay: 3s;
+  /* Adiciona um atraso de 5 segundos antes de iniciar a animação */
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    /* Começa com opacidade total */
+  }
+
+  to {
+    opacity: 0;
+    /* Termina com opacidade zero */
+    display: none;
+    /* Opcional: esconde o elemento após a animação */
+  }
+}
+
+
+
+.loader {
+  text-align: center;
+}
+
+.loader img {
+  width: 100px;
+  height: auto;
+}
+
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -470,11 +531,9 @@ button:focus {
   height: 40.7em;
   width: 26em;
   background: rgb(21, 21, 21);
-  background: linear-gradient(
-    180deg,
-    rgba(21, 21, 21, 1) 0%,
-    rgba(97, 136, 171, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(21, 21, 21, 1) 0%,
+      rgba(97, 136, 171, 1) 100%);
   transition: all 0.3s ease;
 }
 
@@ -482,11 +541,9 @@ button:focus {
   height: 40.7em;
   width: 26em;
   background: rgb(21, 21, 21);
-  background: linear-gradient(
-    180deg,
-    rgba(21, 21, 21, 1) 0%,
-    rgba(97, 136, 171, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(21, 21, 21, 1) 0%,
+      rgba(97, 136, 171, 1) 100%);
   transition: all 0.3s ease;
 }
 
@@ -504,7 +561,7 @@ button:focus {
   font-weight: 300;
   position: relative;
   top: -1.00em;
-  left: 3.63em;
+  left: 3.20em;
   text-transform: uppercase;
 }
 
@@ -554,7 +611,7 @@ button:focus {
   font-weight: 300;
   position: relative;
   top: -1.00em;
-  left: 3.63em;
+  left: 5.55em;
   text-transform: uppercase;
 }
 
@@ -579,9 +636,10 @@ button:focus {
   font-weight: 300;
   position: relative;
   top: -1.00em;
-  left: 3.63em;
+  left: 10em;
   text-transform: uppercase;
 }
+
 
 .cardFour p {
   font-size: 1.5em;
@@ -629,7 +687,7 @@ button:focus {
   text-indent: 1em;
 }
 
-.textEcho p:last-child{
+.textEcho p:last-child {
   margin-top: 1%;
 }
 
@@ -699,17 +757,13 @@ button:focus {
 .planBg {
   width: 100%;
   background: rgb(255, 255, 210);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 210, 1) 0%,
-    rgba(21, 21, 21, 1) 100%
-  );
-  height: 650px;
+  background: linear-gradient(180deg,
+      rgba(255, 255, 210, 1) 0%,
+      rgba(21, 21, 21, 1) 100%);
+  height: 40.63em;
   display: flex;
   justify-content: center;
-  /* Centraliza os cards horizontalmente */
   align-items: center;
-  /* Centraliza os cards verticalmente */
 }
 
 .card-container {
@@ -717,8 +771,8 @@ button:focus {
 }
 
 .card-wrapper {
-  width: 450px;
-  height: 651px;
+  width: 28.13em;
+  height: 40.69em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -727,8 +781,8 @@ button:focus {
 }
 
 .card {
-  width: 430px;
-  height: 605px;
+  width: 26.88em;
+  height: 37.81em;
   background-color: var(--preto-fundo);
   display: flex;
   justify-content: center;
@@ -755,7 +809,7 @@ button:focus {
 .footerTitle {
   display: flex;
   width: 100%;
-  height: 150px;
+  height: 9.38em;
   background-color: var(--preto-fundo);
   border-bottom: 1px solid var(--cor-logo);
   align-items: center;
@@ -764,7 +818,7 @@ button:focus {
 }
 
 .contact {
-  height: 150px;
+  height: 9.38em;
   width: 177%;
   max-width: 195%;
   border-right: 1px solid var(--cor-logo);
@@ -784,7 +838,7 @@ button:focus {
 .echo {
   border-right: 1px solid var(--cor-logo);
   border-left: 1px solid var(--cor-logo);
-  height: 150px;
+  height: 9.38em;
   width: 59%;
   margin-left: 2.5%;
   transition: all 0.3s ease;
@@ -804,7 +858,7 @@ button:focus {
 }
 
 .footerTitle:nth-child(2) {
-  height: 350px;
+  height: 21.88em;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -814,7 +868,7 @@ button:focus {
 .generalMedias {
   border-right: 1px solid var(--cor-logo);
   border-left: 1px solid var(--cor-logo);
-  height: 350px;
+  height: 21.88em;
   width: 34.8%;
   margin-left: 2.5%;
   transition: all 0.3s ease;
@@ -836,7 +890,7 @@ button:focus {
   position: relative;
   list-style: none;
   color: #000;
-  padding: 9px 9px 9px 9px;
+  padding: 0.56em 0.56em 0.56em 0.56em;
   border-radius: 8px;
   letter-spacing: 2px;
   font-weight: 700;
@@ -851,7 +905,7 @@ button:focus {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   position: absolute;
-  left: -30px;
+  left: -1.88em;
   opacity: 0;
   transition: opacity 0.3s ease, left 0.3s ease;
 }
@@ -862,7 +916,7 @@ button:focus {
 
 .generalMedias nav ul li:hover {
   color: var(--cor-logo-selecionado);
-  padding-left: 35px;
+  padding-left: 2.19em;
 }
 
 .generalMedias nav ul li:hover span {
@@ -872,13 +926,13 @@ button:focus {
 
 .generalMedias nav ul li:hover::before {
   opacity: 1;
-  left: 5px;
+  left: 0.31em;
 }
 
 .generalMedias nav ul li a {
   color: var(--cor-logo);
   text-decoration: none;
-  margin-bottom: 10px;
+  margin-bottom: 0.63em;
 }
 
 form.infos {
@@ -886,7 +940,7 @@ form.infos {
   width: 100%;
   max-width: 100%;
   margin-right: 2.5%;
-  height: 348px;
+  height: 21.75em;
   padding: 0 7%;
   font-family: "Montserrat";
   color: #fff;
@@ -915,16 +969,16 @@ select {
 }
 
 .right-column {
-  margin-left: 20px;
+  margin-left: 1.25em;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
 }
 
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 0.31em;
   font-weight: 800;
   font-size: 2rem;
   text-align: left;
@@ -934,7 +988,7 @@ label {
 .option2,
 textarea {
   width: 100%;
-  padding: 8px;
+  padding: 0.50em;
   box-sizing: border-box;
   background-color: var(--preto-fundo);
   border: none;
@@ -946,7 +1000,7 @@ textarea {
 }
 
 .option2 {
-  padding-bottom: 5px;
+  padding-bottom: 0.31em;
 }
 
 .option2:focus,
@@ -955,14 +1009,14 @@ textarea:focus {
 }
 
 textarea {
-  height: 52.5px;
+  height: 3.28em;
 }
 
 .logoPlane .svgContainer {
   position: relative;
   display: inline-block;
-  width: 115px;
-  height: 116px;
+  width: 7.19em;
+  height: 7.25em;
 }
 
 .logoPlane .svgContainer svg {
@@ -988,8 +1042,8 @@ textarea {
 
 .logoPlane {
   position: relative;
-  top: 32px;
-  left: 66px;
+  top: 2.00em;
+  left: 4.13em;
 }
 
 .logoPlane svg:hover {
@@ -1003,7 +1057,7 @@ textarea {
 }
 
 .footerTitle:nth-child(3) {
-  height: 63px;
+  height: 3.94em;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -1014,14 +1068,14 @@ textarea {
 .border1 {
   border-right: 1px solid var(--cor-logo);
   border-left: 1px solid var(--cor-logo);
-  height: 63px;
+  height: 3.94em;
   width: 59%;
   margin-left: 2.5%;
   transition: all 0.3s ease;
 }
 
 .border2 {
-  height: 63px;
+  height: 3.94em;
   width: 177%;
   max-width: 195%;
   border-right: 1px solid var(--cor-logo);

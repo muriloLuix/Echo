@@ -2,7 +2,7 @@ function input() {
   const input = document.querySelector("#email");
 
   input.addEventListener("input", function () {
-      const inputWidth = this.value.length * 1.2 + 22;
+      const inputWidth = this.value.length * 1.2 + 20;
       const maxWidth = 32; 
 
       if (inputWidth > maxWidth) {
