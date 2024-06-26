@@ -470,9 +470,11 @@ button:focus {
   height: 40.7rem;
   width: 26rem;
   background: rgb(21, 21, 21);
-  background: linear-gradient(180deg,
-      rgba(21, 21, 21, 1) 0%,
-      rgba(97, 136, 171, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(21, 21, 21, 1) 0%,
+    rgba(97, 136, 171, 1) 100%
+  );
   transition: all 0.3s ease;
 }
 
@@ -480,9 +482,11 @@ button:focus {
   height: 40.7rem;
   width: 26rem;
   background: rgb(21, 21, 21);
-  background: linear-gradient(180deg,
-      rgba(21, 21, 21, 1) 0%,
-      rgba(97, 136, 171, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(21, 21, 21, 1) 0%,
+    rgba(97, 136, 171, 1) 100%
+  );
   transition: all 0.3s ease;
 }
 
@@ -608,6 +612,29 @@ button:focus {
 
 /* Card Style */
 
+/* Text Echo */
+
+.textEcho {
+  margin: 0 auto;
+  width: 65%;
+  text-align: justify;
+  font-size: 1.5rem;
+  padding: 2.5%;
+}
+
+.textEcho p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: var(--cor-logo);
+  text-indent: 1em;
+}
+
+.textEcho p:last-child{
+  margin-top: 1%;
+}
+
+/* Text Echo */
+
 /* We DO Style */
 
 .titleWeDo h1 {
@@ -639,7 +666,7 @@ button:focus {
   width: 94%;
   height: 48em;
   background-color: var(--preto-fundo);
-  margin-bottom: 1px;
+  margin-bottom: .1em;
 }
 
 /* General 2 */
@@ -672,9 +699,11 @@ button:focus {
 .planBg {
   width: 100%;
   background: rgb(255, 255, 210);
-  background: linear-gradient(180deg,
-      rgba(255, 255, 210, 1) 0%,
-      rgba(21, 21, 21, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 210, 1) 0%,
+    rgba(21, 21, 21, 1) 100%
+  );
   height: 650px;
   display: flex;
   justify-content: center;
@@ -877,7 +906,6 @@ select {
   font-size: inherit;
   color: inherit;
 }
-
 
 .left-column,
 .right-column {
