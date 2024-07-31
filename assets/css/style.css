@@ -632,7 +632,7 @@ button:focus {
   font-weight: 300;
   position: relative;
   top: -1.00em;
-  left: 5.55em;
+  left: 5vw;
   text-transform: uppercase;
 }
 
@@ -657,7 +657,7 @@ button:focus {
   font-weight: 300;
   position: relative;
   top: -1.00em;
-  left: 10em;
+  left: 9vw;
   text-transform: uppercase;
 }
 
