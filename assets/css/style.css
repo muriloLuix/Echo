@@ -26,9 +26,7 @@ main {
 
 body {
   opacity: 0;
-  /* Inicia o body com opacidade 0 */
   animation: fadeIn 2s ease-in-out forwards;
-  /* Animação fadeIn com duração de 2 segundos */
 }
 
 @keyframes fadeIn {
@@ -41,6 +39,28 @@ body {
   }
 }
 
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+select option {
+  background: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+select:focus {
+  outline: none;
+}
 
 
 .loader-wrapper {
@@ -700,7 +720,7 @@ button:focus {
 .backgroundBlack {
   margin: 0 auto;
   width: 94%;
-  height: 48em;
+  min-height: 73vh;
   background-color: var(--preto-fundo);
   margin-bottom: .1em;
 }
@@ -722,11 +742,13 @@ button:focus {
 
 .columnGeneral {
   display: flex;
-  align-items: center;
+  align-items: stretch;
+  /* Alinha as colunas para terem a mesma altura */
   justify-content: space-between;
   padding: 7%;
   gap: 1em;
 }
+
 
 .imgColumnLogo img {
   width: 6vw !important;
@@ -784,6 +806,11 @@ button:focus {
 }
 
 /* Portfolio Style */
+
+.portfolio {
+  margin-bottom: 7vh;
+}
+
 .portfolio h1 {
   display: flex;
   justify-content: right;
@@ -807,6 +834,7 @@ button:focus {
   padding: 6px;
   position: relative;
   overflow: hidden;
+  box-shadow: rgba(255, 255, 255, 0.07) 0px 1px 1px, rgba(255, 255, 255, 0.07) 0px 2px 2px, rgba(255, 255, 255, 0.07) 0px 4px 4px, rgba(255, 255, 255, 0.07) 0px 8px 8px, rgba(255, 255, 255, 0.07) 0px 16px 16px;
 }
 
 .blurLayer {
@@ -829,9 +857,9 @@ button:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 30% 30%, transparent 10%, rgba(255, 255, 255, 0.2) 20%, transparent 30%),
-    radial-gradient(circle at 70% 70%, transparent 10%, rgba(255, 255, 255, 0.2) 20%, transparent 30%);
-  filter: blur(40px);
+  background: radial-gradient(circle at 30% 30%, transparent 10%, rgba(255, 255, 255, 0.075) 20%, transparent 30%),
+    radial-gradient(circle at 70% 70%, transparent 10%, rgba(255, 255, 255, 0.048) 20%, transparent 30%);
+  filter: blur(25px);
 }
 
 .blackPortfolio {
@@ -871,6 +899,8 @@ button:focus {
   font-style: italic;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin-left: 1vw;
+  text-shadow: 1px 1px 1px black;
 }
 
 .viewButton {
@@ -889,7 +919,8 @@ button:focus {
   padding: 10px 24px;
   font-weight: 700;
   text-align: center;
-  text-decoration: none; /* Remove o sublinhado do link */
+  text-decoration: none;
+  /* Remove o sublinhado do link */
   font-size: 16px;
   border-radius: 12px;
   cursor: pointer;
@@ -900,8 +931,9 @@ button:focus {
 
 .viewButton svg {
   fill: var(--cor-logo);
-  stroke: var(--cor-logo); /* Define a cor do contorno */
-  stroke-width: 1; 
+  stroke: var(--cor-logo);
+  /* Define a cor do contorno */
+  stroke-width: 1;
 }
 
 .viewButton:hover {
