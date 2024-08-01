@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="assets/js/input.js" defer></script>
   <script src="assets/js/animation.js" defer></script>
+  <script src="assets/js/menu.js" defer></script>
   <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet"
@@ -27,27 +28,63 @@
   <header>
     <div class="container">
       <div class="logo">
-        <img src="assets/img/logoEcho.png" alt="Logo" />
-        <div class="icons">
-          <div class="svgOne">
-            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
-              stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <path d="M16 10a4 4 0 0 1-8 0"></path>
-            </svg>
-          </div>
-          <div class="svgTwo">
-            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
-              stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-          </div>
-        </div>
+        <img src="assets/img/logoEcho.png" alt="Logo Echo">
+      </div>
+      <div class="menuHamburger">
+        <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+        </svg>
+      </div>
+      <div id="fullScreenMenu" class="fullScreenMenu">
+        <nav>
+          <ul>
+            <li><a href="#footer">Contato</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#products">Produto</a></li>
+            <li><a href="#plans">Planos</a></li>
+            <li><a href="#social">Redes Sociais</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="menuOverlay">
+        <ul>
+          <li><a href="#contact">Contato</a></li>
+          <li><a href="#login">Login</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#product">Produto</a></li>
+          <li><a href="#plans">Planos</a></li>
+          <li><a href="#social">Redes Sociais</a></li>
+        </ul>
       </div>
       <div class="midLogo">
         <img src="assets/img/iconeMeio.png" alt="Logo" />
+      </div>
+      <div class="icons">
+        <div class="svgOne">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+            stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+        </div>
+        <div class="svgTwo">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
+            stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </div>
+        <div class="svgThree">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+          </svg>
+        </div>
       </div>
       <div class="buttons">
         <nav>
@@ -62,6 +99,8 @@
         </nav>
       </div>
     </div>
+
+
   </header>
   <main>
     <section class="general">

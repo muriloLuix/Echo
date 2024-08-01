@@ -171,6 +171,10 @@ header {
   margin: 0;
 }
 
+.svgThree {
+  display: none;
+}
+
 .icons svg {
   color: var(--cor-logo);
   width: 2.2em;
@@ -717,19 +721,21 @@ button:focus {
   margin-left: 2.4%;
 }
 
+/* O que fazemos - parte preta */
+
 .backgroundBlack {
   margin: 0 auto;
-  width: 94%;
-  min-height: 73vh;
+  width: 94vw;
+  min-height: 55vh;
   background-color: var(--preto-fundo);
-  margin-bottom: .1em;
+  margin-bottom: 0.1vh;
 }
 
 .backgroundBlack h1 {
   color: #fff;
   font-family: "Montserrat", sans-serif;
   width: 26vw;
-  font-size: 1.7rem;
+  font-size: 1.7vw;
   font-weight: 500;
 }
 
@@ -743,12 +749,10 @@ button:focus {
 .columnGeneral {
   display: flex;
   align-items: stretch;
-  /* Alinha as colunas para terem a mesma altura */
   justify-content: space-between;
-  padding: 7%;
-  gap: 1em;
+  padding: 7vw;
+  gap: 1vw;
 }
-
 
 .imgColumnLogo img {
   width: 6vw !important;
@@ -767,7 +771,7 @@ button:focus {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #000;
-  font-size: 1.5rem;
+  font-size: 1.3vw;
   text-align: left;
   width: 15vw;
 }
@@ -1030,15 +1034,15 @@ button:focus {
 /* Footer Style */
 
 .footer {
-  width: 100%;
+  width: 100vw;
   background-color: var(--preto-fundo);
   border-top: 1px solid var(--cor-logo);
 }
 
 .footerTitle {
   display: flex;
-  width: 100%;
-  height: 9.38em;
+  width: 100vw;
+  height: 9.38vh;
   background-color: var(--preto-fundo);
   border-bottom: 1px solid var(--cor-logo);
   align-items: center;
@@ -1047,30 +1051,36 @@ button:focus {
 }
 
 .contact {
-  height: 9.38em;
+  height: 9.38vh;
   width: 71.5vw;
-  max-width: 195%;
+  max-width: 195vw;
   border-right: 1px solid var(--cor-logo);
-  margin-right: 2.5%;
+  margin-right: 2.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
 .contact h1 {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
-  font-size: 8rem;
+  font-size: 4vw;
   color: var(--cor-logo);
   text-align: left;
-  margin-left: 3%;
+  margin-left: 3vw;
 }
 
 .echo {
   border-right: 1px solid var(--cor-logo);
   border-left: 1px solid var(--cor-logo);
-  height: 9.38em;
-  width: 23.9vw;
-  margin-left: 2.5%;
+  height: 9.38vh;
+  width: 23.79vw;
+  margin-left: 2.5vw;
+  display: flex;
+  align-items: center;
   transition: all 0.3s ease;
+  justify-content: center;
 }
 
 .echo:hover {
@@ -1082,12 +1092,12 @@ button:focus {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
-  font-size: 8rem;
+  font-size: 6vw;
   color: var(--preto-fundo);
 }
 
 .footerTitle:nth-child(2) {
-  height: 21.88em;
+  height: 21.88vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -1097,14 +1107,14 @@ button:focus {
 .generalMedias {
   border-right: 1px solid var(--cor-logo);
   border-left: 1px solid var(--cor-logo);
-  height: 21.88em;
+  height: 21.88vh;
   width: 34.5vw;
-  margin-left: 2.5%;
+  margin-left: 2.5vw;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
   text-align: left;
-  padding-left: 2%;
+  padding-left: 2vw;
 }
 
 .generalMedias nav ul {
@@ -1119,13 +1129,13 @@ button:focus {
   position: relative;
   list-style: none;
   color: #000;
-  padding: 0.56em 0.56em 0.56em 0.56em;
+  padding: 0.56vh 0.56vw;
   border-radius: 8px;
   letter-spacing: 2px;
   font-weight: 700;
   transition: all 0.3s ease;
   font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5vw;
   white-space: nowrap;
 }
 
@@ -1134,7 +1144,7 @@ button:focus {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   position: absolute;
-  left: -1.88em;
+  left: -1.88vw;
   opacity: 0;
   transition: opacity 0.3s ease, left 0.3s ease;
 }
@@ -1145,7 +1155,7 @@ button:focus {
 
 .generalMedias nav ul li:hover {
   color: var(--cor-logo-selecionado);
-  padding-left: 2.19em;
+  padding-left: 2.19vw;
 }
 
 .generalMedias nav ul li:hover span {
@@ -1155,20 +1165,22 @@ button:focus {
 
 .generalMedias nav ul li:hover::before {
   opacity: 1;
-  left: 0.31em;
+  left: 0.31vw;
 }
 
 .generalMedias nav ul li a {
   color: var(--cor-logo);
   text-decoration: none;
-  margin-bottom: 0.63em;
+  margin-bottom: 0.63vw;
 }
 
 form.infos {
   display: flex;
-  width: 100%;
-  max-width: 100%;
-  padding: 0 7%;
+  align-items: center;
+  width: 100vw;
+  height: 22vh;
+  max-width: 100vw;
+  padding: 0 7vw;
   font-family: "Montserrat";
   color: #fff;
   border-right: 1px solid var(--cor-logo);
@@ -1183,43 +1195,42 @@ form.infos {
 }
 
 .right-column {
-  margin-left: 1.25em;
+  margin-left: 1.25vw;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.25em;
+  margin-bottom: 1.25vh;
 }
 
 label {
   display: block;
-  margin-bottom: 0.31em;
+  margin-bottom: 0.31vh;
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 1vw;
   text-align: left;
-  height: 2.5em;
-  line-height: 2.5em;
+  height: 2.5vh;
+  line-height: 2.5vh;
 }
 
 .input,
 .option2,
 textarea {
   width: 100%;
-  padding: 0.50em;
   box-sizing: border-box;
   background-color: var(--preto-fundo);
   border: none;
   border-bottom: 1px solid #fff;
-  font-size: 2rem !important;
+  font-size: 1vw !important;
   color: #fff;
   resize: none;
   outline: none;
-  height: 2.2em;
+  height: 4.2vh;
 }
 
 .option2 {
-  padding-bottom: 0.31em;
+  padding-bottom: 0.31vh;
 }
 
 .option2:focus,
@@ -1228,14 +1239,14 @@ textarea:focus {
 }
 
 textarea {
-  height: 2.2em;
+  height: 4.2vh;
 }
 
 .logoPlane .svgContainer {
   position: relative;
   display: inline-block;
-  width: 7.19em;
-  height: 7.25em;
+  width: 7.19vw;
+  height: 7.25vh;
 }
 
 .logoPlane .svgContainer svg {
@@ -1261,8 +1272,8 @@ textarea {
 
 .logoPlane {
   position: relative;
-  top: 2.00em;
-  left: 4.13em;
+  bottom: 2vh;
+  left: 4.13vw;
 }
 
 .logoPlane svg:hover {
@@ -1275,9 +1286,8 @@ textarea {
   transition: all 0.3s ease;
 }
 
-
 .footerTitle:nth-child(3) {
-  height: 3.94em;
+  height: 3.94vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -1288,16 +1298,137 @@ textarea {
 .border1 {
   border-right: 1px solid var(--cor-logo);
   border-left: 1px solid var(--cor-logo);
-  height: 3.94em;
-  width: 59%;
-  margin-left: 2.5%;
+  height: 3.94vh;
+  width: 59vw;
+  margin-left: 2.5vw;
   transition: all 0.3s ease;
 }
 
 .border2 {
-  height: 3.94em;
-  width: 177%;
-  max-width: 195%;
+  height: 3.94vh;
+  width: 177vw;
+  max-width: 195vw;
   border-right: 1px solid var(--cor-logo);
-  margin-right: 2.5%;
+  margin-right: 2.5vw;
+}
+
+/* Menu Hamburguer */
+
+.menuHamburger {
+  display: none;
+  cursor: pointer;
+  font-family: var(--montserrat);
+}
+
+#menuOverlay{
+  display: none;
+}
+
+.fullScreenMenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1000;
+}
+
+.fullScreenMenu nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: var(--montserrat);
+}
+
+.fullScreenMenu nav ul li {
+  margin: 20px 0;
+  padding: 4%;
+  width: 40vw;
+}
+
+.fullScreenMenu nav ul li a {
+  color: #fff;
+  font-size: 3rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.fullScreenMenu nav ul li a:hover {
+  color: #ccc;
+}
+
+@media screen and (max-width: 1098px) {
+  .buttons nav ul {
+    display: none;
+  }
+
+  .hand-wrapper {
+    display: none;
+  }
+
+  .svgTwo {
+    display: none;
+  }
+
+  .container {
+    justify-content: space-between;
+  }
+
+  .svgThree {
+    display: flex;
+  }
+
+  .icons svg {
+    width: 3.2em;
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .menuHamburger {
+    display: flex;
+  }
+
+  .menuHamburger svg {
+    color: var(--cor-logo);
+    width: 4.2em;
+    height: auto;
+    margin-left: 3vw;
+  }
+
+  .midLogo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .icons {
+    position: absolute;
+    right: 1em;
+  }
+
+  .logo{
+    display: none;
+  }
+}
+
+.menuOpen .fullScreenMenu {
+  display: block;
+  opacity: 1;
+}
+
+.menuOpen .menuHamburger svg {
+  content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg>');
 }
