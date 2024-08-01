@@ -1318,10 +1318,12 @@ textarea {
   display: none;
   cursor: pointer;
   font-family: var(--montserrat);
+  transition: transform 0.3s ease;
+  z-index: 1100;
 }
 
-#menuOverlay{
-  display: none;
+.menuHamburger svg {
+  transition: transform 0.3s ease;
 }
 
 .fullScreenMenu {
@@ -1331,9 +1333,10 @@ textarea {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(0 0 0);
+  background: rgba(0, 0, 0, 0.9);
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transform: scale(1.1);
   z-index: 1000;
 }
 
@@ -1351,20 +1354,27 @@ textarea {
 
 .fullScreenMenu nav ul li {
   margin: 20px 0;
-  padding: 4%;
-  width: 40vw;
+  width: 100vw;
 }
 
 .fullScreenMenu nav ul li a {
   color: #fff;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.3s;
+  border-radius: 20px;
 }
 
 .fullScreenMenu nav ul li a:hover {
   color: #ccc;
+  transform: scale(1.1);
 }
+
+.fullScreenMenu nav ul li a:active{
+  transform: scale(0.9);
+  background-color: var(--cor-logo);
+}
+
 
 @media screen and (max-width: 1098px) {
   .buttons nav ul {
@@ -1388,13 +1398,14 @@ textarea {
   }
 
   .icons svg {
-    width: 3.2em;
+    width: 2.2em;
+    margin-left: 5vw;
   }
 
   .icons {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
   }
 
   .menuHamburger {
@@ -1403,9 +1414,18 @@ textarea {
 
   .menuHamburger svg {
     color: var(--cor-logo);
-    width: 4.2em;
+    width: 3em;
     height: auto;
-    margin-left: 3vw;
+  }
+
+  .menuOpen .fullScreenMenu {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .menuOpen .menuHamburger svg {
+    transform: rotate(0deg);
   }
 
   .midLogo {
@@ -1419,16 +1439,20 @@ textarea {
     right: 1em;
   }
 
-  .logo{
+  .logo {
     display: none;
+  }
+
+  .midLogo img {
+    width: 4em;
+  }
+
+  .title h1 {
+    width: 63vw;
+    font-size: 2rem;
   }
 }
 
-.menuOpen .fullScreenMenu {
-  display: block;
-  opacity: 1;
-}
-
-.menuOpen .menuHamburger svg {
-  content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg>');
+.menuOpen .menuHamburger #menuIcon {
+  content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg>');
 }
