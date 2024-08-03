@@ -30,31 +30,33 @@
       <div class="logo">
         <img src="assets/img/logoEcho.png" alt="Logo Echo">
       </div>
-      <div class="menuHamburger">
-        <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-          class="bi bi-list" viewBox="0 0 16 16">
-          <path fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-        </svg>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div class="menu">
+          <div class="menu-content">
+            <div class="logoMenu">
+              <img src="assets/img/logoEcho.png" alt="Logo Echo">
+            </div>
+            <ul>
+              <li><a href="#services">Serviços</a></li>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#footer">Contato</a></li>
+              <li><a href="#footer">Conta</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div id="fullScreenMenu" class="fullScreenMenu">
-        <nav>
-          <ul>
-            <li><a href="#footer">Contato</a></li>
-            <li><a href="#login">Login</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#products">Produto</a></li>
-            <li><a href="#plans">Planos</a></li>
-            <li><a href="#social">Redes Sociais</a></li>
-          </ul>
-        </nav>
-      </div>
-
-
       <div class="midLogo">
         <img src="assets/img/iconeMeio.png" alt="Logo" />
       </div>
       <div class="icons">
+        <div class="imgBlack">
+          <img src="assets/img/imgHeaderBlack.svg" alt="">
+        </div>
         <div class="svgOne">
           <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
             stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
@@ -134,6 +136,9 @@
           negócio ou empresa com a<br />
           ECHO!
         </p>
+        <div class="email-containerPhone">
+          <button>Torne-se um echo</button>
+        </div>
         <div class="email-container" onclick="input()">
           <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplete="off" />
           <button class="echo-button">Torne-se um echo</button>
