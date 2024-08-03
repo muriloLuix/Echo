@@ -1600,4 +1600,21 @@ textarea {
   .imgBlack {
     display: none;
   }
+
+  .logoMenu {
+    display: none;
+  }
+
+  .menu-content {
+    display: none;
+  }
+
+  .email-containerPhone {
+    display: none;
+  }
+
+  .icons svg {
+    display: none !important;
+  }
+
 }
