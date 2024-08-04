@@ -1,42 +1,41 @@
-$num = $('.my-card').length;
-$even = $num / 2;
-$odd = ($num + 1) / 2;
+document.addEventListener('DOMContentLoaded', function () {
+    const cards = document.querySelectorAll('#carousel > div');
+    const carousel = document.getElementById('carousel');
 
-if ($num % 2 == 0) {
-    $('.my-card:nth-child(' + $even + ')').addClass('active');
-    $('.my-card:nth-child(' + $even + ')').prev().addClass('prev');
-    $('.my-card:nth-child(' + $even + ')').next().addClass('next');
-} else {
-    $('.my-card:nth-child(' + $odd + ')').addClass('active');
-    $('.my-card:nth-child(' + $odd + ')').prev().addClass('prev');
-    $('.my-card:nth-child(' + $odd + ')').next().addClass('next');
-}
+    let currentIndex = Math.floor(cards.length / 2);
 
-$('.my-card').click(function () {
-    $slide = $('.active').width();
-    console.log($('.active').position().left);
+    function updateCarousel() {
+        cards.forEach((card, index) => {
+            card.classList.remove('prev', 'active', 'next');
+            if (index === currentIndex) {
+                card.classList.add('active');
+            } else if (index === currentIndex - 1) {
+                card.classList.add('prev');
+            } else if (index === currentIndex + 1) {
+                card.classList.add('next');
+            }
+        });
 
-    if ($(this).hasClass('next')) {
-        $('.card-carousel').stop(false, true).animate({ left: '-=' + $slide });
-    } else if ($(this).hasClass('prev')) {
-        $('.card-carousel').stop(false, true).animate({ left: '+=' + $slide });
+        const activeCard = document.querySelector('#carousel > div.active');
+        const offset = activeCard.offsetLeft - (carousel.clientWidth / 2 - activeCard.clientWidth / 2);
+        carousel.style.transform = `translateX(-${offset}px)`;
     }
 
-    $(this).removeClass('prev next');
-    $(this).siblings().removeClass('prev active next');
+    cards.forEach((card, index) => {
+        card.addEventListener('click', () => {
+            currentIndex = index;
+            updateCarousel();
+        });
+    });
 
-    $(this).addClass('active');
-    $(this).prev().addClass('prev');
-    $(this).next().addClass('next');
-});
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft' && currentIndex > 0) {
+            currentIndex--;
+        } else if (e.key === 'ArrowRight' && currentIndex < cards.length - 1) {
+            currentIndex++;
+        }
+        updateCarousel();
+    });
 
-
-// Keyboard nav
-$('html body').keydown(function (e) {
-    if (e.keyCode == 37) { // left
-        $('.active').prev().trigger('click');
-    }
-    else if (e.keyCode == 39) { // right
-        $('.active').next().trigger('click');
-    }
+    updateCarousel();
 });
