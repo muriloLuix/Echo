@@ -1747,7 +1747,7 @@ textarea {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 45vh;
     width: 100%;
     background: rgb(21, 21, 21);
     background: linear-gradient(180deg, rgba(21, 21, 21, 1) 0%, rgba(97, 136, 171, 1) 100%);
@@ -1785,6 +1785,7 @@ textarea {
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 44vw;
   }
 
   .carousel-control-next {
@@ -1932,7 +1933,7 @@ textarea {
     height: 7vh;
     background-color: var(--cor-logo);
     font-family: var(--montserrat);
-    font-size: 1rem;
+    font-size: 1rem !important;
     color: rgba(0, 0, 0, 0.87);
     transition: border-color 0.2s, box-shadow 0.2s;
     position: relative;
