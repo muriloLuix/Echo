@@ -75,22 +75,17 @@ select:focus {
   align-items: center;
   z-index: 9999;
   animation: fadeOut 1s forwards;
-  /* Aplica a animação fadeOut por 1 segundo */
   animation-delay: 3s;
-  /* Adiciona um atraso de 5 segundos antes de iniciar a animação */
 }
 
 @keyframes fadeOut {
   from {
     opacity: 1;
-    /* Começa com opacidade total */
   }
 
   to {
     opacity: 0;
-    /* Termina com opacidade zero */
     display: none;
-    /* Opcional: esconde o elemento após a animação */
   }
 }
 
@@ -1045,6 +1040,7 @@ button:focus {
 
 .card-header {
   width: 100%;
+  height: 13vh;
   text-align: center;
   color: #fff;
   font-size: 5rem;
@@ -1071,28 +1067,33 @@ button:focus {
   background-image: url(../img/basicBg.svg);
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  background-size: cover;
 }
 
 .plus-bg {
   background-image: url(../img/plusBg.svg);
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  background-size: cover;
 }
 
 .pro-bg {
   background-image: url(../img/proBg.svg);
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  background-size: cover;
 }
 
 .premium-bg {
   background-image: url(../img/premiumBg.svg);
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  background-size: cover;
 }
 
 .headerGeneral {
   display: flex;
+  height: 13vh;
 }
 
 .plus-header {
@@ -1333,7 +1334,7 @@ button:focus {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
-  font-size: 6vw;
+  font-size: 7rem;
   color: var(--preto-fundo);
 }
 
