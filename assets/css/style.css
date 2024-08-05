@@ -597,6 +597,14 @@ button:focus {
   text-transform: uppercase;
 }
 
+
+.svgCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 11vh;
+}
+
 .cardTwo h1 {
   font-size: 3rem;
   margin-bottom: 0.31em;
@@ -826,11 +834,18 @@ button:focus {
   margin-bottom: 7vh;
 }
 
+.headerPortfolio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+}
+
 .portfolio h1 {
   display: flex;
   justify-content: right;
   margin: 0;
-  padding: 2% 2.4%;
+  margin-left: 1.5vw;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 5rem;
@@ -839,17 +854,22 @@ button:focus {
   font-style: italic;
 }
 
+.sloganPortfolio p {
+  color: var(--cor-logo);
+  font-family: var(--montserrat);
+  letter-spacing: 5px;
+}
+
 .cardPortfolio {
   width: 26vw;
   height: 28vh;
-  background-color: var(--cor-logo);
   border-radius: 12px;
   /* margin-left: 6vw; */
   margin: 0 auto;
   padding: 6px;
   position: relative;
   overflow: hidden;
-  box-shadow: rgba(255, 255, 255, 0.07) 0px 1px 1px, rgba(255, 255, 255, 0.07) 0px 2px 2px, rgba(255, 255, 255, 0.07) 0px 4px 4px, rgba(255, 255, 255, 0.07) 0px 8px 8px, rgba(255, 255, 255, 0.07) 0px 16px 16px;
+  box-shadow: rgb(0, 0, 0) 0px 22px 70px 4px;
 }
 
 .blurLayer {
@@ -977,6 +997,7 @@ button:focus {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  font-family: var(--montserrat) !important;
 }
 
 .card-container {
@@ -988,7 +1009,7 @@ button:focus {
 
 .card-wrapper {
   width: 23.6vw;
-  height: 39.69em;
+  height: 64vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -999,22 +1020,230 @@ button:focus {
 
 .card {
   width: 22vw;
-  height: 37.81em;
+  height: 60vh;
   background-color: var(--preto-fundo);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 25px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 2%;
+  color: var(--branco);
+}
+
+.priceDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.infoPlan span {
+  color: #fff;
+  font-size: .6rem;
+}
+
+.card-header {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 5rem;
+  font-style: italic;
+  padding: 10px 0;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+
+.card-header svg {
+  width: 4vw;
+  height: 4vw;
+  padding-top: 1vh;
+}
+
+
+.blueBg {
+  width: 22vw;
+  height: 44vh;
+  background-repeat: no-repeat;
+}
+
+.basic-bg {
+  background-image: url(../img/basicBg.svg);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.plus-bg {
+  background-image: url(../img/plusBg.svg);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.pro-bg {
+  background-image: url(../img/proBg.svg);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.premium-bg {
+  background-image: url(../img/premiumBg.svg);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.headerGeneral {
+  display: flex;
+}
+
+.plus-header {
+  position: relative;
+  display: block;
+  right: 3vh;
+}
+
+.plus-header img {
+  width: 100%;
+  height: auto;
+}
+
+.svgStar {
+  position: relative;
+  bottom: 6.5vh;
+  left: 1.89vw;
+}
+
+.centered-textPopular {
+  font-family: var(--montserrat);
+  position: absolute;
+  top: 5vh;
+  letter-spacing: 1px;
+  left: 2.67vw;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: center;
+  font-style: italic;
+}
+
+.card-features {
+  width: 100%;
+  background-color: var(--azul-fundo);
+  color: #fff;
+  padding: 0;
+  margin-left: 1.5vw;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+.card-features li {
+  padding: 1px 0;
+}
+
+.card-price-info {
+  width: 100%;
+  background-color: var(--preto-fundo);
+  color: var(--branco);
+  text-align: left;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.price-note {
+  font-size: 2.2rem;
+  font-style: italic;
+  opacity: 0.8;
+  color: #ffffff91;
+}
+
+.price-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-top: 5px;
+  color: #fff;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 1.8rem;
+  height: 9vh;
+  letter-spacing: 4px;
+}
+
+.currency {
+  font-size: 1.1em !important;
+  padding-right: 5px;
+  position: relative;
+  bottom: 5vh;
+}
+
+.price-main {
+  font-size: 4em;
+  position: relative;
+  top: 3vh;
+}
+
+.price-decimal {
+  font-size: 1.1em !important;
+  position: relative;
+  bottom: 5vh;
+}
+
+.price-per-month {
+  font-size: 1rem !important;
+  position: relative;
+  right: 3.3vw;
+  bottom: 3vh;
+}
+
+.price-per-month-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 5px;
+}
+
+.card-button {
+  background-color: #2E81FF;
+  color: #fff;
+  font-weight: 900;
+  border: none;
+  border-radius: 50px;
+  padding: 1px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  position: absolute;
+  font-family: var(--montserrat);
+  top: 12.5vh;
+  right: 1vh;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-decoration: none;
+  /* Remove underline */
+  display: inline-block;
+  /* Make sure it behaves like a button */
+  text-align: center;
+  /* Center the text inside */
+}
+
+
+#mySvg {
+  color: #FA827D;
+  position: relative;
+  top: .5vh;
+  left: .3vw;
 }
 
 .card-wrapper:hover {
   background-color: var(--cor-logo-selecionado);
   transition: all 0.3s ease;
 }
-
 
 /* Services Style */
 

@@ -152,7 +152,7 @@
           sobre a ECHO!
         </h1>
         <p>
-          A Echo é uma start-up, fundada por 4<br />
+          A Echo é uma start-up, fundada por 3<br />
           amigos apaixonados por tecnologia e <br />são eles;
         </p>
       </aside>
@@ -173,11 +173,13 @@
         <div class="cardThree">
           <h1>Murilo <span>JABOINSKI</span></h1>
           <p>Front-end</p>
-          <svg width="375" height="293" viewBox="0 0 375 293" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M373 132.608C373 132.608 366.643 130.432 362.564 131.028C248.979 147.634 69.0992 170.832 69.0992 170.832C48.6494 173.78 6.67464 172.475 2.37386 143.664C-3.00212 107.651 50.1252 7.51012 127.919 2.13977C205.712 -3.23058 167.23 150.668 143.23 179C112.556 200.692 61.7626 253.346 103.252 290.243C174.405 302.563 142.465 160.723 132.03 136.083C121.594 111.442 110.21 52.0524 127.919 27.0961C134.644 17.619 157.702 76.5134 155.747 101.965C153.792 127.417 151.061 142.537 135.825 158.512C120.588 174.486 107.68 144.612 108.312 130.08C108.945 115.549 113.688 72.5861 90.9193 67.8475C72.7042 64.0567 66.6747 104.387 65.9368 125.026L66.1955 158.691L64.9881 125.026C62.6691 113.548 54.4259 88.8235 40.0057 81.7473C21.9803 72.902 21.9803 156.616 25.1427 157.564C27.6725 158.322 25.2481 129.628 25.1427 114.465"
-              stroke="#FFFFD2" stroke-width="4" stroke-linecap="round" />
-          </svg>
+          <div class="svgCard">
+            <svg width="375" height="293" viewBox="0 0 375 293" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M373 132.608C373 132.608 366.643 130.432 362.564 131.028C248.979 147.634 69.0992 170.832 69.0992 170.832C48.6494 173.78 6.67464 172.475 2.37386 143.664C-3.00212 107.651 50.1252 7.51012 127.919 2.13977C205.712 -3.23058 167.23 150.668 143.23 179C112.556 200.692 61.7626 253.346 103.252 290.243C174.405 302.563 142.465 160.723 132.03 136.083C121.594 111.442 110.21 52.0524 127.919 27.0961C134.644 17.619 157.702 76.5134 155.747 101.965C153.792 127.417 151.061 142.537 135.825 158.512C120.588 174.486 107.68 144.612 108.312 130.08C108.945 115.549 113.688 72.5861 90.9193 67.8475C72.7042 64.0567 66.6747 104.387 65.9368 125.026L66.1955 158.691L64.9881 125.026C62.6691 113.548 54.4259 88.8235 40.0057 81.7473C21.9803 72.902 21.9803 156.616 25.1427 157.564C27.6725 158.322 25.2481 129.628 25.1427 114.465"
+                stroke="#FFFFD2" stroke-width="4" stroke-linecap="round" />
+            </svg>
+          </div>
 
         </div>
         <!-- <div class="cardFour">
@@ -286,7 +288,14 @@
     <section class="general2">
       <section class="generalBlack">
         <div class="portfolio">
-          <h1>Portfólio</h1>
+          <div class="headerPortfolio">
+            <div class="titlePortfolio">
+              <h1>Portfólio</h1>
+            </div>
+            <div class="sloganPortfolio">
+              <p>Nossa ressonância ecoando <strong>QUALIDADE & INOVAÇÃO</strong> em cada criação.</p>
+            </div>
+          </div>
           <div class="cardPortfolio">
             <div class="blurLayer">
               <div class="blackPortfolio">
@@ -309,7 +318,7 @@
           </div>
         </div>
         <aside class="titleServices" id="titleServices">
-          <h1>SERVIÇOS</h1>
+          <h1>PLANOS</h1>
         </aside>
         <div id="carousel-container">
           <div id="carousel">
@@ -325,18 +334,228 @@
           crossorigin="anonymous"></script>
 
         <div class="planBg">
+          <!-- Plano Básico -->
           <div class="card-container">
             <div class="card-wrapper">
-              <div class="card"></div>
+              <div class="card">
+                <div class="blueBg basic-bg">
+                  <div class="card-header">BÁSICO</div>
+                  <ul class="card-features">
+                    <li>6 meses de fidelidade</li>
+                    <li>Suporte básico</li>
+                    <li>Manutenções limitadas, exceto erros</li>
+                    <li>Funcionalidades básicas</li>
+                    <li>Domínio padrão</li>
+                    <li>Armazenamento ilimitado</li>
+                    <li>Backup diário</li>
+                    <li>Email profissional</li>
+                    <li>Certificado SSL</li>
+                    <li>Layout à escolha</li>
+                  </ul>
+                </div>
+                <div class="card-price-info">
+                  <div class="priceDiv">
+                    <div class="priceNoteDiv">
+                      <span class="price-note">A partir de</span>
+                    </div>
+                    <div class="infoPlan">
+                      <span>para mais informações<svg id="mySvg" xmlns="http://www.w3.org/2000/svg" width="16"
+                          height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                          <path
+                            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="price-container">
+                    <span class="currency">R$</span>
+                    <span class="price-main">119</span>
+                    <span class="price-decimal">,90</span>
+                    <div class="price-per-month-container">
+                      <span class="price-per-month">/Mês</span>
+                    </div>
+                  </div>
+                  <a href="https://api.whatsapp.com/send?phone=5541996754583&text=Ol%C3%A1!%20Estou%20interessado%20no%20plano%20b%C3%A1sico%20e%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20detalhadas%20sobre%20o%20que%20est%C3%A1%20inclu%C3%ADdo.%20Poderia%20me%20enviar%20mais%20detalhes,%20por%20favor?"
+                    class="card-button" target="_blank">Comprar</a>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="card-container">
+            <!-- Plano Plus -->
             <div class="card-wrapper">
-              <div class="card"></div>
+              <div class="card">
+                <div class="blueBg plus-bg">
+                  <div class="headerGeneral">
+                    <div class="card-header">
+                      PLUS
+                    </div>
+                    <div class="imgPopular plus-header">
+                      <img src="assets/img/popular.svg" alt="Popular">
+                      <span class="centered-textPopular">Popular</span>
+                      <div class="svgStar">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M14 0L17.7396 3.7254L22.999 3.27538L23.4691 8.533L27.7873 11.5689L24.7679 15.8987L26.1244 21L21.0282 22.3759L18.7883 27.1557L14 24.934L9.21172 27.1557L6.97176 22.3759L1.87564 21L3.23211 15.8987L0.212691 11.5689L4.53088 8.533L5.00097 3.27538L10.2604 3.7254L14 0Z"
+                            fill="#FA827D" />
+                        </svg>
+
+                      </div>
+                    </div>
+
+                  </div>
+                  <ul class="card-features">
+                    <li>8 meses de fidelidade</li>
+                    <li>Suporte Prioritário</li>
+                    <li>Funcionalidades intermediárias</li>
+                    <li>Escolha de domínio</li>
+                    <li>Armazenamento ilimitado</li>
+                    <li>Backup diário</li>
+                    <li>Email profissional</li>
+                    <li>Certificado SSL</li>
+                    <li>Layout à escolha</li>
+                    <li>10 bancos de dados</li>
+                    <li>Reuniões mensais</li>
+                  </ul>
+                </div>
+                <div class="card-price-info">
+                  <div class="priceDiv">
+                    <div class="priceNoteDiv">
+                      <span class="price-note">A partir de</span>
+                    </div>
+                    <div class="infoPlan">
+                      <span>para mais informações<svg id="mySvg" xmlns="http://www.w3.org/2000/svg" width="16"
+                          height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                          <path
+                            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="price-container">
+                    <span class="currency">R$</span>
+                    <span class="price-main">145</span>
+                    <span class="price-decimal">,90</span>
+                    <div class="price-per-month-container">
+                      <span class="price-per-month">/Mês</span>
+                    </div>
+                  </div>
+                  <a href="https://api.whatsapp.com/send?phone=5541996754583&text=Ol%C3%A1!%20Estou%20interessado%20no%20plano%20plus%20e%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20detalhadas%20sobre%20o%20que%20est%C3%A1%20inclu%C3%ADdo.%20Poderia%20me%20enviar%20mais%20detalhes,%20por%20favor?"
+                    class="card-button" target="_blank">Comprar</a>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="card-container">
+            <!-- Plano Pro -->
             <div class="card-wrapper">
-              <div class="card"></div>
+              <div class="card">
+                <div class="blueBg pro-bg">
+                  <div class="card-header">PRO <svg width="81" height="93" viewBox="0 0 81 93" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M40.5 0L56.5658 18.6733L80.7702 23.25L72.6315 46.5L80.7702 69.75L56.5658 74.3267L40.5 93L24.4342 74.3267L0.22982 69.75L8.3685 46.5L0.22982 23.25L24.4342 18.6733L40.5 0Z"
+                        fill="white" />
+                    </svg>
+                  </div>
+                  <ul class="card-features">
+                    <li>12 meses de fidelidade</li>
+                    <li>Suporte prioritário</li>
+                    <li>Atualizações e Manutenções ilimitadas</li>
+                    <li>Escolha de domínio</li>
+                    <li>Funcionalidades intermediárias/avançadas</li>
+                    <li>Armazenamento ilimitado</li>
+                    <li>Backup diário</li>
+                    <li>Email profissional</li>
+                    <li>Certificado SSL</li>
+                    <li>10 bancos de dados</li>
+                    <li>Reuniões semanais/mensais</li>
+                    <li>Análise mensal de desempenho do site</li>
+                  </ul>
+                </div>
+                <div class="card-price-info">
+                  <div class="priceDiv">
+                    <div class="priceNoteDiv">
+                      <span class="price-note">A partir de</span>
+                    </div>
+                    <div class="infoPlan">
+                      <span>para mais informações<svg id="mySvg" xmlns="http://www.w3.org/2000/svg" width="16"
+                          height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                          <path
+                            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="price-container">
+                    <span class="currency">R$</span>
+                    <span class="price-main">175</span>
+                    <span class="price-decimal">,90</span>
+                    <div class="price-per-month-container">
+                      <span class="price-per-month">/Mês</span>
+                    </div>
+                  </div>
+                  <a href="https://api.whatsapp.com/send?phone=5541996754583&text=Ol%C3%A1!%20Estou%20interessado%20no%20plano%20pro%20e%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20detalhadas%20sobre%20o%20que%20est%C3%A1%20inclu%C3%ADdo.%20Poderia%20me%20enviar%20mais%20detalhes,%20por%20favor?"
+                    class="card-button" target="_blank">Comprar</a>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="card-container">
+            <!-- Plano Premium -->
             <div class="card-wrapper">
-              <div class="card"></div>
+              <div class="card">
+                <div class="blueBg premium-bg">
+                  <div class="card-header">PREM <svg width="93" height="93" viewBox="0 0 93 93" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M46.5 0L60.4333 12.862L79.3805 13.6195L80.138 32.5667L93 46.5L80.138 60.4333L79.3805 79.3805L60.4333 80.138L46.5 93L32.5667 80.138L13.6195 79.3805L12.862 60.4333L0 46.5L12.862 32.5667L13.6195 13.6195L32.5667 12.862L46.5 0Z"
+                        fill="white" />
+                    </svg>
+                  </div>
+                  <ul class="card-features">
+                    <li>14 meses de fidelidade</li>
+                    <li>Suporte VIP</li>
+                    <li>Atualizações e manutenções ilimitadas</li>
+                    <li>Escolha de domínio</li>
+                    <li>Funcionalidades avançadas</li>
+                    <li>Armazenamento ilimitado</li>
+                    <li>Backup diário</li>
+                    <li>Email profissional</li>
+                    <li>Certificado SSL</li>
+                    <li>Layout à escolha</li>
+                    <li>13 bancos de dados</li>
+                    <li>Reuniões semanais/mensais</li>
+                    <li>Análise de desempenho do site</li>
+                    <li>Consultoria de desing do site</li>
+                  </ul>
+                </div>
+                <div class="card-price-info">
+                  <div class="priceDiv">
+                    <div class="priceNoteDiv">
+                      <span class="price-note">A partir de</span>
+                    </div>
+                    <div class="infoPlan">
+                      <span>para mais informações<svg id="mySvg" xmlns="http://www.w3.org/2000/svg" width="16"
+                          height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                          <path
+                            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="price-container">
+                    <span class="currency">R$</span>
+                    <span class="price-main">219</span>
+                    <span class="price-decimal">,90</span>
+                    <div class="price-per-month-container">
+                      <span class="price-per-month">/Mês</span>
+                    </div>
+                  </div>
+                  <a href="https://api.whatsapp.com/send?phone=5541996754583&text=Ol%C3%A1!%20Estou%20interessado%20no%20plano%20premium%20e%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20detalhadas%20sobre%20o%20que%20est%C3%A1%20inclu%C3%ADdo.%20Poderia%20me%20enviar%20mais%20detalhes,%20por%20favor?"
+                    class="card-button" target="_blank">Comprar</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
