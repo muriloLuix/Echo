@@ -1965,22 +1965,6 @@ textarea {
     display: none;
   }
 
-  #carousel-container {
-    overflow: hidden;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    padding: 4vh;
-  }
-
-  #carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    transition: transform 1s;
-  }
-
   .card {
     flex: 0 0 100%;
     display: flex;
@@ -2028,79 +2012,106 @@ textarea {
     width: 44vw;
   }
 
-  .carousel-control-next {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    font-size: 2rem;
-    background-color: var(--preto-fundo);
-    height: 7vh;
-    width: 14vw;
-    border-radius: 50%;
-    color: var(--cor-logo);
-    cursor: pointer;
-  }
-
-
-  #carousel>div {
-    height: 20rem;
-    width: 15rem;
+  .carrossel {
     position: relative;
-    z-index: 1;
-    transform: scale(0.6) translateY(-2rem);
-    opacity: 0.6;
+    width: 184vw;
+    margin: auto;
+    height: 60vh;
+    margin-top: .3vh;
+    overflow: hidden;
+    font-family: var(--montserrat);
+  }
+
+  .blueBg {
+    min-width: 87vw;
+  }
+
+  .areaMovimento {
+    width: 546vw;
+    transition: .9s all;
+  }
+
+  .card-features {
+    font-size: .9rem;
+    text-align: left;
+  }
+
+  .item {
+    width: 87vw;
+    height: 55vh;
+    float: left;
+    margin-left: 15px;
+    margin-top: 20px;
+    background-color: #202225;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 25px;
     cursor: pointer;
-    pointer-events: none;
-    background: var(--cor-logo);
-    transition: transform 1s, opacity 1s;
-    border-radius: 46px;
-    transition: all .3s ease;
+    transition: 1s all;
   }
 
-  #carousel>div:after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    border-radius: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    bottom: -5rem;
-    filter: blur(4px);
+  .card-price-info {
+    max-height: 11vh;
   }
 
-  #carousel>div:nth-child(1):before,
-  #carousel>div:nth-child(2):before,
-  #carousel>div:nth-child(3):before,
-  #carousel>div:nth-child(4):before,
-  #carousel>div:nth-child(5):before {
-    content: attr(data-content);
+  .price-note {
+    font-size: 1rem;
+  }
+
+  .price-main {
+    font-size: 2.5rem;
+    top: -2vh;
+  }
+
+  .currency {
+    font-size: .9rem !important;
+  }
+
+  .item img {
+    width: 70px;
+    margin-top: 20px;
+  }
+
+  .price-decimal {
+    font-size: 1rem !important;
+    bottom: 5vh;
+  }
+
+  .price-per-month {
+    font-size: .8rem !important;
+    position: relative;
+    right: 10.3vw;
+    bottom: 3vh;
+  }
+
+  .card-button {
+    font-size: 1.2rem;
+    top: 6.5vh;
+    right: 1vh;
+  }
+
+  .controles {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    font-size: 3rem;
-    font-weight: 300;
-    color: #fff;
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
   }
 
-  #carousel>div.active {
-    z-index: 3;
-    transform: scale(1) translateY(0) translateX(0);
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  #carousel>div.prev,
-  #carousel>div.next {
-    z-index: 2;
-    transform: scale(0.8) translateY(-1rem) translateX(0);
-    opacity: 0.8;
-    pointer-events: auto;
-    background-color: #AACCFF;
-    transition: all .3s ease;
+  .controle {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .textEcho {
@@ -2362,6 +2373,10 @@ textarea {
   }
 
   .textCellphone {
+    display: none;
+  }
+
+  .carrossel {
     display: none;
   }
 }

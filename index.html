@@ -239,7 +239,6 @@
             </svg>
           </div> -->
         </div>
-        <button class="carousel-control-next" aria-label="Next">&#10095;</button>
       </section>
       <section class="weDo">
         <aside class="titleWeDo">
@@ -320,13 +319,63 @@
         <aside class="titleServices" id="titleServices">
           <h1>PLANOS</h1>
         </aside>
-        <div id="carousel-container">
-          <div id="carousel">
-            <div data-content="0"></div>
-            <div data-content="1"></div>
-            <div data-content="2"></div>
-            <div data-content="3"></div>
-            <div data-content="4"></div>
+        <div class="carrossel">
+          <div class="areaMovimento" id="mover">
+            <div class="item">
+              <div class="blueBg basic-bg">
+                <div class="card-header">
+                  BÁSICO
+                </div>
+                <ul class="card-features">
+                  <li>6 meses de fidelidade</li>
+                  <li>Suporte básico</li>
+                  <li>Manutenções limitadas, exceto erros</li>
+                  <li>Funcionalidades básicas</li>
+                  <li>Domínio padrão</li>
+                  <li>Armazenamento ilimitado</li>
+                  <li>Backup diário</li>
+                  <li>Email profissional</li>
+                  <li>Certificado SSL</li>
+                  <li>Layout à escolha</li>
+                </ul>
+              </div>
+              <div class="card-price-info">
+                <div class="priceDiv">
+                  <div class="priceNoteDiv">
+                    <span class="price-note">A partir de</span>
+                  </div>
+                  <div class="infoPlan">
+                    <span>para mais informações<svg id="mySvg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+                <div class="price-container">
+                  <span class="currency">R$</span>
+                  <span class="price-main">119</span>
+                  <span class="price-decimal">,90</span>
+                  <div class="price-per-month-container">
+                    <span class="price-per-month">/Mês</span>
+                  </div>
+                </div>
+                <a href="https://api.whatsapp.com/send?phone=5541996754583&text=Ol%C3%A1!%20Estou%20interessado%20no%20plano%20b%C3%A1sico%20e%20gostaria%20de%20receber%20mais%20informa%C3%A7%C3%B5es%20detalhadas%20sobre%20o%20que%20est%C3%A1%20inclu%C3%ADdo.%20Poderia%20me%20enviar%20mais%20detalhes,%20por%20favor?"
+                  class="card-button" target="_blank">Comprar</a>
+              </div>
+            </div>
+            <div class="item"><img src=""></div>
+            <div class="item"><img src=""></div>
+            <div class="item"><img src=""></div>
+            <div class="item"><img src=""></div>
+            <div class="item"><img src=""></div>
+            <div class="item"><img src=""></div>
+          </div>
+          <!-- controles -->
+          <div class="controles">
+            <button class="controle esquerda" id="e">◀</button>
+            <button class="controle direita" id="d">▶</button>
           </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -339,7 +388,9 @@
             <div class="card-wrapper">
               <div class="card">
                 <div class="blueBg basic-bg">
-                  <div class="card-header">BÁSICO</div>
+                  <div class="card-header">
+                    BÁSICO
+                  </div>
                   <ul class="card-features">
                     <li>6 meses de fidelidade</li>
                     <li>Suporte básico</li>
