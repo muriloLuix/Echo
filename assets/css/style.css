@@ -2183,6 +2183,22 @@ textarea {
     border: none;
   }
 
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    background-color: var(--preto-fundo);
+    height: 7vh;
+    width: 14vw;
+    border-radius: 50%;
+    color: var(--cor-logo);
+  }
+
+
   .formFooter {
     width: 100vw;
     background-color: var(--preto-fundo);
@@ -2190,6 +2206,7 @@ textarea {
     align-items: center;
     justify-content: center;
     padding-top: 6vh;
+    border-bottom: 1px solid var(--cor-logo);
   }
 
   .formCellphone {
