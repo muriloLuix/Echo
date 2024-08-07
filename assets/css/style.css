@@ -1125,7 +1125,7 @@ button:focus {
   position: absolute;
   top: 5vh;
   letter-spacing: 1px;
-  left: 3.1vw;
+  left: 2.7vw;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 1rem;
@@ -1140,7 +1140,8 @@ button:focus {
   color: #fff;
   padding: 0;
   margin-left: 1.5vw;
-  padding: 10px 20px;
+  padding: 1px 20px;
+  font-size: .9rem;
   box-sizing: border-box;
   font-weight: bold;
 }
@@ -1196,7 +1197,7 @@ button:focus {
   font-size: 6rem;
   position: relative;
   top: 3vh;
-  z-index: 9999;
+  z-index: 1000;
 }
 
 .price-decimal {
@@ -2308,6 +2309,7 @@ textarea {
     width: 100vw;
     background-color: var(--preto-fundo);
     border-bottom: 1px solid var(--cor-logo);
+    border-top: 1px solid var(--cor-logo);
   }
 
   .textCellphone p {
