@@ -1062,34 +1062,82 @@ button:focus {
   width: 22vw;
   height: 44vh;
   background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 .basic-bg {
   background-image: url(../img/basicBg.svg);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  background-size: cover;
 }
 
 .plus-bg {
   background-image: url(../img/plusBg.svg);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  background-size: cover;
+}
+
+
+.pro-bg,
+.premium-bg {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.pro-bg::-webkit-scrollbar {
+  width: 10px;
+}
+
+.pro-bg::-webkit-scrollbar-track {
+  background-color: #0066FF !important;
+  border-radius: 25px;
+}
+
+.pro-bg::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+}
+
+.pro-bg::-webkit-scrollbar-thumb:hover {
+  background-color: var(--cor-logo);
+}
+
+.pro-bg::-webkit-scrollbar-thumb:focus {
+  border-radius: 30px;
+}
+
+/* Fim */
+
+.premium-bg::-webkit-scrollbar {
+  width: 10px;
+}
+
+.premium-bg::-webkit-scrollbar-track {
+  background-color: #2400FF;
+  border-radius: 25px;
+}
+
+.premium-bg::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+}
+
+.premium-bg::-webkit-scrollbar-thumb:hover {
+  background-color: var(--cor-logo);
+}
+
+.premium-bg::-webkit-scrollbar-thumb:focus {
+  border-radius: 30px;
 }
 
 .pro-bg {
   background-image: url(../img/proBg.svg);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  background-size: cover;
 }
+
 
 .premium-bg {
   background-image: url(../img/premiumBg.svg);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  background-size: cover;
+
 }
 
 .headerGeneral {
@@ -1152,7 +1200,7 @@ button:focus {
 
 .card-price-info {
   width: 100%;
-  max-height: 17vh;
+  max-height: 16vh;
   background-color: var(--preto-fundo);
   color: var(--branco);
   text-align: left;
