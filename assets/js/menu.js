@@ -25,3 +25,7 @@ document.querySelectorAll('.menu-content ul li a').forEach(link => {
     toggleMenu();
   });
 });
+
+function menu(){
+  
+}

@@ -5,10 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="assets/js/index.js" type="module" defer></script>
-  <script src="assets/js/input.js" defer></script>
   <script src="assets/js/menu.js" defer></script>
-  <script src="assets/js/carousel.js" defer></script>
-  <script src="assets/js/carouselPlans.js" defer></script>
   <link rel="shortcut icon" href="assets/img/favicon-32x32.png" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet"
@@ -817,7 +814,7 @@
     <h1>Entre<br> em contato</h1>
   </div>
   <div class="formFooter">
-    <form action="" method="" class="formCellphone">
+    <form action="https://formsubmit.co/contato.echoo@gmail.com" method="post" class="formCellphone">
       <div class="formGroup">
         <input type="text" name="nameCellphone" id="nameCellphone" placeholder=" ">
         <label for="nameCellphone">Nome</label>
@@ -854,6 +851,11 @@
         </svg>
 
       </button>
+      <input type="hidden" name="_subject" value="Novo Contato!">
+      <input type="text" name="_honey" style="display: none;">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="assets/html/obrigado.html">
+
     </form>
   </div>
   <div id="about" class="textCellphone">
@@ -927,7 +929,7 @@
         </nav>
       </div>
 
-      <form class="infos" action="assets/php/send_email.php" method="POST">
+      <form class="infos" action="https://formsubmit.co/contato.echoo@gmail.com" method="POST">
         <div class="left-column">
           <div class="form-group">
             <label for="name">Nome</label>
@@ -973,6 +975,10 @@
             </div>
           </button>
         </div>
+        <input type="hidden" name="_subject" value="Novo Contato!">
+        <input type="text" name="_honey" style="display: none;">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="assets/html/obrigado.html">
       </form>
 
 

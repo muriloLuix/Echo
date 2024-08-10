@@ -1,4 +1,4 @@
-function input() {
+export function input() {
   const input = document.querySelector("#email");
 
   input.addEventListener("input", function () {
@@ -12,5 +12,3 @@ function input() {
       }
   });
 }
-
-input();
