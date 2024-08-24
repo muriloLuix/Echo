@@ -1,6 +1,7 @@
 # Echo
 
-![image](https://github.com/muriloLuix/Echo/assets/143234115/461d5a96-2bf5-44c3-8f28-8c19f2cbf7b0)
+![image](https://github.com/user-attachments/assets/4fef06e2-0b29-4340-ab7a-47582cc9473f)
+
 
 > A imagem acima retrata a tela principal ao acessar o nosso WebSite!
 
