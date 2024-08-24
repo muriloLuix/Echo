@@ -20,6 +20,11 @@ body {
     background-color: rgb(250, 248, 248) !important;
 }
 
+@font-face {
+    font-family: "Taruno";
+    src: url(../fonts/Fontspring-DEMO-tarunowide-medium.otf);
+}
+
 :root {
     --montserrat: "Montserrat", sans-serif;
 }
@@ -98,6 +103,8 @@ nav {
 
 .topSlogan {
     padding: 5%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .topSlogan h1 {
@@ -111,6 +118,29 @@ nav {
     color: #2c2c2cc7;
     font-style: italic;
 }
+
+.faleConosco {
+    display: flex;
+}
+
+.textConosco {
+    margin-left: 1vw;
+}
+
+.talkWithUs a {
+    text-decoration: none;
+    color: #41A131;
+}
+
+.talkWithUs a:hover {
+    color: #32d316;
+}
+
+.talkWithUs svg {
+    width: 1vw;
+    height: 1.8vh;
+}
+
 
 /* TopSlogan Style */
 
@@ -226,7 +256,6 @@ nav {
 .carousel {
     padding: 3% 5%;
     display: flex;
-    /* Adiciona flexbox para alinhar as divs horizontalmente */
     gap: 2%;
 }
 
@@ -460,3 +489,238 @@ nav {
 }
 
 /* Planos Style */
+
+/* WhyEcho Style */
+
+.whyEcho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 8vh;
+}
+
+.texts {
+    width: 50vw;
+    text-align: justify;
+}
+
+.text2 {
+    margin-top: 2vh;
+}
+
+/* WhyEcho Style */
+
+/* Contact Style */
+
+.contact {
+    padding: 5%;
+}
+
+.contact h1 {
+    color: #00000077;
+    font-family: var(--montserrat);
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+
+.contact span {
+    color: #2c2c2cc7;
+    font-style: italic;
+}
+
+.generalContact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 7vh;
+}
+
+.imgEchoContact {
+    position: absolute;
+    z-index: -1;
+    left: 25vw;
+    margin-top: 20vh;
+}
+
+.imgEchoContact img {
+    height: 60vh;
+    width: 42vw;
+}
+
+/* Form Style */
+
+.formContact {
+    width: 34vw;
+    padding: 1%;
+    background-color: #F0F0F0;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 2vh;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 10px 12px 10px;
+    font-size: 16px;
+    border: 2px solid #aaa;
+    border-radius: 13px;
+    background-color: #F0F0F0;
+    box-shadow: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.form-group label {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    font-size: 16px;
+    color: #999;
+    transition: all 0.3s;
+    pointer-events: none;
+    background-color: transparent;
+}
+
+/* Efeito de Floating Label */
+.form-group input:focus~label,
+.form-group input:not(:placeholder-shown)~label,
+.form-group select:focus~label,
+.form-group select:not([value=""])~label,
+.form-group textarea:focus~label,
+.form-group textarea:not(:placeholder-shown)~label {
+    top: -10px;
+    left: 5px;
+    font-size: 12px;
+    color: #007bff;
+    background-color: #F0F0F0;
+    padding: 0 5px;
+}
+
+.form-group select:not([value=""])~label {
+    top: -10px;
+}
+
+.btnDiv {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.btnEnviar {
+    outline: none;
+    border: none;
+    background-color: #349B24;
+    color: #fff;
+    padding: 2%;
+    width: 14vw;
+    height: 4vh;
+    display: flex;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnEnviar:hover {
+    background-color: #33c21d;
+}
+
+/* Form Style */
+
+/* General Infos Style */
+
+.generalInfos {
+    margin-right: 12vw;
+}
+
+.mapOfSite,
+.socialMedias {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.mapOfSite h1,
+.socialMedias h1 {
+    font-size: 1.5rem;
+}
+
+.mapOfSite a,
+.socialMedias a {
+    text-decoration: none;
+    color: #00000081;
+    padding: 2%;
+}
+
+
+.mapOfSite a:hover,
+.socialMedias a:hover {
+    color: #000000b4;
+}
+
+.socialMedias {
+    margin-top: 2vh;
+}
+
+.feedback {
+    display: flex;
+    margin-top: 5vh;
+}
+
+.feedbackStars {
+    display: flex;
+    margin-left: 1vw;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.feedbackStars img {
+    width: 9vw;
+    height: 3vh;
+}
+
+.imgFeedback img {
+    width: 2vw;
+    height: 5vh;
+}
+
+.copyright {
+    display: flex;
+    position: absolute;
+    right: 2vw;
+    align-items: center;
+    margin-top: 6vh;
+}
+
+.imgEchoCopy img {
+    width: 2vw;
+    height: 2vh;
+    margin-right: 10px;
+}
+
+.copyright span {
+    font-family: "Taruno";
+    color: #00000088;
+    font-size: .7rem;
+}
+
+/* General Infos Style */
+
+
+/* Contact Style */
