@@ -17,7 +17,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: rgb(250, 248, 248) !important;
+    transition: all .3s ease;
 }
 
 @font-face {
@@ -58,6 +58,11 @@ body {
 header {
     background-color: white;
     padding: 20px 40px;
+    transition: all .3s ease;
+}
+
+header.dark {
+    background-color: #0F0F0F;
 }
 
 nav {
@@ -91,6 +96,11 @@ nav {
     text-decoration: none;
     color: black;
     font-size: 16px;
+    transition: all .3s ease;
+}
+
+.nav-links a.dark {
+    color: #fff;
 }
 
 .nav-links a:hover {
@@ -98,6 +108,78 @@ nav {
 }
 
 /* Header Style */
+
+/* Switch Theme Style */
+
+.switchThemeDiv {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 4vh;
+    padding-top: 2vh;
+}
+
+body.dark {
+    background-color: #272727 !important;
+}
+
+/* Switch Theme Style */
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .4vh;
+    position: relative;
+    height: 2.7vh;
+    width: 2.6vw;
+    transform: scale(1.5);
+    border: 1px solid #272727;
+    transition: all .3s ease;
+}
+
+.label.dark {
+    background-color: #272727;
+    border: 1px solid #fff;
+}
+
+.label .ball {
+    background-color: #272727;
+    border-radius: 50%;
+    position: absolute;
+    top: .2vh;
+    left: .1vw;
+    height: 2.1vh;
+    width: 1vw;
+    transform: translateX(0px);
+    transition: all .3s ease;
+}
+
+.ball.dark {
+    background-color: #fff;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(1.3vw);
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+/* Switch Theme Style */
 
 /* TopSlogan Style */
 
@@ -112,6 +194,19 @@ nav {
     font-family: var(--montserrat);
     font-weight: 600;
     font-size: 2rem;
+}
+
+h1,
+span {
+    transition: all .3s ease;
+}
+
+h1.dark {
+    color: #ffffff79;
+}
+
+span.dark {
+    color: #ffffffc7 !important;
 }
 
 .topSlogan span {
@@ -130,10 +225,19 @@ nav {
 .talkWithUs a {
     text-decoration: none;
     color: #41A131;
+    transition: all .3s ease;
+}
+
+.talkWithUs a.dark {
+    color: #0066FF;
 }
 
 .talkWithUs a:hover {
     color: #32d316;
+}
+
+.talkWithUs a.dark:hover {
+    color: #418af8;
 }
 
 .talkWithUs svg {
@@ -141,6 +245,9 @@ nav {
     height: 1.8vh;
 }
 
+.talkWithUs path.dark {
+    stroke: #0066FF;
+}
 
 /* TopSlogan Style */
 
@@ -158,12 +265,17 @@ nav {
     width: 90vw;
     height: 46vh;
     border-radius: 20px;
+    transition: all .3s ease;
+}
+
+.box.dark {
+    background-color: #0F0F0F;
 }
 
 .img3D {
     position: relative;
     overflow: visible;
-    width: 94vw;
+    width: 91vw;
     height: 55vh;
 }
 
@@ -695,7 +807,8 @@ nav {
     height: 3vh;
 }
 
-.imgFeedback img {
+.imgFeedback img,
+.imgConosco img {
     width: 2vw;
     height: 5vh;
 }
