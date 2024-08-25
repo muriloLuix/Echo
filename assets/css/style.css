@@ -112,11 +112,10 @@ nav {
 /* Switch Theme Style */
 
 .switchThemeDiv {
-    display: flex;
-    align-items: center;
-    justify-content: right;
+    position: fixed;
     margin-right: 4vh;
     padding-top: 2vh;
+    right: 0px;
 }
 
 body.dark {
@@ -202,7 +201,7 @@ span {
 }
 
 h1.dark {
-    color: #ffffff79;
+    color: #ffffff79 !important;
 }
 
 span.dark {
@@ -300,9 +299,6 @@ span.dark {
 }
 
 .aboutEcho h1 {
-    color: #00000077;
-    font-family: var(--montserrat);
-    font-weight: 600;
     font-size: 2rem;
 }
 
@@ -318,30 +314,99 @@ span.dark {
 
 .generalBoxs {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 9vh;
+    gap: 2vw;
 }
 
-.box1,
-.box2 {
+.cardDevs {
+    display: flex;
     background-color: #fff;
-    width: 43vw;
-    height: 10vh;
+    width: 48vw;
+    height: 43vh;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 20px;
-    padding: 1%;
+    overflow: hidden;
+    transition: all .3s ease;
 }
 
-.box1 span,
-.box2 span {
-    color: #000;
+.cardDevs.dark {
+    background-color: #0F0F0F;
 }
 
-.box1 h1,
-.box2 h1 {
+.imageBox {
+    width: 31vw;
+    background-color: #ddd;
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #888;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.imageBox.dark {
+    background-color: #0B0B0B;
+}
+
+.aboutPerson {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    padding: 6%;
+}
+
+.aboutPerson h1 {
     color: #000;
+    margin: 0 0 1em 0;
+    font-size: 1.5em;
+}
+
+.aboutPerson h1 .dark{
+    color: red !important;
+}
+
+.aboutPerson p {
+    text-align: justify;
+}
+
+.infoBox {
+    padding: 2%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.infoBox p {
+    color: #555;
     margin: 0;
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+.infoBox p.dark {
+    color: #ffffff86;
+}
+
+.roleBox {
+    margin-top: 1vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    padding: 5%;
+}
+
+.roleBox h2 {
+    margin: 0 0 0.5em 0;
+    color: #000;
+    font-size: 1.2em;
+}
+
+.roleBox span {
+    color: #000;
+    font-size: 1em;
 }
 
 /* aboutEcho Style */
@@ -527,8 +592,13 @@ span.dark {
     padding: 20px;
     margin: 5px;
     box-sizing: border-box;
+    position: relative;
+    transition: all .3s ease;
 }
 
+.cartao:hover {
+    width: 25vw !important;
+}
 
 .cartao h2 {
     color: #000000b7;
@@ -566,6 +636,7 @@ span.dark {
     border-radius: 10px;
 }
 
+
 .info {
     display: flex;
     align-items: center;
@@ -574,6 +645,19 @@ span.dark {
     background-color: #291C1D;
     border-radius: 20px;
     font-family: var(--montserrat);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    position: absolute;
+    bottom: 10vh;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    width: calc(100% - 40px);
+}
+
+.cartao:hover .info {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }
 
 .info a {
@@ -581,7 +665,6 @@ span.dark {
     font-family: var(--montserrat);
     text-decoration: none;
 }
-
 
 .cartao-footer p {
     margin-top: 10px;
@@ -602,19 +685,139 @@ span.dark {
 
 /* Planos Style */
 
+/* Faq Style */
+
+.faqs {
+    padding: 5%;
+}
+
+.faqs h1 {
+    color: #00000077;
+    font-family: var(--montserrat);
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.faqs span {
+    color: #2c2c2cc7;
+}
+
+.duvida {
+    display: flex;
+    margin-top: 5vh;
+}
+
+.textDuvida {
+    margin-left: 1vw;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+    margin-top: 9vh;
+}
+
+.askHere a {
+    text-decoration: none;
+    color: #41A131;
+    transition: all .3s ease;
+}
+
+.askHere svg {
+    width: 1vw;
+    height: 1.8vh;
+}
+
+.faq-card {
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.faq-card span {
+    color: #41A131;
+    text-decoration: underline;
+}
+
+.faq-card h2 {
+    color: #2c2c2c;
+    font-size: 1.5rem;
+    font-family: var(--montserrat);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.faq-card p {
+    color: #5a5a5a;
+    font-size: 1rem;
+    font-family: var(--montserrat);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.faq-card button {
+    align-self: flex-start;
+    background-color: #3aaf3a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--montserrat);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.faq-card button:hover {
+    background-color: #319931;
+}
+
+@media (max-width: 768px) {
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-card {
+        padding: 15px;
+    }
+
+    .faq-card h2 {
+        font-size: 1.25rem;
+    }
+
+    .faq-card p {
+        font-size: 0.9rem;
+    }
+
+    .faq-card button {
+        font-size: 0.9rem;
+    }
+}
+
+/* Faq Style */
+
 /* WhyEcho Style */
 
 .whyEcho {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: left;
     flex-direction: column;
-    margin-top: 8vh;
+    margin-top: 1vh;
 }
 
+.whyEcho h1 {
+    padding: 1% 5%;
+}
+
+
 .texts {
-    width: 50vw;
+    width: 70vw;
     text-align: justify;
+    padding-left: 5%;
 }
 
 .text2 {
@@ -808,17 +1011,18 @@ span.dark {
 }
 
 .imgFeedback img,
-.imgConosco img {
+.imgConosco img,
+.imgDuvida img {
     width: 2vw;
     height: 5vh;
 }
 
 .copyright {
     display: flex;
-    position: absolute;
+    position: fixed;
     right: 2vw;
+    bottom: 2vh;
     align-items: center;
-    margin-top: 6vh;
 }
 
 .imgEchoCopy img {
@@ -832,6 +1036,7 @@ span.dark {
     color: #00000088;
     font-size: .7rem;
 }
+
 
 /* General Infos Style */
 
