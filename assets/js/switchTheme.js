@@ -1,52 +1,82 @@
-const chk = document.getElementById('chk');
-
 chk.addEventListener('change', () => {
-    const header = document.getElementById('header');
-    const navlinks = document.querySelectorAll('.nav-link');
-    const logo = document.querySelector('.logo img');
-    const faleConoscoImg = document.querySelector('.imgConosco img')
-    const feedbackImg = document.querySelector('.imgFeedback img')
-    const starsFeedback = document.querySelector('.feedbackStars img')
-    const echo3D = document.querySelector('.img3D img')
-    const label = document.getElementById('label');
-    const ball = document.getElementById('ball');
-    const h1Elements = document.querySelectorAll('h1');
-    const spanElements = document.querySelectorAll('span')
-    const talkWithUs = document.querySelector('.talkWithUs a')
-    const talkWithUsPath = document.querySelectorAll('.talkWithUs path')
-    const box = document.querySelector('.box')
-    const imageBox = document.querySelectorAll('.imageBox')
-    const cardDevs = document.querySelectorAll('.cardDevs')
-    const infobox = document.querySelectorAll('.infoBox p')
-    const aboutPerson = document.querySelectorAll('.aboutPerson h1')
+    const elementsToToggle = [
+        document.body,
+        document.getElementById('header'),
+        document.getElementById('label'),
+        document.getElementById('ball'),
+        document.querySelector('.talkWithUs a'),
+        document.querySelector('.box'),
+        document.querySelector('.carouselBackground'),
+        document.querySelector('.askHere a'),
+        document.querySelector('.formContact'),
+        document.querySelector('.btnEnviar'),
+        ...document.querySelectorAll('.nav-link'),
+        ...document.querySelectorAll('h1'),
+        ...document.querySelectorAll('span'),
+        ...document.querySelectorAll('.imageBox'),
+        ...document.querySelectorAll('.cardDevs'),
+        ...document.querySelectorAll('.infoBox p'),
+        ...document.querySelectorAll('.person'),
+        ...document.querySelectorAll('.talkWithUs path'),
+        ...document.querySelectorAll('.roleBox h2'),
+        ...document.querySelectorAll('.cartao'),
+        ...document.querySelectorAll('.cartao h2'),
+        ...document.querySelectorAll('.cartao ul'),
+        ...document.querySelectorAll('.info'),
+        ...document.querySelectorAll('.cartao-footer p'),
+        ...document.querySelectorAll('.price a'),
+        ...document.querySelectorAll('.btnVer'),
+        ...document.querySelectorAll('.faq-card h2'),
+        ...document.querySelectorAll('.faq-card p'),
+        ...document.querySelectorAll('.faq-card button'),
+        ...document.querySelectorAll('.askHere path'),
+        ...document.querySelectorAll('.texts'),
+        ...document.querySelectorAll('.form-group input'),
+        ...document.querySelectorAll('.form-group select'),
+        ...document.querySelectorAll('.form-group textarea'),
+        ...document.querySelectorAll('.mapOfSite a'),
+        ...document.querySelectorAll('.socialMedias a')
+    ];
 
-    document.body.classList.toggle('dark');
-    header.classList.toggle('dark');
-    label.classList.toggle('dark');
-    ball.classList.toggle('dark');
-    talkWithUs.classList.toggle('dark');
-    box.classList.toggle('dark')
+    elementsToToggle.forEach(element => element.classList.toggle('dark'));
 
-    talkWithUsPath.forEach(path => path.classList.toggle('dark'))
-    h1Elements.forEach(h1 => h1.classList.toggle('dark'));
-    spanElements.forEach(span => span.classList.toggle('dark'));
-    imageBox.forEach(image => image.classList.toggle('dark'))
-    cardDevs.forEach(carddev => carddev.classList.toggle('dark'))
-    infobox.forEach(info => info.classList.toggle('dark'))
-    navlinks.forEach(link => link.classList.toggle('dark'));
-    aboutPerson.forEach(person => person.classList.toggle('dark'))
+    const imageSources = {
+        dark: {
+            logo: 'assets/img/logoHeaderWhite.svg',
+            faleConoscoImg: 'assets/img/faleConoscoImgBlue.svg',
+            feedbackImg: 'assets/img/feedbackImgBlue.svg',
+            starsFeedback: 'assets/img/starsFeedbackBlue.svg',
+            echo3D: 'assets/img/echoLogo3DBlack.svg',
+            personFaq: 'assets/img/personFaqsBlue.svg',
+            imgLogoContact: 'assets/img/imgLogoContactBlack.svg',
+            logoFooter: 'assets/img/imgFooterWhite.svg'
+        },
+        light: {
+            logo: 'assets/img/logoHeader.svg',
+            faleConoscoImg: 'assets/img/faleConoscoImg.svg',
+            feedbackImg: 'assets/img/feedbackImg.svg',
+            starsFeedback: 'assets/img/starsFeedback.svg',
+            echo3D: 'assets/img/echoLogo3D.svg',
+            personFaq: 'assets/img/personFaqs.svg',
+            imgLogoContact: 'assets/img/imgLogoContact.svg',
+            logoFooter: 'assets/img/imgFooter.svg'
+        }
+    };
 
-    if (document.body.classList.contains('dark')) {
-        logo.src = 'assets/img/logoHeaderWhite.svg';
-        faleConoscoImg.src = 'assets/img/faleConoscoImgBlue.svg'
-        feedbackImg.src = 'assets/img/feedbackImgBlue.svg'
-        starsFeedback.src = 'assets/img/starsFeedbackBlue.svg'
-        echo3D.src = 'assets/img/echoLogo3DBlack.svg'
-    } else {
-        logo.src = 'assets/img/logoHeader.svg';
-        faleConoscoImg.src = 'assets/img/faleConoscoImg.svg'
-        feedbackImg.src = 'assets/img/feedbackImg.svg'
-        starsFeedback.src = 'assets/img/starsFeedback.svg'
-        echo3D.src = 'assets/img/echoLogo3D.svg'
-    }
+    const theme = document.body.classList.contains('dark') ? 'dark' : 'light';
+
+    document.querySelector('.logo img').src = imageSources[theme].logo;
+    document.querySelector('.imgConosco img').src = imageSources[theme].faleConoscoImg;
+    const feedbackImages = document.querySelectorAll('.imgFeedback img');
+    feedbackImages.forEach(img => {
+        img.src = imageSources[theme].feedbackImg;
+    });
+    const feedbackStars = document.querySelectorAll('.feedbackStars img');
+    feedbackStars.forEach(img => {
+        img.src = imageSources[theme].starsFeedback;
+    });
+    document.querySelector('.img3D img').src = imageSources[theme].echo3D;
+    document.querySelector('.imgDuvida img').src = imageSources[theme].personFaq
+    document.querySelector('.imgEchoContact img').src = imageSources[theme].imgLogoContact
+    document.querySelector('.imgEchoCopy img').src = imageSources[theme].logoFooter
 });

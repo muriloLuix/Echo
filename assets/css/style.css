@@ -27,6 +27,7 @@ body {
 
 :root {
     --montserrat: "Montserrat", sans-serif;
+    --branco-dark: #ffffff96;
 }
 
 ::-webkit-scrollbar {
@@ -116,10 +117,11 @@ nav {
     margin-right: 4vh;
     padding-top: 2vh;
     right: 0px;
+    z-index: 9999;
 }
 
 body.dark {
-    background-color: #272727 !important;
+    background-color: #151515 !important;
 }
 
 /* Switch Theme Style */
@@ -201,11 +203,11 @@ span {
 }
 
 h1.dark {
-    color: #ffffff79 !important;
+    color: #ffffff86 !important;
 }
 
 span.dark {
-    color: #ffffffc7 !important;
+    color: #ffffffb6 !important;
 }
 
 .topSlogan span {
@@ -298,7 +300,8 @@ span.dark {
     padding: 5%;
 }
 
-.aboutEcho h1 {
+.aboutH1,
+.whatDo {
     font-size: 2rem;
 }
 
@@ -359,14 +362,15 @@ span.dark {
 }
 
 .aboutPerson h1 {
+    font-size: 1.6rem;
     color: #000;
-    margin: 0 0 1em 0;
-    font-size: 1.5em;
+    transition: all .3 ease;
 }
 
-.aboutPerson h1 .dark{
-    color: red !important;
+.aboutPerson h1.dark {
+    color: var(--branco-dark) !important;
 }
+
 
 .aboutPerson p {
     text-align: justify;
@@ -404,6 +408,10 @@ span.dark {
     font-size: 1.2em;
 }
 
+.roleBox h2.dark {
+    color: #ffffffb0 !important;
+}
+
 .roleBox span {
     color: #000;
     font-size: 1em;
@@ -425,9 +433,14 @@ span.dark {
 
 .carouselBackground {
     background-color: #fff;
-    width: 99vw;
+    width: 100%;
     height: 46vh;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all .3s ease
+}
+
+.carouselBackground.dark {
+    background-color: #0F0F0F;
 }
 
 .carousel {
@@ -448,6 +461,7 @@ span.dark {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .abadeSuger span {
@@ -495,8 +509,12 @@ span.dark {
     display: flex;
     align-items: center;
     gap: 0.3rem;
-    transition: background-color 0.3s ease;
+    transition: all .3s ease;
     font-style: italic;
+}
+
+.btnVer.dark {
+    background-color: #0066FF;
 }
 
 .btnVer svg {
@@ -507,6 +525,10 @@ span.dark {
 
 .btnVer:hover {
     background-color: #09a604;
+}
+
+.btnVer.dark:hover {
+    background-color: #428cfa;
 }
 
 /* Abade Suger */
@@ -523,6 +545,7 @@ span.dark {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .federalista span {
@@ -596,6 +619,10 @@ span.dark {
     transition: all .3s ease;
 }
 
+.cartao.dark {
+    background-color: #0F0F0F;
+}
+
 .cartao:hover {
     width: 25vw !important;
 }
@@ -607,6 +634,11 @@ span.dark {
     font-size: 2rem;
     padding-left: 5%;
     padding-bottom: 2vh;
+    transition: all .3s ease;
+}
+
+.cartao h2.dark {
+    color: #ffffff96;
 }
 
 .cartao-footer {
@@ -615,6 +647,12 @@ span.dark {
 
 .cartao ul {
     flex-grow: 1;
+    transition: all .3s ease;
+
+}
+
+.cartao ul.dark {
+    color: #ffffff83;
 }
 
 
@@ -634,6 +672,11 @@ span.dark {
     text-decoration: none;
     background-color: #349B24;
     border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.price a.dark {
+    background-color: #0066FF;
 }
 
 
@@ -655,6 +698,10 @@ span.dark {
     width: calc(100% - 40px);
 }
 
+.info.dark {
+    background-color: #353535;
+}
+
 .cartao:hover .info {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
@@ -670,6 +717,11 @@ span.dark {
     margin-top: 10px;
     font-size: 18px;
     color: #333;
+    transition: all .3s ease;
+}
+
+.cartao-footer p.dark {
+    color: #fff;
 }
 
 .cartao.plus .star {
@@ -724,9 +776,21 @@ span.dark {
     transition: all .3s ease;
 }
 
+.askHere a.dark {
+    color: #0161F0;
+}
+
 .askHere svg {
     width: 1vw;
     height: 1.8vh;
+}
+
+.askHere path {
+    transition: all .3s ease;
+}
+
+.askHere path.dark {
+    stroke: #0066FF;
 }
 
 .faq-card {
@@ -741,6 +805,11 @@ span.dark {
 .faq-card span {
     color: #41A131;
     text-decoration: underline;
+    transition: all .3s ease;
+}
+
+.faq-card span.dark {
+    color: #0161F0 !important;
 }
 
 .faq-card h2 {
@@ -749,6 +818,11 @@ span.dark {
     font-family: var(--montserrat);
     font-weight: 600;
     margin-bottom: 10px;
+    transition: all .3s ease;
+}
+
+.faq-card h2.dark {
+    color: var(--branco-dark);
 }
 
 .faq-card p {
@@ -757,6 +831,10 @@ span.dark {
     font-family: var(--montserrat);
     line-height: 1.5;
     margin-bottom: 20px;
+}
+
+.faq-card p.dark {
+    color: #ffffff7a;
 }
 
 .faq-card button {
@@ -770,10 +848,19 @@ span.dark {
     font-family: var(--montserrat);
     font-weight: 600;
     font-size: 1rem;
+    transition: all .3s ease;
+}
+
+.faq-card button.dark {
+    background-color: #0161F0;
 }
 
 .faq-card button:hover {
     background-color: #319931;
+}
+
+.faq-card button:hover {
+    background-color: #3b86f5;
 }
 
 @media (max-width: 768px) {
@@ -818,6 +905,11 @@ span.dark {
     width: 70vw;
     text-align: justify;
     padding-left: 5%;
+    transition: all 3s ease;
+}
+
+.texts.dark {
+    color: #ffffff7a;
 }
 
 .text2 {
@@ -872,6 +964,11 @@ span.dark {
     background-color: #F0F0F0;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all .3s ease;
+}
+
+.formContact.dark {
+    background-color: #202020;
 }
 
 .form-group {
@@ -889,7 +986,14 @@ span.dark {
     border-radius: 13px;
     background-color: #F0F0F0;
     box-shadow: none;
-    transition: border-color 0.3s;
+    transition: all .3s ease;
+}
+
+.form-group input.dark,
+.form-group select.dark,
+.form-group textarea.dark{
+    background-color: #202020;
+    color: #ffffffa8;
 }
 
 .form-group input:focus,
@@ -922,7 +1026,18 @@ span.dark {
     font-size: 12px;
     color: #007bff;
     background-color: #F0F0F0;
+    transition: all .3s ease;
     padding: 0 5px;
+}
+
+.form-group input.dark:focus~label,
+.form-group input.dark:not(:placeholder-shown)~label,
+.form-group select.dark:focus~label,
+.form-group select.dark:not([value=""])~label,
+.form-group textarea.dark:focus~label,
+.form-group textarea.dark:not(:placeholder-shown)~label {
+    background-color: #202020;
+    color: #ffffff77;
 }
 
 .form-group select:not([value=""])~label {
@@ -949,6 +1064,11 @@ span.dark {
     font-weight: 500;
     align-items: center;
     justify-content: center;
+    transition: all .3s ease;
+}
+
+.btnEnviar.dark{
+    background-color: #0066FF;
 }
 
 .btnEnviar:hover {
@@ -981,12 +1101,23 @@ span.dark {
     text-decoration: none;
     color: #00000081;
     padding: 2%;
+    transition: all .3s ease;
+}
+
+.mapOfSite a.dark,
+.socialMedias a.dark{
+    color: #ffffff6b;
 }
 
 
 .mapOfSite a:hover,
 .socialMedias a:hover {
     color: #000000b4;
+}
+
+.mapOfSite a.dark:hover,
+.socialMedias a.dark:hover {
+    color: #ffffff9c;
 }
 
 .socialMedias {
