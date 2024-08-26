@@ -108,6 +108,35 @@ nav {
     color: grey;
 }
 
+/* Esconde o menu hambúrguer no desktop */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+/* Animações para o ícone de menu (hambúrguer) */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
 /* Header Style */
 
 /* Switch Theme Style */
@@ -141,7 +170,7 @@ body.dark {
     padding: .4vh;
     position: relative;
     height: 2.7vh;
-    width: 2.6vw;
+    width: 114%;
     transform: scale(1.5);
     border: 1px solid #272727;
     transition: all .3s ease;
@@ -159,7 +188,7 @@ body.dark {
     top: .2vh;
     left: .1vw;
     height: 2.1vh;
-    width: 1vw;
+    width: 43%;
     transform: translateX(0px);
     transition: all .3s ease;
 }
@@ -326,7 +355,8 @@ span.dark {
     display: flex;
     background-color: #fff;
     width: 48vw;
-    height: 43vh;
+    height: auto;
+    min-height: 43vh;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 20px;
     overflow: hidden;
@@ -991,7 +1021,7 @@ span.dark {
 
 .form-group input.dark,
 .form-group select.dark,
-.form-group textarea.dark{
+.form-group textarea.dark {
     background-color: #202020;
     color: #ffffffa8;
 }
@@ -1067,7 +1097,7 @@ span.dark {
     transition: all .3s ease;
 }
 
-.btnEnviar.dark{
+.btnEnviar.dark {
     background-color: #0066FF;
 }
 
@@ -1080,7 +1110,7 @@ span.dark {
 /* General Infos Style */
 
 .generalInfos {
-    margin-right: 12vw;
+    margin-right: 12%;
 }
 
 .mapOfSite,
@@ -1105,7 +1135,7 @@ span.dark {
 }
 
 .mapOfSite a.dark,
-.socialMedias a.dark{
+.socialMedias a.dark {
     color: #ffffff6b;
 }
 
@@ -1173,3 +1203,93 @@ span.dark {
 
 
 /* Contact Style */
+
+/* Responsivity */
+@media screen and (max-width: 1140px) {
+
+    /* Header Style  */
+
+    nav {
+        justify-content: flex-start;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        padding-left: 0;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links.active {
+        left: 0;
+        z-index: 9;
+    }
+
+    .nav-links li {
+        padding: 0;
+    }
+
+    .hamburger {
+        display: flex;
+        position: fixed;
+        left: 20px;
+        z-index: 999;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Header Style  */
+
+    /* Devs Info */
+
+    .generalBoxs {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardDevs {
+        width: 91vw;
+    }
+
+    /* Devs Info */
+
+    /* Contact Style */
+
+    .generalInfos {
+        margin-right: 2%;
+    }
+
+    /* Contact Style */
+
+    /* Why Echo? */
+
+    .texts {
+        width: 87vw;
+    }
+
+    /* Why Echo? */
+}
+
+@media screen and (max-width: 1668px) {
+    .price a {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1300px) {}
+
+/* Responsivity */
