@@ -1000,6 +1000,11 @@ span.dark {
     width: 42vw;
 }
 
+main {
+    position: relative;
+    z-index: -1;
+}
+
 /* Form Style */
 
 .formContact {
@@ -1247,22 +1252,21 @@ span.dark {
         gap: 40px;
         padding-left: 0;
         transition: all 0.3s ease;
+        overflow-y: hidden;
     }
 
     .nav-links.active {
         left: 0;
-        z-index: 9;
+        z-index: 9999;
+        overflow-y: hidden;
     }
 
     .nav-links li {
         padding: 0;
     }
 
-    .hamburger {
-        display: flex;
-        position: fixed;
-        left: 20px;
-        z-index: 999;
+    .hamburger.active {
+        z-index: 10000;
     }
 
     .logo {
