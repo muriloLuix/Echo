@@ -50,7 +50,9 @@ chk.addEventListener('change', () => {
             echo3D: 'assets/img/echoLogo3DBlack.svg',
             personFaq: 'assets/img/personFaqsBlue.svg',
             imgLogoContact: 'assets/img/imgLogoContactBlack.svg',
-            logoFooter: 'assets/img/imgFooterWhite.svg'
+            logoFooter: 'assets/img/imgFooterWhite.svg',
+            setaDireita: 'assets/img/SetaDireitaWhite.svg',
+            setaEsquerda: 'assets/img/SetaEsquerdaWhite.svg'
         },
         light: {
             logo: 'assets/img/logoHeader.svg',
@@ -60,7 +62,9 @@ chk.addEventListener('change', () => {
             echo3D: 'assets/img/echoLogo3D.svg',
             personFaq: 'assets/img/personFaqs.svg',
             imgLogoContact: 'assets/img/imgLogoContact.svg',
-            logoFooter: 'assets/img/imgFooter.svg'
+            logoFooter: 'assets/img/imgFooter.svg',
+            setaDireita: 'assets/img/setaDireitaBlack.svg',
+            setaEsquerda: 'assets/img/setaEsquerdaBlack.svg'
         }
     };
 
@@ -80,4 +84,6 @@ chk.addEventListener('change', () => {
     document.querySelector('.imgDuvida img').src = imageSources[theme].personFaq
     document.querySelector('.imgEchoContact img').src = imageSources[theme].imgLogoContact
     document.querySelector('.imgEchoCopy img').src = imageSources[theme].logoFooter
+    document.querySelector('.setaDireita').src = imageSources[theme].setaDireita
+    document.querySelector('.setaEsquerda').src = imageSources[theme].setaEsquerda
 });

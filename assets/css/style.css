@@ -772,6 +772,11 @@ span.dark {
     display: none;
 }
 
+.setaEsquerda,
+.setaDireita {
+    width: 6vw;
+}
+
 /* Planos Carousel */
 
 /* Planos Style */
@@ -1095,7 +1100,7 @@ span.dark {
     background-color: #349B24;
     color: #fff;
     padding: 2%;
-    width: 14vw;
+    width: 19em;
     height: 4vh;
     display: flex;
     border-radius: 10px;
@@ -1196,7 +1201,7 @@ span.dark {
 }
 
 .imgEchoCopy img {
-    width: 2vw;
+    width: 2em;
     height: 2vh;
     margin-right: 10px;
 }
@@ -1303,6 +1308,10 @@ span.dark {
     .price a {
         text-align: center;
     }
+
+    .abadeSuger span {
+        z-index: 2;
+    }
 }
 
 @media screen and (max-width: 1440px) {
@@ -1324,7 +1333,7 @@ span.dark {
     .cartao {
         margin: 0 auto;
         width: 86vw;
-        min-height: 69vh;
+        min-height: 83vh;
     }
 
     .cartao h2 {
