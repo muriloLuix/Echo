@@ -10,6 +10,7 @@ chk.addEventListener('change', () => {
         document.querySelector('.askHere a'),
         document.querySelector('.formContact'),
         document.querySelector('.btnEnviar'),
+        document.querySelector('.hamburger span'),
         ...document.querySelectorAll('.nav-link'),
         ...document.querySelectorAll('h1'),
         ...document.querySelectorAll('span'),
@@ -35,7 +36,7 @@ chk.addEventListener('change', () => {
         ...document.querySelectorAll('.form-group select'),
         ...document.querySelectorAll('.form-group textarea'),
         ...document.querySelectorAll('.mapOfSite a'),
-        ...document.querySelectorAll('.socialMedias a')
+        ...document.querySelectorAll('.socialMedias a'),
     ];
 
     elementsToToggle.forEach(element => element.classList.toggle('dark'));

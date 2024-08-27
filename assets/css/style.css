@@ -113,7 +113,6 @@ nav {
     color: grey;
 }
 
-/* Esconde o menu hamb�rguer no desktop */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -129,7 +128,10 @@ nav {
     transition: all 0.3s ease;
 }
 
-/* Anima��es para o �cone de menu (hamb�rguer) */
+.dark .hamburger span {
+    border: 1px solid #fff;
+}
+
 .hamburger.active span:nth-child(1) {
     transform: rotate(45deg) translate(7px, 7px);
 }
@@ -169,9 +171,11 @@ nav {
     padding: 1vh;
     position: relative;
     height: 4vh;
-    width: 4vw;
+    min-width: 4vw;
+    width: auto;
     border: 1px solid #272727;
     transition: all .3s ease;
+    gap: 2vw;
 }
 
 .label.dark {
@@ -196,7 +200,7 @@ nav {
 }
 
 .checkbox:checked+.label .ball {
-    transform: translateX(2vw);
+    transform: translateX(2.5vw);
 }
 
 .fa-moon {
@@ -332,7 +336,11 @@ span.dark {
 .whatDo {
     font-size: 2rem;
     width: 50vw;
+    color: #00000077;
+    font-weight: 600;
 }
+
+
 
 
 .aboutEcho span {
@@ -476,7 +484,7 @@ span.dark {
 .carousel {
     padding: 3% 5%;
     display: flex;
-    gap: 2%;
+    gap: 2vh;
 }
 
 /* Abade Suger */
@@ -1210,6 +1218,10 @@ span.dark {
 
 @media screen and (max-width: 1140px) {
 
+    .nav-link.dark {
+        color: #000 !important;
+    }
+
     /* Header Style  */
 
     nav {
@@ -1293,7 +1305,14 @@ span.dark {
     }
 }
 
+@media screen and (max-width: 1440px) {
+    .checkbox:checked+.label .ball {
+        transform: translateX(3vw);
+    }
+}
+
 @media screen and (max-width: 1327px) {
+
     .pricing-card {
         display: none;
     }
@@ -1331,7 +1350,7 @@ span.dark {
         bottom: 14vh;
         left: 50%;
         transform: translateX(-50%) translateY(20px);
-        width: calc(71% - 40px);
+        width: calc(68vw - 6vw);
         opacity: 1;
     }
 }
@@ -1349,6 +1368,14 @@ span.dark {
 }
 
 @media screen and (max-width: 768px) {
+    .checkbox:checked+.label .ball {
+        transform: translateX(6vw);
+    }
+
+    .label {
+        min-width: 11vw;
+    }
+
     .cardDevs {
         flex-direction: column;
     }
@@ -1394,7 +1421,6 @@ span.dark {
     .socialMedias h1 {
         font-size: 1.5rem;
         min-height: 50px;
-        /* Define uma altura mínima para os títulos */
         margin-bottom: 0.5rem;
     }
 
@@ -1412,6 +1438,13 @@ span.dark {
 }
 
 @media screen and (max-width: 425px) {
+    .label {
+        min-width: 16.5vw;
+    }
+
+    .checkbox:checked+.label .ball {
+        transform: translateX(8vw);
+    }
 
     .carouselBackground {
         height: auto;
@@ -1461,6 +1494,14 @@ span.dark {
 
     .cartao ul {
         text-align: center;
+    }
+
+    .label .ball {
+        left: 1.2vw;
+    }
+
+    .checkbox:checked+.label .ball {
+        transform: translateX(6vw);
     }
 }
 
