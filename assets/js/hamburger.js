@@ -1,17 +1,16 @@
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const navItems = document.querySelectorAll('.nav-links li a');
+const body = document.body;
 
-// Função para alternar o menu hambúrguer
 function toggleMenu() {
   navLinks.classList.toggle('active');
   hamburger.classList.toggle('active');
+  body.classList.toggle('no-scroll');
 }
 
-// Evento para abrir/fechar o menu ao clicar no ícone hambúrguer
 hamburger.addEventListener('click', toggleMenu);
 
-// Evento para fechar o menu ao clicar em qualquer item do menu
 navItems.forEach(item => {
   item.addEventListener('click', () => {
     if (navLinks.classList.contains('active')) {

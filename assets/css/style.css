@@ -32,6 +32,11 @@ body.dark {
     background-color: #151515 !important;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
+
 @font-face {
     font-family: "Taruno";
     src: url(../fonts/Fontspring-DEMO-tarunowide-medium.otf);
