@@ -1312,6 +1312,13 @@ span.dark {
     .abadeSuger span {
         z-index: 2;
     }
+
+    .carousel-item-next,
+    .carousel-item-prev,
+    .carousel-item.active {
+        display: block;
+        height: 92vh;
+    }
 }
 
 @media screen and (max-width: 1440px) {
