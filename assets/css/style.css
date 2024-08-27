@@ -1322,7 +1322,8 @@ span.dark {
     }
 
     .cartao {
-        width: 89vw;
+        margin: 0 auto;
+        width: 86vw;
         min-height: 69vh;
     }
 
@@ -1347,7 +1348,7 @@ span.dark {
         transform: translateY(20px);
         transition: opacity 0.4s ease, transform 0.4s ease;
         position: absolute;
-        bottom: 14vh;
+        bottom: 18vh;
         left: 50%;
         transform: translateX(-50%) translateY(20px);
         width: calc(68vw - 6vw);
@@ -1498,10 +1499,6 @@ span.dark {
 
     .label .ball {
         left: 1.2vw;
-    }
-
-    .checkbox:checked+.label .ball {
-        transform: translateX(6vw);
     }
 }
 
