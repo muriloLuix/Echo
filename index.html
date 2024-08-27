@@ -8,6 +8,9 @@
   <link rel="shortcut icon" href="assets/img/logoHeader.svg" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
   <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -19,7 +22,7 @@
 </head>
 
 <body>
-  <header id="header">
+  <header id="header" data-aos="fade-down">
     <nav>
       <div class="logo">
         <img src="assets/img/logoHeader.svg" alt="Logo">
@@ -50,10 +53,10 @@
       </label>
     </div>
     <section class="topSlogan">
-      <div class="slogan">
+      <div class="slogan" data-aos="fade-right">
         <h1>Nossa ressonância ecoando <span>qualidade & inovação</span> em cada criação</h1>
       </div>
-      <div class="infoTop">
+      <div class="infoTop" data-aos="fade-left">
         <div class="faleConosco">
           <div class="imgConosco">
             <img src="assets/img/faleConoscoImg.svg" alt="Imagem homem Fale Conosco" class="faleConoscoImg">
@@ -88,7 +91,7 @@
       </div>
 
     </section>
-    <section class="echo3d">
+    <section class="echo3d" data-aos="fade-up">
       <div class="box">
         <div class="img3D">
           <img src="assets/img/echoLogo3D.svg" alt="Logo Echo 3D">
@@ -96,9 +99,10 @@
       </div>
     </section>
     <section class="aboutEcho" id="aboutEcho">
-      <h1 class="aboutH1"><span>A Echo é uma start-up</span>, fundada por 2 amigos apaixonados por tecnologia, são
+      <h1 class="aboutH1" data-aos="fade-right"><span>A Echo é uma start-up</span>, fundada por 2 amigos apaixonados por
+        tecnologia, são
         eles: </h1>
-      <div class="generalBoxs">
+      <div class="generalBoxs" data-aos="fade-up">
         <div class="cardDevs">
           <div class="imageBox">FOTINHA</div>
           <div class="infoBox">
@@ -135,14 +139,15 @@
         </div>
       </div>
 
-      <h1 class="whatDo"><span>E o que nós fazemos?</span> A Echo tem como objetivo principal<br> criar um ambiente
+      <h1 class="whatDo" data-aos="fade-right"><span>E o que nós fazemos?</span> A Echo tem como objetivo principal<br>
+        criar um ambiente
         criativo e
         acessível na criação
         de sites.</h1>
     </section>
     <section class="portfolio" id="portfolio">
-      <h1>Portfólio</h1>
-      <div class="carouselBackground">
+      <h1 data-aos="fade-right">Portfólio</h1>
+      <div class="carouselBackground" data-aos="fade-up">
         <div class="carousel">
           <div class="abadeSuger">
             <span>Abade Suger</span>
@@ -174,7 +179,7 @@
       </div>
     </section>
     <section class="planos" id="planos">
-      <h1>Planos</h1>
+      <h1 data-aos="fade-right">Planos</h1>
       <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -300,7 +305,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <div class="pricing-card">
+      <div class="pricing-card" data-aos="flip-left">
         <div class="cartao basic">
           <h2>Básico</h2>
           <ul>
@@ -412,8 +417,8 @@
       </div>
     </section>
     <section class="faqs" id="faqs">
-      <h1><span>FAQ</span> perguntas frequentes</h1>
-      <div class="faq-grid">
+      <h1 data-aos="fade-right"><span>FAQ</span> perguntas frequentes</h1>
+      <div class="faq-grid" data-aos="fade-up">
         <div class="faq-card">
           <h2>Como funciona o processo de desenvolvimento de um site com a ECHO?</h2>
           <p>
@@ -505,7 +510,7 @@
           </p>
         </div>
       </div>
-      <div class="duvida">
+      <div class="duvida" data-aos="fade-right">
         <div class="imgDuvida">
           <img src="assets/img/personFaqs.svg" alt="Imagem Homem duvida">
         </div>
@@ -528,8 +533,8 @@
     </section>
 
     <section class="whyEcho">
-      <h1>Por que devo escolher a Echo?</h1>
-      <div class="texts">
+      <h1 data-aos="fade-right">Por que devo escolher a Echo?</h1>
+      <div class="texts" data-aos="fade-right">
         <div class="text1"> Escolher a Echo é optar por excelência e inovação no desenvolvimento de sites. Somos uma
           empresa apaixonada por transformar ideias em realidade digital, dedicada a criar experiências únicas e
           impactantes. Cada projeto é uma oportunidade para superar expectativas, oferecendo soluções personalizadas
@@ -542,13 +547,13 @@
           com a qualidade em cada etapa do processo, desde o design intuitivo até a funcionalidade impecável.</div>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" data-aos="fade-right">
       <h1><span>Entre em contato</span> com a Echo</h1>
       <div class="generalContact">
         <div class="imgEchoContact">
           <img src="assets/img/imgLogoContact.svg" alt="Logo 3D Echo">
         </div>
-        <div class="formContact">
+        <div class="formContact" data-aos="fade-right">
           <form action="" method="post">
             <div class="form-group">
               <input type="text" name="name" id="name" placeholder=" " required>
@@ -580,20 +585,20 @@
         </div>
         <div class="generalInfos" id="generalInfos">
           <div class="mapOfSite">
-            <h1>Mapa do Site</h1>
-            <a href="">Home</a>
-            <a href="">Quem Somos</a>
-            <a href="">Portfólio</a>
-            <a href="">Planos</a>
-            <a href="">FAQ's</a>
-            <a href="">Contato</a>
+            <h1 data-aos="fade-left">Mapa do Site</h1>
+            <a href="" data-aos="fade-left">Home</a>
+            <a href="" data-aos="fade-left">Quem Somos</a>
+            <a href="" data-aos="fade-left">Portfólio</a>
+            <a href="" data-aos="fade-left">Planos</a>
+            <a href="" data-aos="fade-left">FAQ's</a>
+            <a href="" data-aos="fade-left">Contato</a>
           </div>
           <div class="socialMedias">
             <h1>Redes Sociais</h1>
-            <a href="">Instagram</a>
-            <a href="">Whatsapp</a>
-            <a href="">Linkedin</a>
-            <a href="">X (Twitter)</a>
+            <a href="" data-aos="fade-left">Instagram</a>
+            <a href="" data-aos="fade-left">Whatsapp</a>
+            <a href="" data-aos="fade-left">Linkedin</a>
+            <a href="" data-aos="fade-left">X (Twitter)</a>
           </div>
         </div>
       </div>
