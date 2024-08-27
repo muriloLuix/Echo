@@ -1265,6 +1265,10 @@ main {
         padding: 0;
     }
 
+    .hamburger {
+        display: flex;
+    }
+
     .hamburger.active {
         z-index: 10000;
     }
