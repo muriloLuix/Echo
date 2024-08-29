@@ -39,14 +39,19 @@ chk.addEventListener('change', () => {
         ...document.querySelectorAll('.socialMedias a'),
     ];
 
-    elementsToToggle.forEach(element => element.classList.toggle('dark'));
+    elementsToToggle.forEach(element => {
+        if (element) {
+            element.classList.toggle('dark');
+        }
+    });
 
     const theme = document.body.classList.contains('dark') ? 'dark' : 'light';
 
-    // Alterar o stroke dos paths nos SVGs
     const strokeColor = theme === 'dark' ? 'white' : 'black';
     document.querySelectorAll('#label svg path').forEach(path => {
-        path.style.stroke = strokeColor;
+        if (path) {
+            path.style.stroke = strokeColor;
+        }
     });
 
     const imageSources = {
@@ -80,22 +85,43 @@ chk.addEventListener('change', () => {
         }
     };
 
-    document.querySelector('.logo img').src = imageSources[theme].logo;
-    document.querySelector('.imgConosco img').src = imageSources[theme].faleConoscoImg;
+    const logoImg = document.querySelector('.logo img');
+    if (logoImg) logoImg.src = imageSources[theme].logo;
+
+    const faleConoscoImg = document.querySelector('.imgConosco img');
+    if (faleConoscoImg) faleConoscoImg.src = imageSources[theme].faleConoscoImg;
+
     const feedbackImages = document.querySelectorAll('.imgFeedback img');
     feedbackImages.forEach(img => {
-        img.src = imageSources[theme].feedbackImg;
+        if (img) img.src = imageSources[theme].feedbackImg;
     });
+
     const feedbackStars = document.querySelectorAll('.feedbackStars img');
     feedbackStars.forEach(img => {
-        img.src = imageSources[theme].starsFeedback;
+        if (img) img.src = imageSources[theme].starsFeedback;
     });
-    document.querySelector('.img3D img').src = imageSources[theme].echo3D;
-    document.querySelector('.imgDuvida img').src = imageSources[theme].personFaq
-    document.querySelector('.imgEchoContact img').src = imageSources[theme].imgLogoContact
-    document.querySelector('.imgEchoCopy img').src = imageSources[theme].logoFooter
-    document.querySelector('.setaDireita').src = imageSources[theme].setaDireita
-    document.querySelector('.setaEsquerda').src = imageSources[theme].setaEsquerda
-    document.querySelector('.setaDireitaDev').src = imageSources[theme].setaDireitaDev
-    document.querySelector('.setaEsquerdaDev').src = imageSources[theme].setaEsquerdaDev
+
+    const echo3D = document.querySelector('.img3D img');
+    if (echo3D) echo3D.src = imageSources[theme].echo3D;
+
+    const personFaq = document.querySelector('.imgDuvida img');
+    if (personFaq) personFaq.src = imageSources[theme].personFaq;
+
+    const imgLogoContact = document.querySelector('.imgEchoContact img');
+    if (imgLogoContact) imgLogoContact.src = imageSources[theme].imgLogoContact;
+
+    const logoFooter = document.querySelector('.imgEchoCopy img');
+    if (logoFooter) logoFooter.src = imageSources[theme].logoFooter;
+
+    const setaDireita = document.querySelector('.setaDireita');
+    if (setaDireita) setaDireita.src = imageSources[theme].setaDireita;
+
+    const setaEsquerda = document.querySelector('.setaEsquerda');
+    if (setaEsquerda) setaEsquerda.src = imageSources[theme].setaEsquerda;
+
+    const setaDireitaDev = document.querySelector('.setaDireitaDev');
+    if (setaDireitaDev) setaDireitaDev.src = imageSources[theme].setaDireitaDev;
+
+    const setaEsquerdaDev = document.querySelector('.setaEsquerdaDev');
+    if (setaEsquerdaDev) setaEsquerdaDev.src = imageSources[theme].setaEsquerdaDev;
 });
