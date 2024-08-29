@@ -37,6 +37,7 @@ chk.addEventListener('change', () => {
         ...document.querySelectorAll('.form-group textarea'),
         ...document.querySelectorAll('.mapOfSite a'),
         ...document.querySelectorAll('.socialMedias a'),
+        ...document.querySelectorAll('.carousel-indicators [data-bs-target]')
     ];
 
     elementsToToggle.forEach(element => {
