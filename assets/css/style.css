@@ -74,22 +74,37 @@ body.no-scroll {
 /* Header Style */
 
 header {
-    background-color: white;
+    position: fixed;
     padding: 20px 40px;
     transition: all .3s ease;
+    width: 100vw;
+    overflow: hidden;
 }
 
-header.dark {
-    background-color: #0F0F0F;
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(50px);
+    z-index: -1;
+}
+
+header.dark::before {
+    background-color: #00000054;
 }
 
 nav {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 89vw;
     font-family: var(--montserrat);
 }
+
 
 .logo img {
     width: 50px;
@@ -163,7 +178,6 @@ nav {
 .switchThemeDiv {
     position: fixed;
     margin-right: 4vh;
-    padding-top: 2vh;
     right: 0px;
     z-index: 9999;
 }
@@ -174,56 +188,53 @@ nav {
 }
 
 .label {
-    background-color: #fff;
+    background-color: #F5F5F7;
     border-radius: 50px;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vh;
+    padding: 0.5vh;
     position: relative;
-    height: 4vh;
-    min-width: 4vw;
-    width: auto;
-    border: 1px solid #272727;
+    height: 3vh;
+    width: 4vw;
+    border: none;
     transition: all .3s ease;
-    gap: 2vw;
 }
 
 .label.dark {
-    background-color: #272727;
-    border: 1px solid #fff;
+    background-color: #000000;
 }
 
 .label .ball {
-    background-color: #272727;
+    background-color: #41A131;
     border-radius: 50%;
     position: absolute;
-    top: 0.3vh;
-    left: 0.2vw;
-    height: 3vh;
-    width: 3vh;
+    top: 0.25vh;
+    left: 0.3vw;
+    height: 2.5vh;
+    width: 2.8vh;
     transform: translateX(0);
     transition: all .3s ease;
+    z-index: 1;
 }
 
 .ball.dark {
-    background-color: #fff;
+    background-color: #0066FF;
 }
 
 .checkbox:checked+.label .ball {
-    transform: translateX(2.5vw);
+    transform: translateX(2vw);
 }
 
-.fa-moon {
-    color: #f1c40f;
+.label svg {
+    width: 3vh;
+    height: 2vh;
+    position: relative;
+    z-index: 2;
 }
 
-.fa-sun {
-    color: #f39c12;
-}
-
-/* Switch Theme Style */
+/* Switch Style */
 
 /* TopSlogan Style */
 

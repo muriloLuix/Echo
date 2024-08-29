@@ -41,6 +41,14 @@ chk.addEventListener('change', () => {
 
     elementsToToggle.forEach(element => element.classList.toggle('dark'));
 
+    const theme = document.body.classList.contains('dark') ? 'dark' : 'light';
+
+    // Alterar o stroke dos paths nos SVGs
+    const strokeColor = theme === 'dark' ? 'white' : 'black';
+    document.querySelectorAll('#label svg path').forEach(path => {
+        path.style.stroke = strokeColor;
+    });
+
     const imageSources = {
         dark: {
             logo: 'assets/img/logoHeaderWhite.svg',
@@ -71,8 +79,6 @@ chk.addEventListener('change', () => {
             setaEsquerdaDev: 'assets/img/setaEsquerdaBlack.svg'
         }
     };
-
-    const theme = document.body.classList.contains('dark') ? 'dark' : 'light';
 
     document.querySelector('.logo img').src = imageSources[theme].logo;
     document.querySelector('.imgConosco img').src = imageSources[theme].faleConoscoImg;
