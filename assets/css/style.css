@@ -1384,7 +1384,7 @@ main {
         transition: all .3s ease;
     }
 
-    .carousel-indicators [data-bs-target].dark{
+    .carousel-indicators [data-bs-target].dark {
         background-color: #0066FF !important;
     }
 
