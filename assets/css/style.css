@@ -196,8 +196,8 @@ nav {
     align-items: center;
     padding: 0.5vh;
     position: relative;
-    height: 3vh;
-    width: 4vw;
+    height: 1.7em;
+    width: 5em;
     border: none;
     transition: all .3s ease;
 }
@@ -211,9 +211,9 @@ nav {
     border-radius: 50%;
     position: absolute;
     top: 0.25vh;
-    left: 0.3vw;
-    height: 2.5vh;
-    width: 2.8vh;
+    left: .4em;
+    height: 1.5em;
+    width: 1.5em;
     transform: translateX(0);
     transition: all .3s ease;
     z-index: 1;
@@ -224,7 +224,7 @@ nav {
 }
 
 .checkbox:checked+.label .ball {
-    transform: translateX(2vw);
+    transform: translateX(2.5em);
 }
 
 .label svg {
@@ -394,6 +394,7 @@ span.dark {
     border-radius: 20px;
     overflow: hidden;
     transition: all .3s ease;
+    margin: 0 auto;
 }
 
 .cardDevs.dark {
@@ -802,6 +803,7 @@ span.dark {
 .setaDireitaDev,
 .setaEsquerdaDev {
     width: 6vw;
+    height: 4vh;
 }
 
 /* Planos Carousel */
@@ -1373,22 +1375,17 @@ main {
     }
 
     .carousel-indicators [data-bs-target] {
-        width: 7vw !important;
-        height: 3.5vh !important;
-        border-radius: 59% !important;
+        width: 2.5em !important;
+        height: 2.5em !important;
+        border-radius: 50% !important;
         background-color: #41A131 !important;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
         border: none !important;
     }
 
+
     .generalBoxs {
         display: none;
-    }
-}
-
-@media screen and (max-width: 1440px) {
-    .checkbox:checked+.label .ball {
-        transform: translateX(3vw);
     }
 }
 
@@ -1449,13 +1446,6 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-    .checkbox:checked+.label .ball {
-        transform: translateX(6vw);
-    }
-
-    .label {
-        min-width: 11vw;
-    }
 
     .cardDevs {
         flex-direction: column;
@@ -1520,14 +1510,6 @@ main {
 }
 
 @media screen and (max-width: 425px) {
-    .label {
-        min-width: 16.5vw;
-    }
-
-    .checkbox:checked+.label .ball {
-        transform: translateX(8vw);
-    }
-
     .carouselBackground {
         height: auto;
     }
