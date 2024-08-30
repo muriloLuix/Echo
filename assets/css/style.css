@@ -123,6 +123,7 @@ nav {
 .nav-links li {
     display: inline;
     padding: 0 4vw;
+    white-space: nowrap;
 }
 
 .nav-links a {
@@ -228,7 +229,7 @@ nav {
 }
 
 .label svg {
-    width: 3vh;
+    width: 2em;
     height: 2vh;
     position: relative;
     z-index: 2;
@@ -564,7 +565,7 @@ span.dark {
     background-color: #41A131;
     color: white;
     padding: 8px 15px;
-    border-radius: 5px;
+    border-radius: .5em;
     text-transform: uppercase;
     font-family: var(--montserrat);
     font-weight: 600;
@@ -732,7 +733,7 @@ span.dark {
     color: #fff;
     text-decoration: none;
     background-color: #349B24;
-    border-radius: 10px;
+    border-radius: 1.5em;
     transition: all .3s ease;
 }
 
@@ -916,7 +917,7 @@ span.dark {
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 1em;
     cursor: pointer;
     font-family: var(--montserrat);
     font-weight: 600;
@@ -956,6 +957,10 @@ span.dark {
     .faq-card button {
         font-size: 0.9rem;
     }
+}
+
+.expandedFaqs {
+    display: none;
 }
 
 /* Faq Style */
@@ -1261,6 +1266,10 @@ main {
 
 @media screen and (max-width: 1140px) {
 
+    .infoBox {
+        height: 25.5em !important;
+    }
+
     .nav-link.dark {
         color: #000 !important;
     }
@@ -1328,7 +1337,7 @@ main {
 
     .cardDevs {
         width: 76vw;
-        height: 83vh;
+        height: 64vh;
     }
 
     /* Devs Info */
@@ -1362,7 +1371,9 @@ main {
     .carousel-item-next,
     .carousel-item-prev,
     .carousel-item.active {
-        display: block;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
         height: 92vh;
     }
 
@@ -1436,6 +1447,78 @@ main {
         width: calc(68vw - 6vw);
         opacity: 1;
     }
+
+    .expandedFaqs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .faqs h1 {
+        text-align: center;
+    }
+
+    .btnActive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #349B24;
+        padding: .5em;
+        border-radius: 20px;
+        width: 8em;
+        gap: .7em;
+        cursor: pointer;
+        margin-top: .6em;
+        transition: all .3s ease !important;
+    }
+
+    .btnActive:hover {
+        background-color: #35d91b;
+    }
+
+    .btnActive.dark {
+        background-color: #0066FF;
+    }
+
+    .btnActive.dark:hover {
+        background-color: #4b8cee;
+    }
+
+    .faq-grid {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.5s ease-out;
+    }
+
+    .faq-grid.active {
+        max-height: 139em;
+        transition: max-height 0.5s ease-in;
+        padding: 2em;
+    }
+
+    #activeFaq {
+        display: none;
+    }
+
+    .expandedFaqs svg {
+        margin-top: .5em;
+        transition: all .3s ease;
+    }
+
+    .expandedFaqs svg.dark {
+        stroke: #ffffff78;
+    }
+
+
+    .titleFaq span {
+        color: #00000077;
+    }
+
+    .textFaq span {
+        color: #fff;
+    }
+
 }
 
 @media screen and (min-width: 1328px) {

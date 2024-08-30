@@ -11,6 +11,7 @@ chk.addEventListener('change', () => {
         document.querySelector('.formContact'),
         document.querySelector('.btnEnviar'),
         document.querySelector('.hamburger span'),
+        document.querySelector('.btnActive'),   
         ...document.querySelectorAll('.nav-link'),
         ...document.querySelectorAll('h1'),
         ...document.querySelectorAll('span'),
@@ -54,6 +55,11 @@ chk.addEventListener('change', () => {
             path.style.stroke = strokeColor;
         }
     });
+    document.querySelectorAll('.expandedFaqs svg path').forEach(path => {
+        if (path){
+            path.style.stroke = strokeColor;
+        }
+    })
 
     const imageSources = {
         dark: {

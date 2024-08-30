@@ -1,1 +1,3 @@
-AOS.init();
+import { faqs } from "./faqs.js";
+
+faqs();
