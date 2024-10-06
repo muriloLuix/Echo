@@ -68,7 +68,6 @@ chk.addEventListener('change', () => {
             feedbackImg: 'assets/img/feedbackImgBlue.svg',
             starsFeedback: 'assets/img/starsFeedbackBlue.svg',
             echo3D: 'assets/img/echoLogo3DBlack.png',
-            personFaq: 'assets/img/personFaqsBlue.svg',
             imgLogoContact: 'assets/img/imgLogoContactBlack.svg',
             logoFooter: 'assets/img/imgFooterWhite.svg',
             setaDireita: 'assets/img/SetaDireitaWhite.svg',
@@ -82,7 +81,6 @@ chk.addEventListener('change', () => {
             feedbackImg: 'assets/img/feedbackImg.svg',
             starsFeedback: 'assets/img/starsFeedback.svg',
             echo3D: 'assets/img/echoLogo3D.png',
-            personFaq: 'assets/img/personFaqs.svg',
             imgLogoContact: 'assets/img/imgLogoContact.svg',
             logoFooter: 'assets/img/imgFooter.svg',
             setaDireita: 'assets/img/setaDireitaBlack.svg',
@@ -110,9 +108,6 @@ chk.addEventListener('change', () => {
 
     const echo3D = document.querySelector('.img3D img');
     if (echo3D) echo3D.src = imageSources[theme].echo3D;
-
-    const personFaq = document.querySelector('.imgDuvida img');
-    if (personFaq) personFaq.src = imageSources[theme].personFaq;
 
     const imgLogoContact = document.querySelector('.imgEchoContact img');
     if (imgLogoContact) imgLogoContact.src = imageSources[theme].imgLogoContact;

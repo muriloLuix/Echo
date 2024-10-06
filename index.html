@@ -143,7 +143,7 @@
       </div>
 
 
-      <div id="carouselExampleIndicators" class="carousel slide" data-aos="flip-left">
+      <div id="carouselExampleIndicators" class="carousel slide" data-aos="fade-in">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -369,7 +369,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <div class="pricing-card" data-aos="flip-left">
+      <div class="pricing-card" data-aos="fade-in">
         <div class="cartao basic">
           <h2>Básico</h2>
           <ul>
@@ -386,11 +386,30 @@
           </ul>
           <div class="cartao-footer">
             <div class="info">
-              <a href="#">Para mais informações</a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#modalInfo">Para mais informações</a>
             </div>
             <div class="price">
               <p>A partir de <strong>R$119,90</strong></p>
               <a href="#">Fazer orçamento</a>
+            </div>
+          </div>
+
+          <!-- Modal Bootstrap para "Para mais informações" -->
+          <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="modalInfoLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalInfoLabel">Informações Adicionais</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Aqui você pode adicionar mais detalhes sobre os planos, características ou qualquer outra
+                    informação importante.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -681,6 +700,17 @@
             <a href="" data-aos="fade-left">Whatsapp</a>
             <a href="" data-aos="fade-left">Linkedin</a>
             <a href="" data-aos="fade-left">X (Twitter)</a>
+          </div>
+          <div class="feedback">
+            <div class="imgFeedback">
+              <img src="assets/img/feedbackImg.svg" alt="Imagem Mulher Feedback">
+            </div>
+            <div class="feedbackStars">
+              <span>Dar um feedback para a Echo</span>
+              <a href="#">
+                <img src="assets/img/starsFeedback.svg" alt="Feedback Stars">
+              </a>
+            </div>
           </div>
         </div>
       </div>

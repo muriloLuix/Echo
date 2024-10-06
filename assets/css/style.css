@@ -75,10 +75,16 @@ body.no-scroll {
 
 header {
     position: fixed;
+    top: 0;
+    left: 0;
     padding: 20px 40px;
-    transition: all .3s ease;
     width: 100vw;
+    transition: all 0.3s ease;
+    z-index: 10;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
     overflow: hidden;
+    background: rgba(255, 255, 255, 0.0); /* Cor do fundo transparente */
 }
 
 header::before {
@@ -88,12 +94,14 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    filter: blur(50px);
+    background: rgba(255, 255, 255, 0.2);
+    filter: blur(3px);
     z-index: -1;
+    pointer-events: none;
 }
 
 header.dark::before {
-    background-color: #00000054;
+    background: rgba(0, 0, 0, 0.5) !important;
 }
 
 nav {
@@ -104,7 +112,6 @@ nav {
     width: 89vw;
     font-family: var(--montserrat);
 }
-
 
 .logo img {
     width: 50px;
@@ -214,7 +221,7 @@ nav {
     top: 0.25vh;
     left: .4em;
     height: 1.5em;
-    width: 1.5em;
+    width: 1.65em;
     transform: translateX(0);
     transition: all .3s ease;
     z-index: 1;
@@ -225,7 +232,7 @@ nav {
 }
 
 .checkbox:checked+.label .ball {
-    transform: translateX(2.5em);
+    transform: translateX(2.45em);
 }
 
 .label svg {
@@ -268,7 +275,6 @@ span.dark {
 
 .topSlogan span {
     color: #2c2c2cc7;
-    font-style: italic;
 }
 
 .faleConosco {
@@ -371,7 +377,6 @@ span.dark {
 
 .aboutEcho span {
     color: #2c2c2cc7;
-    font-style: italic;
 }
 
 .aboutEcho h1:nth-child(3) {
@@ -666,6 +671,8 @@ span.dark {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
+    z-index: -2;
 }
 
 
@@ -771,6 +778,11 @@ span.dark {
     text-decoration: none;
 }
 
+.modal-content{
+    z-index: 99999;
+}
+
+
 .cartao-footer p {
     margin-top: 10px;
     font-size: 18px;
@@ -815,6 +827,10 @@ span.dark {
 
 .faqs {
     padding: 5%;
+}
+
+#activeFaq {
+    display: none;
 }
 
 .faqs h1 {
