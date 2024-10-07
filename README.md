@@ -45,21 +45,5 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
         </sub>
       </a>
     </td>
-    <td align="center">
-      <a href="https://github.com/Igor-amg" title="Igor Cangiani">
-        <img src="https://avatars.githubusercontent.com/u/97010618?v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
-        <sub>
-          <b>Igor Cangiani (Front-End & Back-End)</b>
-        </sub>
-      </a>
-    </td>
-        <td align="center">
-      <a href="https://github.com/eduardosamorim" title="Eduardo Amorim">
-        <img src="https://avatars.githubusercontent.com/u/49210157?v=4" width="100px;" alt="Foto do Steve Jobs"/><br>
-        <sub>
-          <b>Eduardo Amorim (Back-End)</b>
-        </sub>
-      </a>
-    </td>
   </tr>
 </table>
