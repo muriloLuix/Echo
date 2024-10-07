@@ -162,7 +162,9 @@ body.no-scroll {
     align-self: flex-end;
 }
 
-.chat-popup.open {}
+.chat-popup.open {
+    height: 500px;
+}
 
 .chat-header {
     background-color: #007BFF;
