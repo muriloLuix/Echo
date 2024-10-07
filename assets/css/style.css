@@ -71,6 +71,227 @@ body.no-scroll {
 
 /* General Styles */
 
+/* Chat Bot */
+
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+}
+
+.chat-button img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.options-container button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-align: left;
+    cursor: pointer;
+    margin: 5px 0;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.options-container button:hover {
+    background-color: #0056b3;
+}
+
+
+.chat-popup {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 350px;
+    height: 0;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    transition: height 0.4s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.eco-message {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.eco-message::before {
+    content: url('../img/personFaqs.svg');
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.client-message {
+    background-color: #F0F0F0;
+    color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    align-self: flex-end;
+}
+
+.chat-popup.open {}
+
+.chat-header {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.chat-body {
+    padding: 15px;
+    height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.message.bot {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.message.bot a {
+    color: #ffffff;
+    text-decoration: underline;
+    display: inline;
+    word-break: break-all;
+}
+
+.message.bot img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.message {
+    max-width: 100%;
+}
+
+.message.user {
+    text-align: right;
+    background-color: #F0F0F0;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    align-self: flex-end;
+}
+
+.chat-options {
+    margin-top: 10px;
+}
+
+.chat-options button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+    display: block;
+    width: 100%;
+}
+
+.chat-options button:hover {
+    background-color: #0056b3;
+}
+
+.close-btn {
+    display: none;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .chat-popup {
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        transition: height 0.3s ease, width 0.3s ease;
+    }
+
+    .chat-popup.open {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .close-btn {
+        display: block;
+    }
+
+    .chat-button {
+        display: none;
+    }
+
+    .chat-header {
+        padding: 15px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .chat-body {
+        height: calc(100vh - 120px);
+
+    }
+}
+
+
+/* Chat Bot */
+
 /* Header Style */
 
 header {
@@ -84,7 +305,7 @@ header {
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(10px);
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.0); /* Cor do fundo transparente */
+    background: rgba(255, 255, 255, 0.0);
 }
 
 header::before {
@@ -778,7 +999,7 @@ span.dark {
     text-decoration: none;
 }
 
-.modal-content{
+.modal-content {
     z-index: 99999;
 }
 
