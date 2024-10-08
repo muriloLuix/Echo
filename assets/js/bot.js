@@ -23,7 +23,7 @@ function greetUser() {
 
     // Exibir a saudação no chat
     const botMessage = document.createElement('div');
-    botMessage.className = 'message bot';
+    botMessage.className = 'message-bot';
     botMessage.innerHTML = `<img src='assets/img/personFaqs.svg' />${greeting} Eu sou o Eco. Como posso ajudar?`;
     chatBody.appendChild(botMessage);
 
@@ -37,7 +37,7 @@ function showOptionsAsMessage() {
 
     // Criar a caixa de opções dentro do chat como uma mensagem do bot
     const optionsMessage = document.createElement('div');
-    optionsMessage.className = 'message bot';
+    optionsMessage.className = 'message-bot';
 
     // Adicionando as opções como botões, dentro de uma div para manter o estilo consistente
     optionsMessage.innerHTML = `
@@ -72,7 +72,7 @@ function userResponse(response) {
     // Resposta automática do bot após a escolha
     setTimeout(() => {
         const botMessage = document.createElement('div');
-        botMessage.className = 'message bot';
+        botMessage.className = 'message-bot';
         switch (response) {
             case '1. Gostaria de mais informações sobre os planos.':
                 botMessage.innerHTML = `<img src='assets/img/personFaqs.svg' />Perfeito, você pode falar com um dos nossos atendentes e tirar dúvidas mais precisas<br><a href='https://api.whatsapp.com/send?phone=5541996754583&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20planos%20da%20Echo.' target='_blank'>CLICANDO AQUI</a>!`;
@@ -90,7 +90,7 @@ function userResponse(response) {
         // Pergunta adicional após a resposta
         setTimeout(() => {
             const additionalMessage = document.createElement('div');
-            additionalMessage.className = 'message bot';
+            additionalMessage.className = 'message-bot';
             additionalMessage.innerHTML = `<img src='assets/img/personFaqs.svg' />Consigo ajudar em algo a mais?`;
             chatBody.appendChild(additionalMessage);
 

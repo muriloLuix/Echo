@@ -11,7 +11,11 @@ chk.addEventListener('change', () => {
         document.querySelector('.formContact'),
         document.querySelector('.btnEnviar'),
         document.querySelector('.hamburger span'),
-        document.querySelector('.btnActive'),   
+        document.querySelector('.btnActive'),
+        document.querySelector('.chat-button'),
+        document.querySelector('.chat-header'),
+        document.querySelector('.chat-popup'),
+        ...document.querySelectorAll('.message-bot'),
         ...document.querySelectorAll('.nav-link'),
         ...document.querySelectorAll('h1'),
         ...document.querySelectorAll('span'),
@@ -38,8 +42,9 @@ chk.addEventListener('change', () => {
         ...document.querySelectorAll('.form-group textarea'),
         ...document.querySelectorAll('.mapOfSite a'),
         ...document.querySelectorAll('.socialMedias a'),
-        ...document.querySelectorAll('.carousel-indicators [data-bs-target]')
+        ...document.querySelectorAll('.carousel-indicators [data-bs-target]'),
     ];
+
 
     elementsToToggle.forEach(element => {
         if (element) {
@@ -56,7 +61,7 @@ chk.addEventListener('change', () => {
         }
     });
     document.querySelectorAll('.expandedFaqs svg path').forEach(path => {
-        if (path){
+        if (path) {
             path.style.stroke = strokeColor;
         }
     })

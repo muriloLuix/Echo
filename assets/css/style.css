@@ -77,7 +77,7 @@ body.no-scroll {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #007BFF;
+    background-color: #349B24;
     color: white;
     border: none;
     border-radius: 50px;
@@ -88,6 +88,11 @@ body.no-scroll {
     align-items: center;
     justify-content: center;
     box-shadow: none;
+    transition: all .3 ease;
+}
+
+.chat-button.dark {
+    background-color: #0066FF;
 }
 
 .chat-button img {
@@ -103,7 +108,7 @@ body.no-scroll {
 }
 
 .options-container button {
-    background-color: #007BFF;
+    background-color: #349B24;
     color: white;
     border: none;
     padding: 8px 15px;
@@ -115,10 +120,13 @@ body.no-scroll {
     transition: background-color 0.3s;
 }
 
-.options-container button:hover {
-    background-color: #0056b3;
+.options-container.dark button {
+    background-color: #0066FF;
 }
 
+.options-container button:hover {
+    background-color: #18570f;
+}
 
 .chat-popup {
     position: fixed;
@@ -131,6 +139,12 @@ body.no-scroll {
     border-radius: 10px;
     transition: height 0.4s ease;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat-popup.dark {
+    background-color: #151515;
+    transition: all .3s ease;
+    
 }
 
 .eco-message {
@@ -167,11 +181,16 @@ body.no-scroll {
 }
 
 .chat-header {
-    background-color: #007BFF;
+    background-color: #349B24;
     color: white;
     padding: 10px;
     border-radius: 10px 10px 0 0;
     text-align: center;
+    transition: all .3s ease;
+}
+
+.chat-header.dark {
+    background-color: #0066FF;
 }
 
 .chat-body {
@@ -182,8 +201,8 @@ body.no-scroll {
     flex-direction: column;
 }
 
-.message.bot {
-    background-color: #007BFF;
+.message-bot {
+    background-color: #349B24;
     color: white;
     padding: 10px;
     border-radius: 10px;
@@ -192,17 +211,21 @@ body.no-scroll {
     flex-wrap: wrap;
     margin-bottom: 10px;
     margin-top: 10px;
+    transition: all .3s ease;
 }
 
+.message-bot.dark {
+    background-color: #0066FF;
+}
 
-.message.bot a {
+.message-bot a {
     color: #ffffff;
     text-decoration: underline;
     display: inline;
     word-break: break-all;
 }
 
-.message.bot img {
+.message-bot img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
