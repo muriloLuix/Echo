@@ -1,22 +1,31 @@
-// Get elements
-const openModalBtn = document.getElementById('openModalBtn');
-const closeModalBtn = document.getElementById('closeModalBtn');
-const closeFooterBtn = document.getElementById('closeFooterBtn');
-const modal = document.getElementById('myModal');
+document.querySelectorAll('[data-caixa-informacao-target]').forEach(trigger => {
+    trigger.addEventListener('click', function (e) {
+        e.preventDefault();
+        const caixaId = this.getAttribute('data-caixa-informacao-target');
+        const caixa = document.querySelector(caixaId);
+        caixa.style.display = 'flex';
+        setTimeout(() => {
+            caixa.classList.add('mostrar');
+        }, 10);
+    });
+});
 
-// Open modal
-openModalBtn.onclick = function () {
-    modal.style.display = 'block';
-}
+// Seleciona todos os botões de fechar
+document.querySelectorAll('.caixa-fechar-btn').forEach(closeBtn => {
+    closeBtn.addEventListener('click', function () {
+        const caixa = this.closest('.caixa-informacao');
+        caixa.classList.remove('mostrar');
+        setTimeout(() => {
+            caixa.style.display = 'none';
+        }, 300);
+    });
+});
 
-// Close modal when clicking on 'x' or 'Close' button
-closeModalBtn.onclick = closeFooterBtn.onclick = function () {
-    modal.style.display = 'none';
-}
-
-// Close modal if clicking outside the modal
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = 'none';
+window.addEventListener('click', function (e) {
+    if (e.target.classList.contains('caixa-informacao')) {
+        e.target.classList.remove('mostrar');
+        setTimeout(() => {
+            e.target.style.display = 'none';
+        }, 300);
     }
-}
+});

@@ -144,7 +144,7 @@ body.no-scroll {
 .chat-popup.dark {
     background-color: #151515;
     transition: all .3s ease;
-    
+
 }
 
 .eco-message {
@@ -277,43 +277,12 @@ body.no-scroll {
 }
 
 @media (max-width: 768px) {
-    .chat-popup {
-        width: 100%;
-        height: 100%;
-        bottom: 0;
-        right: 0;
-        border-radius: 0;
-        transition: height 0.3s ease, width 0.3s ease;
-    }
-
-    .chat-popup.open {
-        height: 100vh;
-        width: 100vw;
-    }
-
-    .close-btn {
-        display: block;
-    }
 
     .chat-button {
         display: none;
     }
 
-    .chat-header {
-        padding: 15px;
-        font-size: 18px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-
-    .chat-body {
-        height: calc(100vh - 120px);
-
-    }
 }
-
 
 /* Chat Bot */
 
@@ -614,6 +583,7 @@ span.dark {
     width: 50vw;
     color: #00000077;
     font-weight: 600;
+    text-align: justify;
 }
 
 .whatDo {
@@ -1024,9 +994,6 @@ span.dark {
     text-decoration: none;
 }
 
-.modal-content {
-    z-index: 99999;
-}
 
 
 .cartao-footer p {
@@ -1049,6 +1016,151 @@ span.dark {
 .price {
     display: flex;
     margin-top: 2vh;
+}
+
+.caixa-informacao {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-family: "Taruno";
+}
+
+.caixa-informacao.mostrar {
+    display: flex;
+    opacity: 1;
+}
+
+.caixa-conteudo {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 47vw;
+    height: 65vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: justify;
+    overflow: auto;
+    overflow-x: hidden;
+    max-width: 90vw;
+    transition: all .3s ease;
+}
+
+
+.caixa-conteudo.dark {
+    background-color: #0F0F0F;
+    color: #fff;
+}
+
+.caixa-conteudo h2 {
+    color: #000000be;
+    font-size: 2em;
+}
+
+.caixa-conteudo.dark h2 {
+    color: #ffffffc4;
+}
+
+.caixa-conteudo p {
+    color: #0000008c;
+    font-size: 1em;
+}
+
+.caixa-conteudo.dark p {
+    color: #ffffff8c;
+    transition: all .3s ease;
+}
+
+@media screen and (max-width: 1325px) {
+    .caixa-conteudo {
+        width: 66vw;
+        height: 77vh;
+    }
+
+    .priceInfo a {
+        width: auto !important;
+    }
+
+    .priceInfo {
+        width: 62vw !important;
+        justify-content: center !important;
+    }
+
+    .aboutH1,
+    .whatDo {
+        width: auto;
+    }
+}
+
+.caixa-fechar-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.caixa-fechar-btn:hover {
+    color: #349B24;
+    text-decoration: none;
+}
+
+.caixa-fechar {
+    margin-top: 10px;
+    cursor: pointer;
+    color: red;
+    text-align: center;
+}
+
+.caixa-fechar:hover {
+    text-decoration: underline;
+}
+
+.priceInfo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    width: 44vw;
+    margin-top: 10vh;
+    font-size: 1em;
+    transition: all .3s ease;
+}
+
+.priceInfo a {
+    padding: 1%;
+    width: 11vw;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    background-color: #349B24;
+    border-radius: 0.7em;
+    transition: all .3s ease;
+}
+
+.priceInfo.dark a {
+    background-color: #0066FF;
+}
+
+.priceInfo p {
+    color: #000;
+    margin: 0;
+    padding-right: 1rem;
+    transition: all .3s ease;
+}
+
+.priceInfo.dark p {
+    color: #fff;
 }
 
 /* Planos Carousel */
@@ -1416,6 +1528,10 @@ main {
     background-color: #0066FF;
 }
 
+.btnEnviar.dark:hover {
+    background-color: #1a498f;
+}
+
 .btnEnviar:hover {
     background-color: #33c21d;
 }
@@ -1529,7 +1645,7 @@ main {
 @media screen and (max-width: 1140px) {
 
     .infoBox {
-        height: 25.5em !important;
+        height: 22.5em !important;
     }
 
     .nav-link.dark {
@@ -1599,7 +1715,7 @@ main {
 
     .cardDevs {
         width: 76vw;
-        height: 64vh;
+        height: auto;
     }
 
     /* Devs Info */
@@ -1799,7 +1915,6 @@ main {
 
     .cardDevs {
         flex-direction: column;
-        margin: 2vh;
     }
 
     .imageBox {
@@ -1819,6 +1934,10 @@ main {
 
     .formContact {
         width: 85vw;
+    }
+
+    .footerOne{
+        display: flex;
     }
 
     .generalInfos {
@@ -1921,7 +2040,7 @@ main {
     .aboutH1,
     .whatDo {
         font-size: 1.7rem;
-        width: 80vw;
+        width: auto;
         text-align: left;
     }
 

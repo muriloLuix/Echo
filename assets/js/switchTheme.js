@@ -15,6 +15,8 @@ chk.addEventListener('change', () => {
         document.querySelector('.chat-button'),
         document.querySelector('.chat-header'),
         document.querySelector('.chat-popup'),
+        ...document.querySelectorAll('.priceInfo'),
+        ...document.querySelectorAll('.caixa-conteudo'),
         ...document.querySelectorAll('.message-bot'),
         ...document.querySelectorAll('.nav-link'),
         ...document.querySelectorAll('h1'),

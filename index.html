@@ -18,6 +18,7 @@
   <script src="assets/js/index.js" type="module" defer></script>
   <script src="assets/js/aos.js" defer></script>
   <script src="assets/js/bot.js" defer></script>
+  <script src="assets/js/modal.js" defer></script>
   <title> Echo - Programando o Futuro</title>
 </head>
 
@@ -225,7 +226,7 @@
       </div>
 
 
-      <h1 class="whatDo" data-aos="fade-right"><span>E o que nós fazemos?</span> A Echo tem como objetivo principal<br>
+      <h1 class="whatDo" data-aos="fade-right"><span>E o que nós fazemos?</span> A Echo tem como objetivo principal
         criar um ambiente
         criativo e
         acessível na criação
@@ -264,6 +265,7 @@
         </div>
       </div>
     </section>
+    <!-- PLANOS CELULAR -->
     <section class="planos" id="planos">
       <h1 data-aos="fade-right">Planos</h1>
       <div id="carouselExample" class="carousel slide" data-aos="flip-left">
@@ -285,7 +287,7 @@
               </ul>
               <div class="cartao-footer">
                 <div class="info">
-                  <a href="#">Para mais informações</a>
+                  <a href="#" data-caixa-informacao-target="#caixa-informacao-basico">Para mais informações</a>
                 </div>
                 <div class="price">
                   <p>A partir de <strong>R$119,90</strong></p>
@@ -313,7 +315,7 @@
               </ul>
               <div class="cartao-footer">
                 <div class="info">
-                  <a href="#">Para mais informações</a>
+                  <a href="#" data-caixa-informacao-target="#caixa-informacao-plus">Para mais informações</a>
                 </div>
                 <div class="price">
                   <p>A partir de <strong>R$145,90</strong></p>
@@ -342,7 +344,7 @@
               </ul>
               <div class="cartao-footer">
                 <div class="info">
-                  <a href="#">Para mais informações</a>
+                  <a href="#" data-caixa-informacao-target="#caixa-informacao-pro">Para mais informações</a>
                 </div>
                 <div class="price">
                   <p>A partir de <strong>R$175,90</strong></p>
@@ -372,7 +374,7 @@
               </ul>
               <div class="cartao-footer">
                 <div class="info">
-                  <a href="#">Para mais informações</a>
+                  <a href="#" data-caixa-informacao-target="#caixa-informacao-premium">Para mais informações</a>
                 </div>
                 <div class="price">
                   <p>A partir de <strong>R$219,90</strong></p>
@@ -409,7 +411,7 @@
           </ul>
           <div class="cartao-footer">
             <div class="info">
-              <a href="#">Para mais informações</a>
+              <a href="#" data-caixa-informacao-target="#caixa-informacao-basico">Para mais informações</a>
             </div>
             <div class="price">
               <p>A partir de <strong>R$119,90</strong></p>
@@ -425,7 +427,6 @@
             <li>Suporte prioritário</li>
             <li>Funcionalidades intermediárias</li>
             <li>Escolha de domínio</li>
-            <li>Domínio padrão</li>
             <li>Armazenamento ilimitado</li>
             <li>Backup diário</li>
             <li>Email profissional</li>
@@ -436,7 +437,7 @@
           </ul>
           <div class="cartao-footer">
             <div class="info">
-              <a href="#">Para mais informações</a>
+              <a href="#" data-caixa-informacao-target="#caixa-informacao-plus">Para mais informações</a>
             </div>
             <div class="price">
               <p>A partir de <strong>R$145,90</strong></p>
@@ -464,7 +465,7 @@
           </ul>
           <div class="cartao-footer">
             <div class="info">
-              <a href="#">Para mais informações</a>
+              <a href="#" data-caixa-informacao-target="#caixa-informacao-pro">Para mais informações</a>
             </div>
             <div class="price">
               <p>A partir de <strong>R$175,90</strong></p>
@@ -489,16 +490,137 @@
             <li>13 bancos de dados</li>
             <li>Reuniões semanais/mensais</li>
             <li>Análise mensal de desempenho do site</li>
-            <li>Consultoria de desing do site</li>
+            <li>Consultoria de design do site</li>
           </ul>
           <div class="cartao-footer">
             <div class="info">
-              <a href="#">Para mais informações</a>
+              <a href="#" data-caixa-informacao-target="#caixa-informacao-premium">Para mais informações</a>
             </div>
             <div class="price">
               <p>A partir de <strong>R$219,90</strong></p>
               <a href="#">Fazer orçamento</a>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Structure -->
+      <div class="caixa-informacao" id="caixa-informacao-basico">
+        <div class="caixa-conteudo">
+          <span class="caixa-fechar-btn">X</span>
+          <h2>Básico</h2>
+          <p> O Plano Básico oferece uma solução econômica para quem precisa de um site funcional, com funcionalidades
+            essenciais, armazenamento ilimitado, suporte básico e segurança garantida com backup diário e SSL. Ideal
+            para pequenas empresas ou projetos em fase inicial, inclui um layout predefinido e email profissional com
+            compromisso semestral.</p>
+          <ul>
+            <li><strong>6 meses de fidelidade:</strong> Compromisso semestral com menor período de vínculo.</li>
+            <li><strong>Suporte básico:</strong> Atendimento padrão para dúvidas e assistência.</li>
+            <li><strong>Manutenções limitadas, exceto erros:</strong> Manutenções restritas, com correção garantida de
+              erros críticos.
+            </li>
+            <li><strong>Funcionalidades básicas:</strong> Recursos essenciais para um site funcional.</li>
+            <li><strong>Domínio padrão:</strong> Registro de domínio convencional.</li>
+            <li><strong>Armazenamento ilimitado:</strong> Espaço sem restrições para seu conteúdo.</li>
+            <li><strong>Backup diário:</strong> Proteção constante com cópias automáticas diárias.</li>
+            <li><strong>Email profissional:</strong> Contas de email personalizadas para seu negócio.</li>
+            <li><strong>Certificado SSL:</strong> Segurança e confiança para navegação no site.</li>
+            <li><strong>Layout predefinido:</strong> Opções de design dentro de padrões predefinidos.</li>
+          </ul>
+          <div class="priceInfo">
+            <p>A partir de <strong>R$119,90</strong></p>
+            <a href="#">Fazer orçamento</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="caixa-informacao" id="caixa-informacao-plus">
+        <div class="caixa-conteudo">
+          <span class="caixa-fechar-btn">X</span>
+          <h2>Plus</h2>
+          <p> O Pacote Plus, o mais popular entre nossos clientes, combina recursos intermediários com excelente
+            custo-benefício. Com suporte prioritário, armazenamento ilimitado e reuniões mensais, oferece a performance
+            ideal para empresas em crescimento. Inclui domínio personalizado, layout ajustável, email profissional,
+            backup diário e SSL, garantindo segurança e um site otimizado para suas necessidades.</p>
+          <ul>
+            <li><strong>8 meses de fidelidade:</strong> Compromisso estendido com benefícios adicionais.</li>
+            <li><strong>Suporte prioritário:</strong> Atendimento mais rápido e eficiente para suas necessidades.</li>
+            <li><strong>Funcionalidades intermediárias:</strong> Recursos aprimorados para maior flexibilidade.</li>
+            <li><strong>Escolha de domínio:</strong> Personalização do endereço do seu site.</li>
+            <li><strong>Armazenamento ilimitado:</strong> Espaço sem limites para todos os seus dados.</li>
+            <li><strong>Backup diário:</strong> Cópias de segurança automáticas para evitar perda de informações.</li>
+            <li><strong>Email profissional:</strong> Endereços de email personalizados para sua marca.</li>
+            <li><strong>Certificado SSL:</strong> Proteção avançada para navegação segura.Layout à escolha: Design
+              personalizado para
+              refletir a identidade do seu negócio.</li>
+            <li><strong>10 bancos de dados:</strong> Estrutura robusta para armazenar e gerenciar informações.</li>
+            <li><strong>Reuniões mensais:</strong> Acompanhamento regular para garantir o sucesso do seu site.</li>
+          </ul>
+          <div class="priceInfo">
+            <p>A partir de <strong>R$145,90</strong></p>
+            <a href="#">Fazer orçamento</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="caixa-informacao" id="caixa-informacao-pro">
+        <div class="caixa-conteudo">
+          <span class="caixa-fechar-btn">X</span>
+          <h2>Profissional</h2>
+          <p> O Pacote Profissional é ideal para empresas que buscam um site robusto e completo. Com suporte
+            prioritário, atualizações ilimitadas, funcionalidades avançadas e armazenamento ilimitado, oferece tudo para
+            manter seu site em alta performance. Inclui backup diário, email profissional, certificado SSL e um layout
+            personalizado. Além disso, reuniões regulares e análises mensais garantem o acompanhamento contínuo do
+            desempenho do seu site.</p>
+          <ul>
+            <li>12 meses de fidelidade: Compromisso anual com benefícios exclusivos.</li>
+            <li>Suporte prioritário: Resolução ágil de problemas com atendimento preferencial.</li>
+            <li>Atualizações e manutenções ilimitadas: Garantia de um site sempre otimizado e seguro.</li>
+            <li>Escolha de domínio: Registro de domínio personalizado conforme sua preferência.</li>
+            <li>Funcionalidades intermediárias-avançadas: Recursos robustos para maior versatilidade do site.</li>
+            <li>Armazenamento ilimitado: Espaço para hospedar todo o conteúdo necessário.</li>
+            <li>Backup diário: Segurança contínua com cópias diárias dos dados.</li>
+            <li>Email profissional: Contas de email personalizadas para sua marca.</li>
+            <li>Certificado SSL: Proteção de dados e navegação segura para os usuários.</li>
+            <li>Layout à escolha: Design personalizado para atender sua identidade visual.</li>
+            <li>10 bancos de dados: Estrutura flexível para gerenciar diversas informações.</li>
+            <li>Reuniões semanais/mensais: Alinhamento contínuo das estratégias e necessidades.</li>
+            <li>Análise mensal de desempenho do site: Relatórios e insights para otimização contínua.</li>
+          </ul>
+          <div class="priceInfo">
+            <p>A partir de <strong>R$175,90</strong></p>
+            <a href="#">Fazer orçamento</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="caixa-informacao" id="caixa-informacao-premium">
+        <div class="caixa-conteudo">
+          <span class="caixa-fechar-btn">X</span>
+          <h2>Premium</h2>
+          <p> O Pacote Premium é a solução mais completa e exclusiva, ideal para negócios que exigem alta performance e
+            suporte personalizado. Com funcionalidades avançadas, design consultivo, atualizações ilimitadas e suporte
+            VIP, oferece tudo o que você precisa para um site de excelência. Inclui armazenamento ilimitado, reuniões
+            frequentes, análise mensal e muito mais para garantir que seu site esteja sempre no topo.</p>
+          <ul>
+            <li>14 meses de fidelidade: Contrato prolongado com condições exclusivas.</li>
+            <li>Suporte VIP: Atendimento prioritário com resposta rápida e personalizada.</li>
+            <li>Atualizações e manutenções ilimitadas: Serviço contínuo para garantir um site sempre otimizado.</li>
+            <li>Escolha de domínio: Flexibilidade total na personalização do endereço do seu site.</li>
+            <li>Funcionalidades avançadas: Recursos de alta performance para atender demandas complexas.</li>
+            <li>Armazenamento ilimitado: Espaço sem limites para todo o seu conteúdo.</li>
+            <li>Backup diário: Segurança garantida com cópias automáticas diárias.</li>
+            <li>Email profissional: Contas de email personalizadas para maior credibilidade.</li>
+            <li>Certificado SSL: Proteção premium para segurança dos seus dados.</li>
+            <li>Layout à escolha: Design customizado e exclusivo.</li>
+            <li>13 bancos de dados: Ampla capacidade para gerenciar dados com eficiência.</li>
+            <li>Reuniões semanais/mensais: Acompanhamento constante para otimização contínua.</li>
+            <li>Análise mensal de desempenho do site: Relatórios detalhados com insights para melhorias.</li>
+            <li>Consultoria de design do site: Suporte especializado para aprimorar a estética e funcionalidade.</li>
+          </ul>
+          <div class="priceInfo">
+            <p>A partir de <strong>R$219,90</strong></p>
+            <a href="#">Fazer orçamento</a>
           </div>
         </div>
       </div>
@@ -689,21 +811,23 @@
           </form>
         </div>
         <div class="generalInfos" id="generalInfos">
-          <div class="mapOfSite">
-            <h1 data-aos="fade-left">Mapa do Site</h1>
-            <a href="" data-aos="fade-left">Home</a>
-            <a href="" data-aos="fade-left">Quem Somos</a>
-            <a href="" data-aos="fade-left">Portfólio</a>
-            <a href="" data-aos="fade-left">Planos</a>
-            <a href="" data-aos="fade-left">FAQ's</a>
-            <a href="" data-aos="fade-left">Contato</a>
-          </div>
-          <div class="socialMedias">
-            <h1>Redes Sociais</h1>
-            <a href="" data-aos="fade-left">Instagram</a>
-            <a href="" data-aos="fade-left">Whatsapp</a>
-            <a href="" data-aos="fade-left">Linkedin</a>
-            <a href="" data-aos="fade-left">X (Twitter)</a>
+          <div class="footerOne">
+            <div class="mapOfSite">
+              <h1 data-aos="fade-left">Mapa do Site</h1>
+              <a href="" data-aos="fade-left">Home</a>
+              <a href="" data-aos="fade-left">Quem Somos</a>
+              <a href="" data-aos="fade-left">Portfólio</a>
+              <a href="" data-aos="fade-left">Planos</a>
+              <a href="" data-aos="fade-left">FAQ's</a>
+              <a href="" data-aos="fade-left">Contato</a>
+            </div>
+            <div class="socialMedias">
+              <h1>Redes Sociais</h1>
+              <a href="" data-aos="fade-left">Instagram</a>
+              <a href="" data-aos="fade-left">Whatsapp</a>
+              <a href="" data-aos="fade-left">Linkedin</a>
+              <a href="" data-aos="fade-left">X (Twitter)</a>
+            </div>
           </div>
           <div class="feedback">
             <div class="imgFeedback">
