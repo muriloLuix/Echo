@@ -63,9 +63,8 @@ body.no-scroll {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #000;
+    background-color: #349B24;
     transition: 0.3s;
-    border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -75,6 +74,7 @@ body.no-scroll {
 ::-webkit-scrollbar-thumb:focus {
     border-radius: 20px;
 }
+
 
 /* General Styles */
 
@@ -364,6 +364,10 @@ nav {
     white-space: nowrap;
 }
 
+.infoTop.dark {
+    background-color: #151515 !important;
+}
+
 .nav-links a {
     text-decoration: none;
     color: black;
@@ -442,7 +446,7 @@ nav {
 }
 
 .label.dark {
-    background-color: #000000;
+    background-color: #000000 !important;
 }
 
 .label .ball {
@@ -481,6 +485,16 @@ nav {
     padding: 5%;
     display: flex;
     justify-content: space-between;
+    background: #F5F5F7;
+    transition: all .3s ease;
+}
+
+.topSlogan.dark {
+    background-color: #151515;
+}
+
+.slogan.dark {
+    background-color: #151515 !important;
 }
 
 .topSlogan h1 {
@@ -552,6 +566,11 @@ span.dark {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #F5F5F7;
+}
+
+.echo3d.dark {
+    background-color: #151515;
 }
 
 .box {
@@ -592,6 +611,11 @@ span.dark {
 
 .aboutEcho {
     padding: 5%;
+    background-color: #F5F5F7;
+}
+
+.aboutEcho.dark {
+    background-color: #151515;
 }
 
 .aboutH1,
@@ -732,6 +756,7 @@ span.dark {
     font-size: 2rem;
     padding-left: 5%;
     padding-bottom: 2vh;
+    margin: 0px;
 }
 
 .carouselBackground {
@@ -743,7 +768,7 @@ span.dark {
 }
 
 .carouselBackground.dark {
-    background-color: #0F0F0F;
+    background-color: #151515;
 }
 
 .carousel {
@@ -839,7 +864,7 @@ span.dark {
 /* Federalista */
 
 .federalista {
-    background-color: #151515;
+    background-color: #0F0F0F;
     height: 36vh;
     width: 50vw;
     border-radius: 20px;
@@ -898,6 +923,7 @@ span.dark {
     font-size: 2rem;
     padding-left: 5%;
     padding-bottom: 2vh;
+    margin: 0px;
 }
 
 .pricing-card {
@@ -1081,7 +1107,7 @@ span.dark {
 
 
 .caixa-conteudo.dark {
-    background-color: #0F0F0F;
+    background-color: #151515;
     color: #fff;
 }
 
@@ -1210,6 +1236,22 @@ span.dark {
     height: 4vh;
 }
 
+.anterior {
+    left: -20px !important;
+}
+
+.anteriorPlano {
+    left: -15px !important;
+}
+
+.proximoPlano {
+    right: -15px !important;
+}
+
+.proximo {
+    right: -20px !important;
+}
+
 /* Planos Carousel */
 
 /* Planos Style */
@@ -1218,6 +1260,11 @@ span.dark {
 
 .faqs {
     padding: 5%;
+    background-color: #F5F5F7;
+}
+
+.faqs.dark {
+    background-color: #151515;
 }
 
 #activeFaq {
@@ -1383,6 +1430,7 @@ span.dark {
 
 .whyEcho h1 {
     padding: 1% 5%;
+    margin: 0px;
 }
 
 
@@ -1440,9 +1488,14 @@ span.dark {
     width: 42vw;
 }
 
-main {
+.main {
     position: relative;
     z-index: -1;
+    background-color: #F5F5F7;
+}
+
+.main.dark {
+    background-color: #151515;
 }
 
 /* Form Style */
@@ -2013,6 +2066,11 @@ main {
         height: auto;
     }
 
+    .feedback,
+    .imgEchoContact {
+        display: none !important;
+    }
+
     .carousel {
         flex-direction: column;
     }
@@ -2024,6 +2082,7 @@ main {
 
     .topSlogan {
         flex-direction: column;
+        margin-top: 3em;
     }
 
     .topSlogan h1 {
