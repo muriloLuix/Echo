@@ -1132,16 +1132,21 @@ span.dark {
 
 @media screen and (max-width: 1325px) {
     .caixa-conteudo {
-        width: 66vw;
+        width: 90vw;
         height: 77vh;
+        border-radius: 0px;
     }
 
     .priceInfo a {
-        width: auto !important;
+        width: 59vw !important;
+        border-radius: 10px !important;
     }
 
     .priceInfo {
         width: 62vw !important;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
         justify-content: center !important;
     }
 
@@ -2162,6 +2167,7 @@ span.dark {
 }
 
 @media screen and (max-width: 425px) {
+
     .carouselBackground {
         height: auto;
     }
