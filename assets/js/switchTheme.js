@@ -23,6 +23,7 @@ chk.addEventListener('change', () => {
         document.querySelector('.echo3d'),
         document.querySelector('.main'),
         document.querySelector('.ativo'),
+        document.querySelector('.designed'),
         ...document.querySelectorAll('.priceInfo'),
         ...document.querySelectorAll('.caixa-conteudo'),
         ...document.querySelectorAll('.message-bot'),
@@ -74,7 +75,7 @@ chk.addEventListener('change', () => {
         if (path) {
             path.style.stroke = strokeColor;
         }
-    })
+    });
 
     const imageSources = {
         dark: {
@@ -88,7 +89,8 @@ chk.addEventListener('change', () => {
             setaDireita: 'assets/img/SetaDireitaWhite.svg',
             setaEsquerda: 'assets/img/SetaEsquerdaWhite.svg',
             setaDireitaDev: 'assets/img/SetaDireitaWhite.svg',
-            setaEsquerdaDev: 'assets/img/SetaEsquerdaWhite.svg'
+            setaEsquerdaDev: 'assets/img/SetaEsquerdaWhite.svg',
+            logoFooterCellphone: 'assets/img/miniLogoGreenFooter.svg'
         },
         light: {
             logo: 'assets/img/logoHeader.svg',
@@ -101,10 +103,10 @@ chk.addEventListener('change', () => {
             setaDireita: 'assets/img/setaDireitaBlack.svg',
             setaEsquerda: 'assets/img/setaEsquerdaBlack.svg',
             setaDireitaDev: 'assets/img/setaDireitaBlack.svg',
-            setaEsquerdaDev: 'assets/img/setaEsquerdaBlack.svg'
+            setaEsquerdaDev: 'assets/img/setaEsquerdaBlack.svg',
+            logoFooterCellphone: 'assets/img/miniLogoBlueFooter.svg'
         }
     };
-
     const logoImg = document.querySelector('.logo img');
     if (logoImg) logoImg.src = imageSources[theme].logo;
 
@@ -141,4 +143,7 @@ chk.addEventListener('change', () => {
 
     const setaEsquerdaDev = document.querySelector('.setaEsquerdaDev');
     if (setaEsquerdaDev) setaEsquerdaDev.src = imageSources[theme].setaEsquerdaDev;
+
+    const logoFooterCellphone = document.querySelector('.echoCellphone-img');
+    if (logoFooterCellphone) logoFooterCellphone.src = imageSources[theme].logoFooterCellphone;
 });

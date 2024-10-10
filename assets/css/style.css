@@ -2047,6 +2047,10 @@ span.dark {
         color: #349B24 !important;
     }
 
+    .designed.dark span {
+        color: #0066FF !important;
+    }
+
     .imageBox {
         width: 71.5vw;
         min-height: 32vh;
@@ -2092,12 +2096,10 @@ span.dark {
 
     .indicadores-carrossel .ativo {
         background-color: #28a745;
-        /* Verde padrão no modo claro */
     }
 
     body.dark .indicadores-carrossel .ativo {
         background-color: #0066FF !important;
-        /* Azul no modo escuro */
     }
 
     .carousel-indicators {
