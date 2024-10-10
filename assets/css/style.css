@@ -1510,7 +1510,7 @@ span.dark {
 }
 
 .formContact.dark {
-    background-color: #202020;
+    background-color: #151515;
 }
 
 .form-group {
@@ -1718,6 +1718,13 @@ span.dark {
     display: none;
 }
 
+.echoCellphone {
+    display: none;
+}
+
+.imgEchoCopy2 {
+    display: none;
+}
 
 /* General Infos Style */
 
@@ -1852,7 +1859,7 @@ span.dark {
         width: 2.5em !important;
         height: 2.5em !important;
         border-radius: 50% !important;
-        background-color: #41A131 !important;
+        background-color: #28a745 !important;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
         border: none !important;
         transition: all .3s ease;
@@ -2002,6 +2009,44 @@ span.dark {
         flex-direction: column;
     }
 
+
+    .btnEnviar {
+        width: 100%;
+    }
+
+    .echoCellphone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5vh;
+    }
+
+    .echoCellphone img {
+        width: 64vw;
+        height: 20vh;
+    }
+
+    .copyright {
+        justify-content: center;
+        right: 0;
+        left: 0;
+        margin-top: 6vh;
+        position: relative;
+        gap: 2vw;
+    }
+
+    .imgEchoCopy {
+        display: none;
+    }
+
+    .imgEchoCopy2 {
+        display: flex;
+    }
+
+    .designed span {
+        color: #349B24 !important;
+    }
+
     .imageBox {
         width: 71.5vw;
         min-height: 32vh;
@@ -2018,8 +2063,61 @@ span.dark {
     }
 
     .formContact {
-        width: 85vw;
+        width: 100vw;
     }
+
+    .formContact {
+        padding: 1em;
+        background-color: #F5F5F7;
+        border-radius: 8px;
+        box-shadow: none;
+        transition: all .3s ease;
+    }
+
+    .indicadores-carrossel {
+        display: flex;
+        padding: 0px;
+    }
+
+    .indicadores-carrossel li {
+        background-color: #6c757d;
+        border-radius: 50%;
+        width: 2.5em !important;
+        height: 2.5em !important;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        list-style-type: none;
+        margin: 0 5px;
+        transition: all .3s ease;
+    }
+
+    .indicadores-carrossel .ativo {
+        background-color: #28a745;
+        /* Verde padrão no modo claro */
+    }
+
+    body.dark .indicadores-carrossel .ativo {
+        background-color: #0066FF !important;
+        /* Azul no modo escuro */
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin-right: 15%;
+        margin-bottom: 0rem !important;
+        margin-left: 7% !important;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+
 
     .footerOne {
         display: flex;
@@ -2134,7 +2232,7 @@ span.dark {
     }
 
     .label .ball {
-        left: 1.2vw;
+        right: 1.2vw;
     }
 }
 

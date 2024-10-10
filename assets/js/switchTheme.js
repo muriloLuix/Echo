@@ -22,7 +22,7 @@ chk.addEventListener('change', () => {
         document.querySelector('.faqs'),
         document.querySelector('.echo3d'),
         document.querySelector('.main'),
-        document.querySelector('::-webkit-scrollbar-thumb'),
+        document.querySelector('.ativo'),
         ...document.querySelectorAll('.priceInfo'),
         ...document.querySelectorAll('.caixa-conteudo'),
         ...document.querySelectorAll('.message-bot'),
