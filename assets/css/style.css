@@ -26,6 +26,7 @@ body {
     position: relative;
     z-index: 1;
     cursor: url('../img/Mouse.svg'), auto;
+    overflow-x: hidden;
 }
 
 a,
@@ -317,7 +318,7 @@ header {
     top: 0;
     left: 0;
     padding: 20px 40px;
-    width: 100vw;
+    width: 100%;
     transition: all 0.3s ease;
     z-index: 10;
     backdrop-filter: blur(3px);
@@ -348,7 +349,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 89vw;
+    width: 100%;
     font-family: var(--montserrat);
 }
 
