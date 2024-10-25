@@ -383,7 +383,7 @@ nav {
     transition: all .3s ease;
 }
 
-.nav-links a.dark {
+.nav-links.dark a{
     color: #fff;
 }
 
@@ -397,7 +397,6 @@ nav {
     flex-direction: column;
     gap: 4px;
     z-index: 20;
-    /* Certifique-se de que o hambúrguer fique acima de outros elementos */
 }
 
 .hamburger span {
@@ -405,6 +404,10 @@ nav {
     height: 3px;
     background-color: black;
     transition: all 0.3s ease;
+}
+
+.hamburger span.dark {
+    background-color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -419,7 +422,11 @@ nav {
         background-color: rgba(255, 255, 255, 0.9);
         transition: left 0.3s ease;
         z-index: 15;
-        /* Aumenta o z-index para que o menu fique acima do conteúdo */
+    }
+
+    .nav-links.dark {
+        background-color: rgb(0, 0, 0);
+
     }
 
     .nav-links.show {
@@ -1747,7 +1754,7 @@ span.dark {
     display: none;
 }
 
-.echoCellphone {
+.echoCellphoneContainer {
     display: none;
 }
 
@@ -2040,7 +2047,7 @@ span.dark {
         width: 100%;
     }
 
-    .echoCellphone {
+    .echoCellphoneContainer {
         display: flex;
         align-items: center;
         justify-content: center;

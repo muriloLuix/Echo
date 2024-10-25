@@ -10,7 +10,6 @@ chk.addEventListener('change', () => {
         document.querySelector('.askHere a'),
         document.querySelector('.formContact'),
         document.querySelector('.btnEnviar'),
-        document.querySelector('.hamburger span'),
         document.querySelector('.btnActive'),
         document.querySelector('.chat-button'),
         document.querySelector('.chat-header'),
@@ -24,6 +23,9 @@ chk.addEventListener('change', () => {
         document.querySelector('.main'),
         document.querySelector('.ativo'),
         document.querySelector('.designed'),
+        ...document.querySelectorAll('.nav-links'),
+        ...document.querySelectorAll('.nav-links a'),
+        ...document.querySelectorAll('.hamburguer'),
         ...document.querySelectorAll('.priceInfo'),
         ...document.querySelectorAll('.caixa-conteudo'),
         ...document.querySelectorAll('.message-bot'),
@@ -90,7 +92,8 @@ chk.addEventListener('change', () => {
             setaEsquerda: 'assets/img/SetaEsquerdaWhite.svg',
             setaDireitaDev: 'assets/img/SetaDireitaWhite.svg',
             setaEsquerdaDev: 'assets/img/SetaEsquerdaWhite.svg',
-            logoFooterCellphone: 'assets/img/miniLogoGreenFooter.svg'
+            logoFooterCellphone: 'assets/img/miniLogoBlueFooter.svg',
+            logoFooterCellphoneMini: 'assets/img/imgFooterBlue.svg'
         },
         light: {
             logo: 'assets/img/logoHeader.svg',
@@ -104,7 +107,8 @@ chk.addEventListener('change', () => {
             setaEsquerda: 'assets/img/setaEsquerdaBlack.svg',
             setaDireitaDev: 'assets/img/setaDireitaBlack.svg',
             setaEsquerdaDev: 'assets/img/setaEsquerdaBlack.svg',
-            logoFooterCellphone: 'assets/img/miniLogoBlueFooter.svg'
+            logoFooterCellphone: 'assets/img/miniLogoGreenFooter.svg',
+            logoFooterCellphoneMini: 'assets/img/imgFooterGreen.svg'
         }
     };
     const logoImg = document.querySelector('.logo img');
@@ -144,6 +148,9 @@ chk.addEventListener('change', () => {
     const setaEsquerdaDev = document.querySelector('.setaEsquerdaDev');
     if (setaEsquerdaDev) setaEsquerdaDev.src = imageSources[theme].setaEsquerdaDev;
 
-    const logoFooterCellphone = document.querySelector('.echoCellphone-img');
+    const logoFooterCellphone = document.querySelector('.echoCellphone');
     if (logoFooterCellphone) logoFooterCellphone.src = imageSources[theme].logoFooterCellphone;
+
+    const logoFooterCellphoneMini = document.querySelector('.imgEchoCopy2 img');
+    if (logoFooterCellphoneMini) logoFooterCellphoneMini.src = imageSources[theme].logoFooterCellphoneMini;
 });
