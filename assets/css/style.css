@@ -26,6 +26,11 @@ body {
     position: relative;
     z-index: 1;
     cursor: url('../img/Mouse.svg'), auto;
+}
+
+body,
+main,
+html {
     overflow-x: hidden;
 }
 
@@ -384,7 +389,7 @@ nav {
     transition: all .3s ease;
 }
 
-.nav-links.dark a{
+.nav-links.dark a {
     color: #fff;
 }
 
@@ -1529,6 +1534,7 @@ span.dark {
     position: relative;
     z-index: -1;
     background-color: #F5F5F7;
+    max-width: 100%;
 }
 
 .main.dark {
