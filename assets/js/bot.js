@@ -1,9 +1,9 @@
 // Função para abrir e fechar o chat
 function toggleChat() {
     const chatPopup = document.getElementById('chatPopup');
-    chatPopup.classList.toggle('open'); // Abre ou fecha o chat
+    chatPopup.classList.toggle('open'); 
     if (chatPopup.classList.contains('open')) {
-        greetUser(); // Saudação quando abrir
+        greetUser(); 
     }
 }
 
