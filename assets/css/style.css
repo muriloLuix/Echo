@@ -21,6 +21,13 @@ body {
     position: relative;
     z-index: 1;
     cursor: url('../img/Mouse.svg'), auto;
+    /* overflow-x: hidden;
+    touch-action: pan-x; */
+
+}
+
+html {
+    width: 100vw !important;
 }
 
 a,
@@ -1266,14 +1273,6 @@ span.dark {
 
 .anterior {
     left: -20px !important;
-}
-
-.anteriorPlano {
-    left: -15px !important;
-}
-
-.proximoPlano {
-    right: -15px !important;
 }
 
 .proximo {
