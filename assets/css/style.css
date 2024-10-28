@@ -20,9 +20,9 @@ body {
     transition: all .3s ease;
     position: relative;
     z-index: 1;
-    cursor: url('../img/Mouse.svg'), auto;
-    /* overflow-x: hidden;
-    touch-action: pan-x; */
+    /* cursor: url('../img/Mouse.svg'), auto; */
+    overflow-x: hidden;
+    touch-action: pan-x;
 
 }
 
@@ -30,12 +30,12 @@ html {
     width: 100vw !important;
 }
 
-a,
+/* a,
 button,
 .pointer,
 label {
     cursor: url('../img/MouseGrab.svg'), pointer !important;
-}
+} */
 
 body.dark {
     background-color: #151515 !important;
