@@ -19,10 +19,9 @@ body {
     font-family: Arial, sans-serif;
     transition: all .3s ease;
     position: relative;
-    z-index: 1;
+    z-index: -1;
     /* cursor: url('../img/Mouse.svg'), auto; */
     overflow-x: hidden;
-    touch-action: pan-x;
 
 }
 
@@ -941,6 +940,8 @@ span.dark {
 
 .planos {
     margin-top: 5vh;
+    position: relative;
+    z-index: 99;
 }
 
 .planos h1 {
@@ -1389,7 +1390,7 @@ span.dark {
     color: #ffffff7a;
 }
 
-.faq-card button {
+.faq-card a {
     align-self: flex-start;
     background-color: #3aaf3a;
     color: white;
@@ -1400,6 +1401,7 @@ span.dark {
     font-family: var(--montserrat);
     font-weight: 600;
     font-size: 1rem;
+    text-decoration: none;
     transition: all .3s ease;
 }
 
@@ -1508,9 +1510,12 @@ span.dark {
 }
 
 .imgEchoContact img {
-    height: 60vh;
-    width: 42vw;
+    height: 24em;
+    width: 46em;
+    margin-top: 0;
+    display: block;
 }
+
 
 .main {
     position: relative;
