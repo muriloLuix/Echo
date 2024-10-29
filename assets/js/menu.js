@@ -13,3 +13,11 @@ hamburger.addEventListener('click', () => {
         body.style.overflow = '';
     }
 });
+
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('show');
+        hamburger.classList.remove('open');
+        body.style.overflow = '';
+    });
+});
