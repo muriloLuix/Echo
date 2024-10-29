@@ -41,9 +41,6 @@ body.dark {
     background-color: #151515 !important;
 }
 
-body.no-scroll {
-    overflow: hidden;
-}
 
 
 @font-face {
