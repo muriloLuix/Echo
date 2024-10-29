@@ -655,7 +655,7 @@ span.dark {
     width: 50vw;
     color: #00000077;
     font-weight: 600;
-    text-align: justify;
+    text-align: left;
 }
 
 .whatDo {
@@ -665,6 +665,7 @@ span.dark {
 
 .aboutEcho span {
     color: #2c2c2cc7;
+    text-align: left;
 }
 
 .aboutEcho h1:nth-child(3) {
@@ -1314,6 +1315,11 @@ span.dark {
 
 .textDuvida {
     margin-left: 1vw;
+}
+
+.textDuvida a {
+    color: #2c2c2cc7;
+    text-decoration: none;
 }
 
 .faq-grid {
