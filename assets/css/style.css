@@ -1396,6 +1396,10 @@ span.dark {
     color: #ffffff7a;
 }
 
+.listarDuvida a.dark{
+    color: var(--branco-dark);
+}
+
 .faq-card a {
     align-self: flex-start;
     background-color: #3aaf3a;
@@ -1409,6 +1413,10 @@ span.dark {
     font-size: 1rem;
     text-decoration: none;
     transition: all .3s ease;
+}
+
+.faq-card a.dark{
+    background-color: #0161F0;
 }
 
 .faq-card button.dark {

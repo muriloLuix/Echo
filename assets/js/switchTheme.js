@@ -23,6 +23,8 @@ chk.addEventListener('change', () => {
         document.querySelector('.main'),
         document.querySelector('.ativo'),
         document.querySelector('.designed'),
+        document.querySelector('.portfolio-btn'),
+        document.querySelector('.listarDuvida a'),
         ...document.querySelectorAll('.nav-links'),
         ...document.querySelectorAll('.nav-links a'),
         ...document.querySelectorAll('.hamburguer'),
