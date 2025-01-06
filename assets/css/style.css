@@ -971,7 +971,7 @@ span.dark {
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 22vw;
-    min-height: 60vh;
+    min-height: 71vh;
     padding: 20px;
     margin: 5px;
     box-sizing: border-box;
@@ -983,6 +983,40 @@ span.dark {
     background-color: #0F0F0F;
 }
 
+.imgWhatsapp img {
+    width: 3vw;
+    height: auto;
+    transition: all .3s ease;
+}
+
+.imgWhatsapp img:hover{
+    transform: scale(1.05);
+}
+
+.profissional {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5vh;
+}
+
+.profissionalSpan {
+    color: #0066FF;
+    font-weight: bolder;
+}
+
+.profissional h1 {
+    text-align: center;
+    padding: 0px;
+    width: 20vw;
+    font-weight: bolder;
+}
+
+.duvidaPlano {
+    width: 15vw;
+    text-align: center;
+}
 
 .cartao h2 {
     color: #000000b7;
@@ -1396,7 +1430,7 @@ span.dark {
     color: #ffffff7a;
 }
 
-.listarDuvida a.dark{
+.listarDuvida a.dark {
     color: var(--branco-dark);
 }
 
@@ -1415,7 +1449,7 @@ span.dark {
     transition: all .3s ease;
 }
 
-.faq-card a.dark{
+.faq-card a.dark {
     background-color: #0161F0;
 }
 

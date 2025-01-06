@@ -1,55 +1,49 @@
 <?php
-// Inclua o autoload do Composer
-require '../../vendor/autoload.php';
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
-    $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-    $help = filter_input(INPUT_POST, 'help', FILTER_SANITIZE_STRING);
-    $mensagem = filter_input(INPUT_POST, 'msg', FILTER_SANITIZE_STRING);
+require '../../vendor/autoload.php';
 
-    // Configurações do PHPMailer
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail = new PHPMailer(true);
+
     try {
-        // Configurações do servidor SMTP
+        // Configuração do servidor SMTP
         $mail->isSMTP();
-        $mail->Host = 'ns1032.hostgator.com.br';  // Endereço do servidor SMTP do seu domínio
+        $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'contato@goecho.com.br'; 
-        $mail->Password = 'Dev$Echo2024!84C[1L4jj$z|';         
+        $mail->Username = 'contato@goecho.com.br';
+        $mail->Password = 'Murylindos1204*';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        // Configurações do e-mail
-        $mail->setFrom('seuemail@seudominio.com', 'Nome do Site');
-        $mail->addAddress('contato@goecho.com.br'); // E-mail que receberá as mensagens do formulário
-        $mail->addReplyTo($email); // Define o "Responder para" como o e-mail do usuário
+        // Remetente e destinatário
+        $mail->setFrom('contato@goecho.com.br', 'Contato - Echo');
+        $mail->addAddress('contato@goecho.com.br');
 
         // Conteúdo do e-mail
         $mail->isHTML(true);
-        $mail->Subject = 'Nova mensagem do formulário de contato';
+        $mail->Subject = 'Nova contribuicao recebida!';
         $mail->Body = "
-            <html>
-            <body>
-                <h2>Nova mensagem do formulário de contato</h2>
-                <p><strong>Nome:</strong> $nome</p>
-                <p><strong>Email:</strong> $email</p>
-                <p><strong>Assunto:</strong> $help</p>
-                <p><strong>Mensagem:</strong><br>$mensagem</p>
-            </body>
-            </html>
+            <h2>Detalhes do formulário enviado:</h2>
+            <p><strong>Nome Completo:</strong> " . htmlspecialchars($_POST['nome'] ?? '') . "</p>
+            <p><strong>RG:</strong> " . htmlspecialchars($_POST['rg'] ?? '') . "</p>
+            <p><strong>UF:</strong> " . htmlspecialchars($_POST['uf'] ?? '') . "</p>
+            <p><strong>Cidade:</strong> " . htmlspecialchars($_POST['cidade'] ?? '') . "</p>
+            <p><strong>Celular:</strong> " . htmlspecialchars($_POST['celular'] ?? '') . "</p>
+            <p><strong>E-mail:</strong> " . htmlspecialchars($_POST['email'] ?? '') . "</p>
+            <p><strong>Contribuição:</strong> " . htmlspecialchars($_POST['contribuicao'] ?? '') . "</p>
+            <p><strong>Observações:</strong> " . htmlspecialchars($_POST['observacoes'] ?? '') . "</p>
         ";
 
-        // Envia o e-mail
+        // Enviar e-mail
         $mail->send();
-        echo "E-mail enviado com sucesso!";
-        header("Location: /obrigado.html"); // Redireciona para a página de agradecimento
-        exit;
+        echo "Mensagem enviada com sucesso!";
     } catch (Exception $e) {
-        echo "Erro ao enviar o e-mail: {$mail->ErrorInfo}";
+        echo "Erro ao enviar a mensagem: {$mail->ErrorInfo}";
     }
+} else {
+    echo "Método de requisição inválido.";
 }
+
 ?>
