@@ -25,6 +25,8 @@ chk.addEventListener('change', () => {
         document.querySelector('.designed'),
         document.querySelector('.portfolio-btn'),
         document.querySelector('.listarDuvida a'),
+        document.querySelector('.buttonBudget a'),
+        document.querySelector('.echoText'),
         ...document.querySelectorAll('.nav-links'),
         ...document.querySelectorAll('.nav-links a'),
         ...document.querySelectorAll('.hamburguer'),
@@ -58,6 +60,7 @@ chk.addEventListener('change', () => {
         ...document.querySelectorAll('.mapOfSite a'),
         ...document.querySelectorAll('.socialMedias a'),
         ...document.querySelectorAll('.carousel-indicators [data-bs-target]'),
+        ...document.querySelectorAll('.bar'),
     ];
 
 

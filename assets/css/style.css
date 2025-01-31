@@ -996,7 +996,6 @@ span.dark {
 .profissional {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     gap: 1.5vh;
 }
@@ -1192,7 +1191,78 @@ span.dark {
     color: #ffffff8c;
     transition: all .3s ease;
 }
+.buttonBudget {
+    position: absolute;
+    width: 193px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 1em;
+}
 
+.buttonBudget a {
+    padding: 2%;
+    color: #fff;
+    text-decoration: none;
+    background-color: #349B24;
+    border-radius: 10px;
+    transition: all .3s ease;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.buttonBudget a:hover {
+    background-color: #375032;
+}
+
+.buttonBudget a.dark {
+    background-color: #0066FF;
+}
+
+.buttonBudget a:hover.dark {
+    background-color: #23497d;
+}
+
+.titlePlansContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    margin-bottom: 60px;
+}
+
+.bar {
+    width: 144px;
+    color: #41A131;
+    border: 4.5px solid;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.echoText{
+    margin: 10px;
+    font-size: 40px;
+    font-weight: 800;
+    color: #41A131;
+}
+
+.bar.dark {
+    width: 144px;
+    color: #0066FF;
+    border: 4.5px solid;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.echoText.dark {
+    margin: 10px;
+    font-size: 40px;
+    font-weight: 800;
+    color: #0066FF;
+}
 @media screen and (max-width: 1325px) {
     .caixa-conteudo {
         width: 90vw;
@@ -1550,16 +1620,22 @@ span.dark {
     margin-top: 7vh;
 }
 
+.contatoText{
+    position: absolute;
+    top: 90%;
+    
+}
+
 .imgEchoContact {
     position: absolute;
     z-index: -1;
-    left: 25vw;
-    margin-top: 20vh;
+    left: 0vw;
+    
 }
 
 .imgEchoContact img {
-    height: 24em;
-    width: 46em;
+    height: 40em;
+    width: 62em;
     margin-top: 0;
     display: block;
 }
