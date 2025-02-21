@@ -537,6 +537,23 @@ nav {
     margin-top: 2em;
 }
 
+.topSloganQuemSomos h1 {
+    color: #000000a9;
+    font-family: var(--montserrat);
+    font-weight: 600;
+    font-size: 2rem;
+    width: 34vw;
+    margin-top: 2em;
+}
+
+.sloganQuemSomos p {
+    color: #0000009c;
+}
+
+.sloganQuemSomos p.dark {
+    color: var(--branco-dark);
+}
+
 h1,
 span {
     transition: all .3s ease;
@@ -638,6 +655,19 @@ span.dark {
 
 /* Echo 3D Style */
 
+/* sloganEcho */
+
+.sloganEcho h1 {
+    font-size: 1.2rem !important;
+    font-family: var(--montserrat) !important;
+}
+
+.sloganEcho span {
+    color: #000;
+}
+
+/* sloganEcho */
+
 /* aboutEcho Style */
 
 .aboutEcho {
@@ -652,7 +682,7 @@ span.dark {
 .aboutH1,
 .whatDo {
     font-size: 2rem;
-    width: 50vw;
+    width: 60vw;
     color: #00000077;
     font-weight: 600;
     text-align: left;
@@ -672,103 +702,103 @@ span.dark {
     margin-top: 8vh;
 }
 
-.generalBoxs {
+.cardsAbout {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
-    margin-top: 9vh;
-    gap: 2vw;
+    gap: 20px;
 }
 
-.cardDevs {
-    display: flex;
+.cardAbout {
     background-color: #fff;
-    width: 48vw;
-    height: auto;
-    min-height: 43vh;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-family: var(--montserrat);
+    width: 27vw;
     border-radius: 20px;
-    overflow: hidden;
-    transition: all .3s ease;
-    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 1.5%;
+    margin-top: 9vh;
+    min-height: 40vh;
+    transition: all 0.3s ease-in-out;
 }
 
-.cardDevs.dark {
+.cardAbout.dark {
     background-color: #0F0F0F;
 }
 
-.imageBox img {
-    width: 16vw;
-    max-width: 16vw;
-    height: 46vh;
-    max-height: 46vh;
-    object-fit: cover;
+.cardAbout h1 {
+    font-size: 1.7rem;
+    color: #000000bf;
+    font-weight: 600;
+    margin-top: 4vh;
 }
 
-
-.imageBox.dark {
-    background-color: #0B0B0B;
+.cardAbout p {
+    color: #00000080;
+    margin-top: 4vh;
 }
 
-.aboutPerson {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 20px;
-    padding: 6%;
+.cardAbout p.dark {
+    color: #ffffff80;
 }
 
-.aboutPerson h1 {
-    font-size: 1.6rem;
-    color: #000;
-    transition: all .3 ease;
+.cardAbout .imgCard img,
+.cardAbout .imgCardEngrenagem img,
+.cardAbout .imgCardFoguete img {
+    width: 4vw;
+    height: 6vh;
 }
 
-.aboutPerson h1.dark {
-    color: var(--branco-dark) !important;
+/* Responsividade */
+@media (max-width: 1024px) {
+    .cardAbout {
+        width: 40vw;
+    }
 }
 
+@media (max-width: 768px) {
+    .cardAbout {
+        width: 80vw;
+        min-height: auto;
+        margin-top: 5vh;
+    }
 
-.aboutPerson p {
-    text-align: justify;
+    .cardAbout h1 {
+        font-size: 1.5rem;
+    }
+
+    .cardAbout p {
+        font-size: 1rem;
+    }
+
+    .cardAbout .imgCard img,
+    .cardAbout .imgCardEngrenagem img,
+    .cardAbout .imgCardFoguete img {
+        width: 8vw;
+        height: 8vh;
+    }
 }
 
-.infoBox {
-    padding: 2%;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+@media (max-width: 480px) {
+    .cardAbout {
+        width: 90vw;
+        padding: 5%;
+    }
 
-.infoBox p {
-    color: #555;
-    margin: 0;
-    font-size: 1em;
-    line-height: 1.4em;
-}
+    .cardAbout h1 {
+        font-size: 1.3rem;
+    }
 
-.infoBox p.dark {
-    color: #ffffff86;
-}
+    .cardAbout p {
+        font-size: 0.9rem;
+    }
 
-.roleBox {
-    margin-top: 1vh;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 20px;
-    padding: 5%;
-}
-
-.roleBox h2 {
-    margin: 0 0 0.5em 0;
-    color: #000;
-    font-size: 1.2em;
-}
-
-.roleBox h2.dark {
-    color: #ffffffb0 !important;
-}
-
-.roleBox span {
-    color: #000;
-    font-size: 1em;
+    .cardAbout .imgCard img,
+    .cardAbout .imgCardEngrenagem img,
+    .cardAbout .imgCardFoguete img {
+        width: 10vw;
+        height: 8vh;
+    }
 }
 
 /* aboutEcho Style */
@@ -784,6 +814,10 @@ span.dark {
     padding-left: 5%;
     padding-bottom: 2vh;
     margin: 0px;
+}
+
+.portfolio span {
+    color: #00000080;
 }
 
 .carouselBackground {
@@ -807,7 +841,8 @@ span.dark {
 /* Abade Suger */
 
 .abadeSuger {
-    background-color: #060606;
+    background: rgb(245, 245, 247);
+    background: linear-gradient(90deg, rgba(245, 245, 247, 1) 0%, rgba(222, 222, 222, 1) 50%);
     height: 36vh;
     width: 50vw;
     border-radius: 20px;
@@ -819,10 +854,14 @@ span.dark {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.abadeSuger.dark {
+    background: rgb(21, 21, 21);
+    background: linear-gradient(90deg, rgba(21, 21, 21, 1) 0%, rgba(6, 6, 6, 1) 50%);
+}
+
 .abadeSuger span {
-    color: #fff;
+    color: #00000080;
     padding: 1%;
-    text-transform: uppercase;
     font-family: var(--montserrat);
     font-weight: 600;
     font-size: 1.5rem;
@@ -940,7 +979,7 @@ span.dark {
 /* Planos Style */
 
 .planos {
-    margin-top: 5vh;
+    margin-top: 8vh;
     position: relative;
     z-index: 99;
 }
@@ -953,16 +992,23 @@ span.dark {
     padding-left: 5%;
     padding-bottom: 2vh;
     margin: 0px;
+    width: 67vw;
+}
+
+.planos span {
+    color: #00000080;
 }
 
 .pricing-card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    width: 90.5vw;
+    margin: 0 auto;
     position: relative;
     z-index: -2;
+    margin-top: 5vh;
 }
-
 
 .cartao {
     display: flex;
@@ -970,8 +1016,8 @@ span.dark {
     background: #fff;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    width: 22vw;
-    min-height: 71vh;
+    width: 26vw;
+    min-height: 87vh;
     padding: 20px;
     margin: 5px;
     box-sizing: border-box;
@@ -983,13 +1029,21 @@ span.dark {
     background-color: #0F0F0F;
 }
 
+.bi-arrow-down {
+    color: #249513;
+}
+
+.bi-arrow-down.dark {
+    color: #0066FF;
+}
+
 .imgWhatsapp img {
-    width: 3vw;
+    width: 9vw;
     height: auto;
     transition: all .3s ease;
 }
 
-.imgWhatsapp img:hover{
+.imgWhatsapp img:hover {
     transform: scale(1.05);
 }
 
@@ -1015,6 +1069,8 @@ span.dark {
 .duvidaPlano {
     width: 15vw;
     text-align: center;
+    color: #000000b7;
+    font-weight: 600;
 }
 
 .cartao h2 {
@@ -1025,10 +1081,46 @@ span.dark {
     padding-left: 5%;
     padding-bottom: 2vh;
     transition: all .3s ease;
+    text-align: center;
 }
 
 .cartao h2.dark {
     color: #ffffff96;
+}
+
+.cartao p {
+    text-align: center;
+    color: #00000080;
+    font-weight: 600;
+}
+
+.cartao p.dark {
+    color: #ffffff83;
+}
+
+.barPlano {
+    background-color: #00000080;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 3vh;
+}
+
+.barPlano.dark {
+    background-color: #ffffff83;
+}
+
+.cartaoRapido,
+.cartaoExclusivo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+
+.cartaoRapido img,
+.cartaoExclusivo img {
+    width: 5vw;
+    height: 10vh;
 }
 
 .cartao-footer {
@@ -1056,6 +1148,21 @@ span.dark {
     justify-content: space-around;
 }
 
+/* .price a {
+    padding: 2%;
+    color: #fff;
+    text-decoration: none;
+    background-color: #349B24;
+    border-radius: 10px;
+    transition: all .3s ease;
+} */
+
+.priceIndisponivel {
+    cursor: not-allowed !important;
+    pointer-events: none;
+
+}
+
 .price a {
     padding: 2%;
     color: #fff;
@@ -1077,6 +1184,13 @@ span.dark {
     background-color: #23497d;
 }
 
+.price p {
+    color: #000;
+}
+
+.price p.dark {
+    color: #fff;
+}
 
 .info {
     display: flex;
@@ -1191,6 +1305,7 @@ span.dark {
     color: #ffffff8c;
     transition: all .3s ease;
 }
+
 .buttonBudget {
     position: absolute;
     width: 193px;
@@ -1226,23 +1341,22 @@ span.dark {
     background-color: #23497d;
 }
 
-.titlePlansContainer{
+.titlePlansContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction:row;
-    margin-bottom: 60px;
+    flex-direction: row;
 }
 
 .bar {
-    width: 144px;
+    width: 13vw;
     color: #41A131;
     border: 4.5px solid;
     border-radius: 10px;
     margin-left: 5px;
 }
 
-.echoText{
+.echoText {
     margin: 10px;
     font-size: 40px;
     font-weight: 800;
@@ -1250,11 +1364,7 @@ span.dark {
 }
 
 .bar.dark {
-    width: 144px;
     color: #0066FF;
-    border: 4.5px solid;
-    border-radius: 10px;
-    margin-left: 5px;
 }
 
 .echoText.dark {
@@ -1263,6 +1373,7 @@ span.dark {
     font-weight: 800;
     color: #0066FF;
 }
+
 @media screen and (max-width: 1325px) {
     .caixa-conteudo {
         width: 90vw;
@@ -1620,22 +1731,16 @@ span.dark {
     margin-top: 7vh;
 }
 
-.contatoText{
-    position: absolute;
-    top: 90%;
-    
-}
-
 .imgEchoContact {
     position: absolute;
     z-index: -1;
     left: 0vw;
-    
+
 }
 
 .imgEchoContact img {
-    height: 40em;
-    width: 62em;
+    height: 31em;
+    width: 60em;
     margin-top: 0;
     display: block;
 }
@@ -1650,6 +1755,10 @@ span.dark {
 
 .main.dark {
     background-color: #151515;
+}
+
+.mainQuemSomos {
+    height: 100vh;
 }
 
 /* Form Style */
@@ -1783,8 +1892,23 @@ span.dark {
     margin-right: 12%;
 }
 
+.footerOne {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .mapOfSite,
-.socialMedias {
+.socialMedias,
+.contato {
     display: flex;
     align-items: left;
     justify-content: left;
@@ -1792,12 +1916,14 @@ span.dark {
 }
 
 .mapOfSite h1,
-.socialMedias h1 {
+.socialMedias h1,
+.contato h1 {
     font-size: 1.5rem;
 }
 
 .mapOfSite a,
-.socialMedias a {
+.socialMedias a,
+.contato a {
     text-decoration: none;
     color: #00000081;
     padding: 2%;
@@ -1805,18 +1931,21 @@ span.dark {
 }
 
 .mapOfSite a.dark,
-.socialMedias a.dark {
+.socialMedias a.dark,
+.contato a.dark {
     color: #ffffff6b;
 }
 
 
 .mapOfSite a:hover,
-.socialMedias a:hover {
+.socialMedias a:hover,
+.contato a:hover {
     color: #000000b4;
 }
 
 .mapOfSite a.dark:hover,
-.socialMedias a.dark:hover {
+.socialMedias a.dark:hover,
+.contato a.dark:hover {
     color: #ffffff9c;
 }
 
@@ -1947,21 +2076,6 @@ span.dark {
 
     /* Header Style  */
 
-    /* Devs Info */
-
-    .generalBoxs {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .cardDevs {
-        width: 76vw;
-        height: auto;
-    }
-
-    /* Devs Info */
-
     /* Contact Style */
 
     .generalInfos {
@@ -2018,19 +2132,48 @@ span.dark {
     .carousel-indicators [data-bs-target].dark {
         background-color: #0066FF !important;
     }
-
-
-    .generalBoxs {
-        display: none;
-    }
 }
 
 
 
 @media screen and (max-width: 1327px) {
 
-    .pricing-card {
-        display: none;
+    .cartaoRapido img,
+    .cartaoExclusivo img {
+        width: 20vw;
+        height: 10vh;
+    }
+
+    .contact h1{
+        padding: 1% 5%;
+        margin: 0px;
+    }
+
+    .imgWhatsapp img {
+        width: 29vw;
+        height: 6vh;
+        transition: all .3sease;
+    }
+
+    .duvidaPlano {
+        width: auto;
+    }
+
+    .profissional h1 {
+        width: auto;
+    }
+
+    .bar {
+        width: 26vw;
+    }
+
+    .profissional {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5vh;
+        margin: 0 auto;
     }
 
     #carouselExample {
@@ -2040,7 +2183,7 @@ span.dark {
     .cartao {
         margin: 3vh auto;
         width: 86vw;
-        min-height: 83vh;
+        min-height: 95vh;
     }
 
     .cartao h2 {
@@ -2271,11 +2414,6 @@ span.dark {
         margin: 0;
     }
 
-
-    .footerOne {
-        display: flex;
-    }
-
     .generalInfos {
         flex-direction: column;
         align-items: center;
@@ -2361,11 +2499,11 @@ span.dark {
 
     .img3D img {
         position: absolute;
-        top: -8%;
+        top: 1%;
         left: 51%;
         transform: translate(-50%, 0);
-        width: 100%;
-        height: 25.5vh;
+        width: 67%;
+        height: 19.5vh;
         max-width: 100vw;
         max-height: none;
         object-fit: contain;

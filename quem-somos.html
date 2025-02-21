@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/logoHeader.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/switchTheme.js" defer></script>
+    <script src="assets/js/index.js" type="module" defer></script>
+    <script src="assets/js/bot.js" defer></script>
+    <script src="assets/js/modal.js" defer></script>
+    <script src="assets/js/carrousel.js" defer></script>
+    <script src="assets/js/menu.js" defer></script>
+    <script src="//code.jivosite.com/widget/3d4huY3gFP" async></script>
+    <title> Echo - Quem somos</title>
+</head>
+
+<body>
+    <!-- <button class="chat-button" onclick="toggleChat()">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/chat.png" alt="Ícone de Chat" />
+  </button> -->
+
+    <!-- Caixa de diálogo do chatbot -->
+    <div class="chat-popup" id="chatPopup">
+        <div class="chat-header">
+            <span class="close-btn" onclick="toggleChat()">&#x2715;</span>
+            Eco - Seu assistente virtual
+        </div>
+        <div class="chat-body" id="chatBody">
+            <!-- Saudação inicial  -->
+        </div>
+        <div class="chat-options" id="chatOptions">
+            <!-- Opções de respostas do usuário -->
+        </div>
+    </div>
+
+    <header id="header">
+        <nav>
+            <div class="logo">
+                <img src="assets/img/logoHeader.svg" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="" class="nav-link">Quem somos</a></li>
+                <li><a href="index.html#portfolio" class="nav-link">Portfólio</a></li>
+                <li><a href="index.html#planos" class="nav-link">Planos</a></li>
+                <li><a href="index.html#faqs" class="nav-link">FAQ's</a></li>
+                <li><a href="index.html#generalInfos" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="switchThemeDiv">
+                <input type="checkbox" class="checkbox" id="chk">
+                <label class="label" for="chk" id="label">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7 13C10.3137 13 13 10.3137 13 7C13 3.68629 10.3137 1 7 1C3.68629 1 1 3.68629 1 7C1 10.3137 3.68629 13 7 13Z"
+                            stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13 7.54054C12.8949 8.67776 12.4681 9.76152 11.7696 10.665C11.071 11.5685 10.1296 12.2544 9.05544 12.6424C7.9813 13.0304 6.81888 13.1044 5.70419 12.8559C4.5895 12.6073 3.56866 12.0465 2.7611 11.2389C1.95354 10.4313 1.39267 9.4105 1.14412 8.29581C0.895572 7.18112 0.969623 6.0187 1.35761 4.94457C1.74559 3.87043 2.43147 2.929 3.33497 2.23045C4.23848 1.53189 5.32224 1.10509 6.45946 1C5.79366 1.90076 5.47327 3.01056 5.55656 4.12758C5.63986 5.24459 6.12132 6.2946 6.91336 7.08664C7.7054 7.87869 8.75541 8.36014 9.87242 8.44344C10.9894 8.52673 12.0992 8.20635 13 7.54054Z"
+                            stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <div class="ball" id="ball"></div>
+                </label>
+            </div>
+        </nav>
+    </header>
+    <main class="main mainQuemSomos">
+        <section class="topSlogan topSloganQuemSomos">
+            <div class="slogan sloganQuemSomos">
+                <h1>QUEM SOMOS</h1>
+                <p> A Echo é mais do que apenas uma startup de criação de sites somos um movimento que transforma ideias
+                    em experiências digitais impactantes. Nossa missão é construir uma presença online autêntica e
+                    atraente para que os projetos não apenas ocupem espaço na Internet, mas deixem uma impressão
+                    duradoura. Criamos sites para empresas de todos os portes, desde pequenos negócios até grandes
+                    corporações, oferecendo soluções personalizadas que aliam beleza e funcionalidade.</p>
+                <p> Nossas diferenças estão na maneira como pensamos e trabalhamos. Acreditamos que um website deve ser
+                    mais do que apenas uma página; Precisa refletir a essência da marca, conectar-se com o público e
+                    produzir resultados reais. Cada projeto é desenvolvido com atenção aos detalhes, interações
+                    dinâmicas e uma experiência de navegação intuitiva. Nosso compromisso é com a qualidade, inovação e
+                    entrega de soluções digitais que façam a diferença.</p>
+                <p> Na Echo, criatividade e tecnologia andam de mãos dadas. Nossa equipe é formada por pessoas
+                    apaixonadas por design e tecnologia, sempre em busca de novas formas de transformar conceitos em
+                    realidade digital. Usamos ferramentas e métodos modernos para garantir que cada site seja
+                    visualmente impactante, tecnicamente eficiente e com desempenho otimizado. Da identidade visual à
+                    experiência do usuário, cada detalhe foi cuidadosamente pensado para entregar resultados
+                    excepcionais.</p>
+                <p> Mas a Echo não para no presente estamos olhando para o futuro. Acompanhamos as tendências de design
+                    e tecnologia e disponibilizamos sempre os produtos mais recentes e eficientes do mercado digital.
+                    Nossa abordagem é colaborativa: trabalhamos lado a lado com nossos clientes para entender suas
+                    necessidades e transformar sua visão em realidade. Acreditamos que as parcerias são fundamentais
+                    para o sucesso e cada projeto deve ser uma jornada partilhada.</p>
+                <p> Além da estética e funcionalidade, também nos preocupamos com a longevidade e escalabilidade dos
+                    websites que criamos. Construímos soluções que evoluem com o seu negócio, permitindo que a sua
+                    presença digital evolua de acordo com as suas necessidades. Nossa visão não é apenas criar um site,
+                    mas criar um ecossistema digital poderoso que impulsione marcas e conecte pessoas.</p>
+                <p> Se você deseja expandir sua marca, lançar novas ideias ou reinventar sua presença digital, a Echo
+                    está pronta para ajudá-lo. Os sites que criamos vão além da estética, combinando estratégia,
+                    identidade e tecnologia para garantir que sua marca ressoe da maneira certa no mundo digital.</p>
+                <p> Contacte-nos e descubra como podemos levar a sua presença online para o próximo nível.</p>
+                <h1>Por que devo escolher a Echo?</h1>
+                <p> Escolher a Echo é optar por excelência e inovação no desenvolvimento de sites. Somos uma empresa
+                    apaixonada por transformar ideias em realidade digital, dedicada a criar experiências únicas e
+                    impactantes. Cada projeto é uma oportunidade para superar expectativas, oferecendo soluções
+                    personalizadas que atendem às necessidades específicas de nossos clientes.</p>
+                <p> Na Echo, acreditamos que um site bem-feito é mais do que uma presença online; é uma ferramenta
+                    poderosa que impulsiona negócios, fortalece marcas e conecta pessoas. Nosso time de especialistas é
+                    comprometido com a qualidade em cada etapa do processo, desde o design intuitivo até a
+                    funcionalidade impecável.</p>
+            </div>
+
+    </main>
+    <section class="contact" id="contact">
+        <div class="generalContact">
+            <div class="quebrarForm">
+                <div class="contatoText">
+                    <h1><span>Entre em contato</span> com a Echo</h1>
+                </div>
+                <div class="imgEchoContact">
+                    <img src="assets/img/imgLogoContact.svg" alt="Logo 3D Echo">
+                </div>
+                <div class="formContact">
+                    <form action="assets/php/send_email.php" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" placeholder=" " required>
+                            <label for="name">Seu nome</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" placeholder=" " required>
+                            <label for="email">E-mail</label>
+                        </div>
+                        <div class="form-group">
+                            <select name="help" id="help" required>
+                                <option value="" selected disabled></option>
+                                <option value="orcamento">Dúvidas sobre orçamento</option>
+                                <option value="investimento">Quero investir na Echo</option>
+                                <option value="reclamacoes">Reclamações</option>
+                                <option value="sugestoes">Sugestões</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                            <label for="help">Como podemos ajudar?</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="msg" id="msg" rows="4" placeholder=" " required></textarea>
+                            <label for="msg">Mensagem</label>
+                        </div>
+                        <input type="hidden" name="_subject" value="E-mail de www.goecho.com.br para resposta!">
+                        <input type="hidden" name="_cc" value="contato.mateusnascimentoeuzebio@gmail.com">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="basic">
+                        <div class="btnDiv">
+                            <button type="submit" class="btnEnviar">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="generalInfos" id="generalInfos">
+                <div class="footerOne">
+                    <div class="footerColumn">
+                        <div class="mapOfSite">
+                            <h1>Mapa do Site</h1>
+                            <a href="index.html">Home</a>
+                            <a href="#aboutEcho">Quem Somos</a>
+                            <a href="#portfolio">Portfólio</a>
+                            <a href="#planos">Planos</a>
+                            <a href="#faqs">FAQ's</a>
+                            <a href="#contact">Contato</a>
+                        </div>
+                        <div class="socialMedias">
+                            <h1>Redes Sociais</h1>
+                            <a href="https://www.instagram.com/go.echo_/" target="_blank">Instagram</a>
+                            <!-- <a href="">Linkedin</a>
+                      <a href="">X (Twitter)</a> -->
+                        </div>
+                    </div>
+                    <div class="footerColumn">
+                        <div class="contato">
+                            <h1>Contato</h1>
+                            <a href="https://api.whatsapp.com/send?phone=5541996754583&text=Ol%C3%A1!%20Visitei%20seu%20site%20e%20gostaria%20de%20tirar%20algumas%20informa%C3%A7%C3%B5es%20gerais."
+                                target="_blank">(41) 99675-4583</a>
+                        </div>
+                        <div class="socialMedias">
+                            <h1>E-mail</h1>
+                            <a
+                                href="mailto:contato@goecho.com.br?subject=Contato%20pela%20p%C3%A1gina%20da%20Echo&body=Ol%C3%A1!%20Visitei%20seu%20site%20e%20gostaria%20de%20tirar%20algumas%20informa%C3%A7%C3%B5es%20gerais.">contato@goecho.com.br</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feedback">
+                    <div class="imgFeedback">
+                        <img src="assets/img/feedbackImg.svg" alt="Imagem Mulher Feedback">
+                    </div>
+                    <div class="feedbackStars">
+                        <span>Dar um feedback para a Echo</span>
+                        <a href="#">
+                            <img src="assets/img/starsFeedback.svg" alt="Feedback Stars">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="echoCellphoneContainer">
+            <img class="echoCellphone" src="assets/img/miniLogoGreenFooter.svg" alt="Logo Echo">
+        </div>
+        </div>
+        <div class="copyright">
+            <div class="imgEchoCopy">
+                <img src="assets/img/imgFooter.svg" alt="Logo Footer">
+            </div>
+            <div class="imgEchoCopy2">
+                <img src="assets/img/imgFooterGreen.svg" alt="Logo Footer">
+            </div>
+            <div class="designed">
+                <span>designed by ECHO</span>
+            </div>
+        </div>
+    </section>
+</body>
