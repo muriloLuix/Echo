@@ -1001,7 +1001,7 @@ span.dark {
 
 .pricing-card {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     width: 90.5vw;
     margin: 0 auto;
@@ -1125,6 +1125,11 @@ span.dark {
 
 .cartao-footer {
     margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
 .cartao ul {
@@ -1170,6 +1175,7 @@ span.dark {
     background-color: #349B24;
     border-radius: 10px;
     transition: all .3s ease;
+    text-align: center;
 }
 
 .price a:hover {
@@ -1201,12 +1207,12 @@ span.dark {
     border-radius: 20px;
     font-family: var(--montserrat);
     opacity: 0;
-    transform: translateY(20px);
     transition: opacity 0.4s ease, transform 0.4s ease;
-    position: absolute;
-    bottom: 10vh;
-    left: 50%;
-    transform: translateX(-50%) translateY(20px);
+    /* position: absolute;
+    bottom: 15vh;
+    left: 50%; */
+    transform: translateX(0%) translateY(20px);  
+
     width: calc(100% - 40px);
 }
 
@@ -1375,6 +1381,9 @@ span.dark {
 }
 
 @media screen and (max-width: 1325px) {
+    .pricing-card {
+        flex-wrap: wrap;
+    }
     .caixa-conteudo {
         width: 90vw;
         height: 77vh;
@@ -2193,6 +2202,7 @@ span.dark {
     .cartao ul {
         display: flex;
         flex-direction: column;
+        margin-bottom: 5rem;
     }
 
     .info {
@@ -2294,7 +2304,7 @@ span.dark {
 
     .cartao:hover .info {
         opacity: 1;
-        transform: translateX(-50%) translateY(0);
+        transform: translateX(0%) translateY(0);
     }
 }
 
