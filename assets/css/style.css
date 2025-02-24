@@ -1986,24 +1986,35 @@ span.dark {
     height: 5vh;
 }
 
-.copyright {
+.copyright{
+    width: 100%;
+    height: 100%;
+    background-color: #349B24;
     display: flex;
-    position: fixed;
-    right: 2vw;
-    bottom: 2vh;
     align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #fff;
+    font-weight: 500;
+    font-family: var(--montserrat);
+    gap: 20px;
 }
 
-.imgEchoCopy img {
+.copyright p{
+    margin: 0px;
+}
+
+.copyright.dark{
+    background-color: #0066FF;
+    color: #fff !important;
+}
+
+.logoCopyright img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 2em;
-    height: 2vh;
-    margin-right: 10px;
-}
-
-.copyright span {
-    font-family: "Taruno";
-    color: #00000088;
-    font-size: .7rem;
+    height: auto;
 }
 
 #carouselExampleIndicators {
@@ -2029,6 +2040,20 @@ span.dark {
 @media screen and (max-width: 1140px) {
     .nav-link.dark {
         color: #000 !important;
+    }
+
+    .contact{
+        background-color: #F5F5F7;
+    }
+
+    .planos h1{
+        width: auto;
+        font-size: 1.2rem;
+    }
+
+    .portfolio h1{
+        width: auto;
+        font-size: 1.2rem;
     }
 
     .duvida {
@@ -2331,29 +2356,12 @@ span.dark {
         height: 20vh;
     }
 
-    .copyright {
-        justify-content: center;
-        right: 0;
-        left: 0;
-        margin-top: 6vh;
-        position: relative;
-        gap: 2vw;
-    }
-
     .imgEchoCopy {
         display: none;
     }
 
     .imgEchoCopy2 {
         display: flex;
-    }
-
-    .designed span {
-        color: #349B24 !important;
-    }
-
-    .designed.dark span {
-        color: #0066FF !important;
     }
 
     .imageBox {
@@ -2534,7 +2542,7 @@ span.dark {
 
     .aboutH1,
     .whatDo {
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         width: auto;
         text-align: left;
     }

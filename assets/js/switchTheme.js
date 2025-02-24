@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('.echoText'),
             document.querySelector('.abadeSuger'),
             document.querySelector('.bi-arrow-down'),
+            document.querySelector('.copyright'),
             ...document.querySelectorAll('.nav-links'),
             ...document.querySelectorAll('.cardAbout'),
             ...document.querySelectorAll('.cardAbout p'),
