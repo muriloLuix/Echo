@@ -1383,6 +1383,7 @@ span.dark {
 @media screen and (max-width: 1325px) {
     .pricing-card {
         flex-wrap: wrap;
+        flex-direction: column-reverse;
     }
     .caixa-conteudo {
         width: 90vw;
