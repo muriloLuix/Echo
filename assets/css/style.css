@@ -20,7 +20,6 @@ body {
     transition: all .3s ease;
     position: relative;
     z-index: -1;
-    /* cursor: url('../img/Mouse.svg'), auto; */
     overflow-x: hidden;
 
 }
@@ -28,13 +27,6 @@ body {
 html {
     width: 100vw !important;
 }
-
-/* a,
-button,
-.pointer,
-label {
-    cursor: url('../img/MouseGrab.svg'), pointer !important;
-} */
 
 body.dark {
     background-color: #151515 !important;
@@ -2562,3 +2554,27 @@ span.dark {
 }
 
 /* Responsivity */
+
+/* Animação Digitação */
+
+.typing-animation {
+    font-family: monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: blink .75s step-end infinite;
+    height: 60px;
+}
+
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
